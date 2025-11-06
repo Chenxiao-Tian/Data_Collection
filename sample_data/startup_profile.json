@@ -1,0 +1,64 @@
+{
+  "profile": {
+    "name": "SynthPilot",
+    "domain": "synthpilot.ai",
+    "industry": "AI",
+    "market_size": "Large",
+    "market_growth_rate": 0.32,
+    "update_frequency_per_month": 9,
+    "timing": "JustRight"
+  },
+  "product": {
+    "pmf": "Strong",
+    "pivot_history": "Rarely",
+    "innovation_mentions": "Often",
+    "frontier_tech_usage": "Emphasized",
+    "release_frequency_per_quarter": 8,
+    "reviews": "Positive"
+  },
+  "funding": {
+    "stage": "Series A",
+    "valuation_trend": "Increased",
+    "investor_quality": "Top-tier"
+  },
+  "hiring": {
+    "net_new_roles_last_quarter": 12,
+    "senior_ratio": 0.65
+  },
+  "founders": [
+    {
+      "name": "Ada Lovelace",
+      "education_level": "PhD",
+      "school_tier": "Tier-1",
+      "leadership_experience": true,
+      "top_company_experience": true,
+      "previous_exits": 1,
+      "role_alignment": 0.75
+    },
+    {
+      "name": "Alan Turing",
+      "education_level": "Masters",
+      "school_tier": "Tier-1",
+      "leadership_experience": true,
+      "top_company_experience": true,
+      "previous_exits": 0,
+      "role_alignment": 0.68
+    }
+  ],
+  "market": {
+    "size_usd": 55000000000,
+    "cagr": 0.29
+  },
+  "competition": {
+    "competitor_count": 18,
+    "investor_diversity": 0.72
+  },
+  "compliance": {
+    "regulation_mentions": 5,
+    "patent_count": 9
+  },
+  "sentiment": {
+    "overall": "Positive",
+    "average": 0.31
+  }
+}
