@@ -24,6 +24,13 @@ python scripts/collect_features.py \
   --domain "scam.ai" \
   --industry "AI anti-fraud" \
   --stage "Unknown" \
+# 2. 使用样例数据收集特征
+python scripts/collect_features.py \
+  --profile-path sample_data/startup_profile.json \
+  --name "SynthPilot" \
+  --domain "synthpilot.ai" \
+  --industry "AI" \
+  --stage "Series A" \
   --region "US" \
   --output-dir outputs/demo
 
@@ -41,6 +48,7 @@ pytest
 - `features_ssff.parquet`：14 个分类特征，可直接喂给分类模型。
 - `features_founder.parquet`：创始人分层 & FIFS 指标。
 - `features_external.json`：市场规模、CAGR、竞争格局、舆情与基于公开资料整理的知识摘要（公司概况、创始人履历、风险、数据缺口等）。
+- `features_external.json`：市场规模、CAGR、竞争格局、舆情等扩展信号。
 
 ## 项目结构
 
