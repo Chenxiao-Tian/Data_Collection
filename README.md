@@ -17,6 +17,13 @@
 # 1. 安装依赖
 pip install -e .[test]
 
+# 2. 使用样例数据收集特征（Scam AI 案例）
+python scripts/collect_features.py \
+  --profile-path sample_data/startup_profile.json \
+  --name "Scam AI" \
+  --domain "scam.ai" \
+  --industry "AI anti-fraud" \
+  --stage "Unknown" \
 # 2. 使用样例数据收集特征
 python scripts/collect_features.py \
   --profile-path sample_data/startup_profile.json \
@@ -40,6 +47,7 @@ pytest
 
 - `features_ssff.parquet`：14 个分类特征，可直接喂给分类模型。
 - `features_founder.parquet`：创始人分层 & FIFS 指标。
+- `features_external.json`：市场规模、CAGR、竞争格局、舆情与基于公开资料整理的知识摘要（公司概况、创始人履历、风险、数据缺口等）。
 - `features_external.json`：市场规模、CAGR、竞争格局、舆情等扩展信号。
 
 ## 项目结构
@@ -77,3 +85,9 @@ pytest
 4. **模型训练**：将 `features_ssff.parquet` 与 `features_external.json` 读入 Pandas DataFrame，结合历史标签训练随机森林或神经网络。
 
 欢迎根据实际需求扩展此仓库，构建更全面的 AI startup 数据资产。
+
+## Scam AI 实战数据说明
+
+- `sample_data/startup_profile.json` 现已收录 Scam AI 的公开资料，包括创始人履历、产品定位、公开风险提示以及待补齐的数据缺口。
+- 所有事实均来自官方站点与创始人 LinkedIn 页面，详细整理过程、字段解释与校验步骤见 [`docs/scam_ai_collection.md`](docs/scam_ai_collection.md)。
+- 运行示例命令即可在 `features_external.json` 中看到上述知识摘要与结构化指标的融合结果，方便下游模型直接引用。

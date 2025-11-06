@@ -1,5 +1,33 @@
 {
   "profile": {
+    "name": "Scam AI",
+    "domain": "scam.ai",
+    "industry": "AI anti-fraud",
+    "market_size": "Unknown",
+    "market_growth_rate": null,
+    "update_frequency_per_month": null,
+    "timing": "Unknown"
+  },
+  "product": {
+    "pmf": "Unknown",
+    "pivot_history": "Unknown",
+    "innovation_mentions": "Often",
+    "frontier_tech_usage": "Emphasized",
+    "release_frequency_per_quarter": null,
+    "reviews": "Unknown"
+  },
+  "funding": {
+    "stage": "Unknown",
+    "valuation_trend": "Unknown",
+    "investor_quality": "Unknown"
+  },
+  "hiring": {
+    "net_new_roles_last_quarter": null,
+    "senior_ratio": null
+  },
+  "founders": [
+    {
+      "name": "Ben (Simiao) Ren",
     "name": "SynthPilot",
     "domain": "synthpilot.ai",
     "industry": "AI",
@@ -32,6 +60,78 @@
       "school_tier": "Tier-1",
       "leadership_experience": true,
       "top_company_experience": true,
+      "previous_exits": 0,
+      "role_alignment": 0.95
+    },
+    {
+      "name": "Dennis Ng T. Sang",
+      "education_level": "Bachelors",
+      "school_tier": "Tier-2",
+      "leadership_experience": true,
+      "top_company_experience": false,
+      "previous_exits": 0,
+      "role_alignment": 0.82
+    }
+  ],
+  "market": {
+    "size_usd": 21800000000,
+    "cagr": 0.156
+  },
+  "competition": {
+    "competitor_count": null,
+    "investor_diversity": null
+  },
+  "compliance": {
+    "regulation_mentions": null,
+    "patent_count": null
+  },
+  "sentiment": {
+    "overall": "Neutral",
+    "average": 0.0
+  },
+  "knowledge": {
+    "company_name": "Scam AI",
+    "sector": "AI anti-fraud (deepfake and voice-clone detection, risk scoring)",
+    "product_type": "SaaS/API for identity and content authenticity",
+    "founders": [
+      {
+        "name": "Ben (Simiao) Ren",
+        "role": "Co-founder & CTO",
+        "summary": "Former Meta Senior Research Scientist focusing on deep learning for vision/audio; PhD in Electrical & Computer Engineering with published research in generative models.",
+        "source": "https://www.linkedin.com/in/simiao-ben-ren/"
+      },
+      {
+        "name": "Dennis Ng T. Sang",
+        "role": "Co-founder",
+        "summary": "Product-focused engineer and former founding engineer at Sportsync.com leading front-end, UX, and product delivery initiatives.",
+        "source": "https://www.linkedin.com/in/dennisngtsang/"
+      }
+    ],
+    "founder_team_complementarity": "Research-to-product ML expertise from Ren pairs with Ng's product engineering and UX delivery background.",
+    "founder_idea_fit": "Strong",
+    "prior_signals": [
+      "Ren's big-tech research tenure building deep learning and generative AI systems at Meta",
+      "Ng's previous founding engineer role translating product requirements into shipped SaaS experiences"
+    ],
+    "potential_risks": [
+      "Go-to-market traction not yet public",
+      "Enterprise compliance and sales cycles for identity risk products can be lengthy",
+      "Regulatory integration requirements remain unclear"
+    ],
+    "public_sources": [
+      "https://www.scam.ai/",
+      "https://www.linkedin.com/in/simiao-ben-ren/",
+      "https://www.linkedin.com/in/dennisngtsang/"
+    ],
+    "data_gaps": [
+      "incorporation_year",
+      "team_size",
+      "revenue_or_arr",
+      "funding_rounds",
+      "paying_customers",
+      "security_or_compliance_certs"
+    ],
+    "timestamp_utc": "2025-10-28T00:00:00Z"
       "previous_exits": 1,
       "role_alignment": 0.75
     },

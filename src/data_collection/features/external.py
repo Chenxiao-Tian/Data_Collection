@@ -2,6 +2,7 @@
 
 from __future__ import annotations
 
+from typing import Any, Dict, List
 from typing import Any, Dict
 
 from .base import FeatureBlock
@@ -17,6 +18,9 @@ class ExternalKnowledgeBlock(FeatureBlock):
         competition = payload.get("competition", {})
         sentiment = payload.get("sentiment", {})
         compliance = payload.get("compliance", {})
+        knowledge = payload.get("knowledge", {})
+
+        result: Dict[str, Any] = {
 
         return {
             "market_size_usd": float(market.get("size_usd", 0.0)),
@@ -27,6 +31,36 @@ class ExternalKnowledgeBlock(FeatureBlock):
             "regulation_mentions": int(compliance.get("regulation_mentions", 0)),
             "investor_diversity": float(competition.get("investor_diversity", 0.0)),
         }
+
+        knowledge_summary: Dict[str, Any] = {
+            "company_name": knowledge.get("company_name"),
+            "sector": knowledge.get("sector"),
+            "product_type": knowledge.get("product_type"),
+            "founder_team_complementarity": knowledge.get(
+                "founder_team_complementarity"
+            ),
+            "founder_idea_fit": knowledge.get("founder_idea_fit"),
+            "prior_signals": self._safe_list(knowledge.get("prior_signals")),
+            "potential_risks": self._safe_list(knowledge.get("potential_risks")),
+            "public_sources": self._safe_list(knowledge.get("public_sources")),
+            "data_gaps": self._safe_list(knowledge.get("data_gaps")),
+            "timestamp_utc": knowledge.get("timestamp_utc"),
+        }
+
+        founders_detail = knowledge.get("founders")
+        if isinstance(founders_detail, list):
+            knowledge_summary["founders"] = founders_detail
+
+        result.update(knowledge_summary)
+        return result
+
+    @staticmethod
+    def _safe_list(value: Any) -> List[Any]:
+        if isinstance(value, list):
+            return value
+        if value is None:
+            return []
+        return [value]
 
     @staticmethod
     def summarise_news_sentiment(scores: Dict[str, float]) -> Dict[str, float]:
