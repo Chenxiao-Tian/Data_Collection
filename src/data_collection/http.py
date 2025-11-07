@@ -24,6 +24,14 @@ class CachedAsyncClient:
         self._cache_dir = cache_dir
         self._cache_dir.mkdir(parents=True, exist_ok=True)
 
+    async def get_json(
+        self,
+        url: str,
+        *,
+        params: Optional[Dict[str, Any]] = None,
+        headers: Optional[Dict[str, str]] = None,
+    ) -> Any:
+        cache_key = self._cache_key("GET", url, params, headers)
     async def get_json(self, url: str, *, params: Optional[Dict[str, Any]] = None) -> Any:
         cache_key = self._cache_key("GET", url, params)
         cached = self._read_cache(cache_key)
@@ -33,6 +41,7 @@ class CachedAsyncClient:
         if params:
             query = "&".join(f"{k}={v}" for k, v in params.items())
             url = f"{url}?{query}"
+        data = await asyncio.to_thread(self._sync_request, url, None, headers=headers)
         data = await asyncio.to_thread(self._sync_request, url, None)
         self._write_cache(cache_key, data)
         return data
@@ -44,6 +53,7 @@ class CachedAsyncClient:
         *,
         headers: Optional[Dict[str, str]] = None,
     ) -> Any:
+        cache_key = self._cache_key("POST", url, payload, headers)
         cache_key = self._cache_key("POST", url, payload)
         cached = self._read_cache(cache_key)
         if cached is not None:
@@ -76,6 +86,17 @@ class CachedAsyncClient:
         except json.JSONDecodeError:
             return content
 
+    def _cache_key(
+        self,
+        method: str,
+        url: str,
+        params: Optional[Dict[str, Any]],
+        headers: Optional[Dict[str, str]],
+    ) -> str:
+        serialized = json.dumps(
+            {"url": url, "params": params, "method": method, "headers": headers},
+            sort_keys=True,
+        )
     def _cache_key(self, method: str, url: str, params: Optional[Dict[str, Any]]) -> str:
         serialized = json.dumps({"url": url, "params": params, "method": method}, sort_keys=True)
         return str(abs(hash(serialized)))

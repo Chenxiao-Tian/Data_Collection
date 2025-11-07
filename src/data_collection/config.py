@@ -16,6 +16,8 @@ class APIKeys:
     crunchbase_key: Optional[str] = None
     newsapi_key: Optional[str] = None
     openalex_email: Optional[str] = None
+    proxycurl_key: Optional[str] = None
+    opencorporates_token: Optional[str] = None
 
     def as_dict(self) -> Dict[str, Optional[str]]:
         return {
@@ -24,6 +26,8 @@ class APIKeys:
             "crunchbase_key": self.crunchbase_key,
             "newsapi_key": self.newsapi_key,
             "openalex_email": self.openalex_email,
+            "proxycurl_key": self.proxycurl_key,
+            "opencorporates_token": self.opencorporates_token,
         }
 
 
@@ -58,6 +62,8 @@ def load_from_env() -> RuntimeConfig:
         crunchbase_key=os.getenv("CRUNCHBASE_KEY"),
         newsapi_key=os.getenv("NEWSAPI_KEY"),
         openalex_email=os.getenv("OPENALEX_EMAIL"),
+        proxycurl_key=os.getenv("PROXYCURL_API_KEY"),
+        opencorporates_token=os.getenv("OPENCORPORATES_APP_TOKEN"),
     )
 
     output_dir = Path(os.getenv("OUTPUT_DIR", "outputs"))

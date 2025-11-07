@@ -52,6 +52,18 @@
 
 ## 5. 在项目中的使用
 
+若 `.env` 中已配置 SerpAPI / Crunchbase / NewsAPI / Product Hunt / Proxycurl / OpenCorporates 等密钥，仅需输入公司名称即可自动抓取：
+
+```bash
+python scripts/collect_features.py "Scam AI" --output-dir outputs/scam_ai
+```
+
+若缺少部分密钥，可叠加 `--profile-path sample_data/startup_profile.json` 作为离线补充，程序会自动将实时抓取与手工整理的字段合并。
+
+执行后会生成：
+
+- `features_ssff.parquet`：分类特征（若实时 API 返回完整市场数据则自动覆盖离线缺口）。
+- `features_founder.parquet`：创始人分层（Ren 与 Ng 的 FIFS 平均得分约 0.885，若 Proxycurl 返回最新履历则会动态更新）。
 ```bash
 python scripts/collect_features.py \
   --profile-path sample_data/startup_profile.json \
