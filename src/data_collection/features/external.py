@@ -3,6 +3,7 @@
 from __future__ import annotations
 
 from typing import Any, Dict, List
+from typing import Any, Dict
 
 from .base import FeatureBlock
 
@@ -20,6 +21,8 @@ class ExternalKnowledgeBlock(FeatureBlock):
         knowledge = payload.get("knowledge", {})
 
         result: Dict[str, Any] = {
+
+        return {
             "market_size_usd": float(market.get("size_usd", 0.0)),
             "cagr": float(market.get("cagr", 0.0)),
             "competitor_count": int(competition.get("competitor_count", 0)),

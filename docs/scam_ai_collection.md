@@ -64,6 +64,21 @@ python scripts/collect_features.py "Scam AI" --output-dir outputs/scam_ai
 
 - `features_ssff.parquet`：分类特征（若实时 API 返回完整市场数据则自动覆盖离线缺口）。
 - `features_founder.parquet`：创始人分层（Ren 与 Ng 的 FIFS 平均得分约 0.885，若 Proxycurl 返回最新履历则会动态更新）。
+```bash
+python scripts/collect_features.py \
+  --profile-path sample_data/startup_profile.json \
+  --name "Scam AI" \
+  --domain "scam.ai" \
+  --industry "AI anti-fraud" \
+  --stage "Unknown" \
+  --region "US" \
+  --output-dir outputs/scam_ai
+```
+
+执行后会生成：
+
+- `features_ssff.parquet`：分类特征（市场规模暂为 `Unknown`，反映公开信息的缺口）。
+- `features_founder.parquet`：创始人分层（Ren 与 Ng 的 FIFS 平均得分约 0.885）。
 - `features_external.json`：除市场量化指标外，还包含 `knowledge` 中的补充说明、风险、数据缺口以及引用的公开链接。
 
 ## 6. 后续扩展建议

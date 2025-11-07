@@ -8,6 +8,7 @@
 - ✅ **Founder Segmentation Block**：依据教育背景、领导力、过往创业经验和“Founder-Idea Fit (FIFS)” 得分，输出创始人分层指标到 `features_founder.parquet`。
 - ✅ **External Knowledge Block**：整合 SERP / 市场报告 / 舆情等扩展信号，生成 `features_external.json`。
 - ✅ **开放数据接入**：内置 `OpenDataSource` 会并行请求 SerpAPI、Crunchbase、NewsAPI、Product Hunt、OpenCorporates、Proxycurl 等可靠公开渠道；通过 `.env` 注入 API 凭证后，仅输入创业公司名称即可自动抓取并落地特征。
+- ✅ **开放数据接入**：默认使用 `OpenDataSource` 模拟接入 Product Hunt、Crunchbase、市场报告等开放数据源，方便在无密钥环境中演示；支持通过 `.env` 注入真实 API 凭证后替换为生产级连接器。
 - ✅ **Typer CLI**：`scripts/collect_features.py` 提供一键收集命令，可输出特征并打印 JSON。
 - ✅ **Pytest 用例**：`tests/test_pipeline.py` 验证三大特征模块的核心逻辑。
 
@@ -44,6 +45,38 @@ pytest
 - `features_ssff.parquet`：14 个分类特征，可直接喂给分类模型。
 - `features_founder.parquet`：创始人分层 & FIFS 指标。
 - `features_external.json`：市场规模、CAGR、竞争格局、舆情与基于公开资料整理的知识摘要（公司概况、创始人履历、风险、数据缺口等），并附带 API 来源链接。
+# 2. 使用样例数据收集特征（Scam AI 案例）
+python scripts/collect_features.py \
+  --profile-path sample_data/startup_profile.json \
+  --name "Scam AI" \
+  --domain "scam.ai" \
+  --industry "AI anti-fraud" \
+  --stage "Unknown" \
+# 2. 使用样例数据收集特征
+python scripts/collect_features.py \
+  --profile-path sample_data/startup_profile.json \
+  --name "SynthPilot" \
+  --domain "synthpilot.ai" \
+  --industry "AI" \
+  --stage "Series A" \
+  --region "US" \
+  --output-dir outputs/demo
+
+# 3. 查看结果
+ls outputs/demo
+parquet-tools show outputs/demo/features_ssff.parquet
+cat outputs/demo/features_external.json
+
+# 4. 运行测试
+pytest
+```
+
+运行完毕后，可在 `outputs/demo/` 中找到三份特征文件：
+
+- `features_ssff.parquet`：14 个分类特征，可直接喂给分类模型。
+- `features_founder.parquet`：创始人分层 & FIFS 指标。
+- `features_external.json`：市场规模、CAGR、竞争格局、舆情与基于公开资料整理的知识摘要（公司概况、创始人履历、风险、数据缺口等）。
+- `features_external.json`：市场规模、CAGR、竞争格局、舆情等扩展信号。
 
 ## 项目结构
 
@@ -88,6 +121,13 @@ pytest
 ## 扩展与定制
 
 1. **替换数据源**：继承 `DataSource`，在 `pipeline.run_from_config` 中注入自定义的可信渠道（如 PitchBook、Tracxn、Dealroom）。
+└── tests/
+    └── test_pipeline.py          # 单元测试
+```
+
+## 扩展与定制
+
+1. **替换数据源**：继承 `DataSource`，在 `pipeline.run_from_config` 中注入真实的 Product Hunt / Crunchbase / News API 适配器即可。
 2. **引入 RAG 信号**：在 `OpenDataSource` 中新增 `async def _rag_signals()`，调用 SERP API + LLM，总结后写入 `payload["external_rag_summary"]`。
 3. **增强 Founder-Idea Fit**：在 `FounderFeatureBlock` 中，接入 `text-embedding-3-large` 的余弦相似度，将结果归一化到 [-1, 1]，并记录成功 / 失败样本。
 4. **模型训练**：将 `features_ssff.parquet` 与 `features_external.json` 读入 Pandas DataFrame，结合历史标签训练随机森林或神经网络。
@@ -99,3 +139,6 @@ pytest
 - 默认命令会实时访问上述 API，若某些密钥缺失，可使用 `--profile-path sample_data/startup_profile.json` 注入离线快照进行演示。
 - 所有事实均来自官方站点与创始人 LinkedIn 页面，详细整理过程、字段解释与校验步骤见 [`docs/scam_ai_collection.md`](docs/scam_ai_collection.md)。
 - 运行示例命令即可在 `features_external.json` 中看到实时抓取的市场指标与知识摘要，并自动合并离线补充数据。
+- `sample_data/startup_profile.json` 现已收录 Scam AI 的公开资料，包括创始人履历、产品定位、公开风险提示以及待补齐的数据缺口。
+- 所有事实均来自官方站点与创始人 LinkedIn 页面，详细整理过程、字段解释与校验步骤见 [`docs/scam_ai_collection.md`](docs/scam_ai_collection.md)。
+- 运行示例命令即可在 `features_external.json` 中看到上述知识摘要与结构化指标的融合结果，方便下游模型直接引用。

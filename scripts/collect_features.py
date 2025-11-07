@@ -18,6 +18,7 @@ app = typer.Typer(add_completion=False)
 @app.command(help="Collect features for a single startup.")
 def collect(
     name: str = typer.Argument(..., help="Startup name"),
+    name: Optional[str] = typer.Option(None, help="Startup name"),
     domain: Optional[str] = typer.Option(None, help="Startup website domain"),
     profile_path: Optional[Path] = typer.Option(
         None, help="Path to a JSON file with pre-annotated signals"
