@@ -163,6 +163,22 @@ def test_registry_rejects_duplicate_domain(tmp_path):
         registry(p)
 
 
+def test_discovery_deduplicates_entity_and_excludes_tracked_company(store):
+    assert not store.candidate(C["name"], C["website"], "https://www.wikidata.org/wiki/Q1")
+    assert store.candidate("Newco", "https://newco.example/", "https://www.wikidata.org/wiki/Q2")
+    assert not store.candidate("Newco", "https://newco.example/en", "https://www.wikidata.org/wiki/Q2")
+    assert len(store.snapshot()["candidates"]) == 1
+
+
+def test_legacy_candidate_queue_migrates_without_url_duplicates(store):
+    with store.db:
+        store.db.execute("INSERT INTO candidates VALUES('old1','Newco','https://newco.example/en','Q2','2026-01-01','needs_review')")
+        store.db.execute("INSERT INTO candidates VALUES('old2','Newco','https://newco.example/','Q2','2026-01-01','needs_review')")
+    store.register([C])
+    queue = store.snapshot()["candidates"]
+    assert len(queue) == 1 and queue[0]["website"] == "https://newco.example/"
+
+
 def test_wikidata_name_match_alone_is_rejected():
     class Fake:
         def json(self, url, params, **kw):

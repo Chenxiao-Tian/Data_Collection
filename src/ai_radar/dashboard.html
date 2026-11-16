@@ -28,9 +28,9 @@ function showCompany(c){const body=$('detailcontent');body.replaceChildren(el('h
  for(const [field,values] of Object.entries(c.facts)){for(const v of values){const f=el('div',undefined,'fact');f.append(el('strong',labels[field]||field),document.createTextNode(' '),badge(v.status),el('p',String(v.value)));v.evidence.forEach(e=>f.append(source(e)));body.append(f)}}
  body.append(el('h3','来源档案'));c.sources.forEach(s=>body.append(source(s)));$('detail').showModal()}
 function card(c){const article=el('article',undefined,'card'),head=el('div',undefined,'cardhead'),left=el('div'),name=el('button',c.name,'company');name.onclick=()=>showCompany(c);left.append(name,el('div',new URL(c.website).hostname,'hint'));const ts=el('div');c.tags.forEach(t=>ts.append(el('span',t,'tag')));left.append(ts);head.append(left,badge(c.status));article.append(head);
- const descr=c.facts.self_description?.[0]?.value;article.append(el('p',descr||'尚未取得可引用的公司自述。点击公司查看现有来源和待补齐字段。','excerpt'));
+ const descriptionFact=c.facts.self_description?.find(v=>v.status!=='stale')||c.facts.self_description?.[0];const descr=descriptionFact?.value;article.append(el('p',descr||'尚未取得可引用的公司自述。点击公司查看现有来源和待补齐字段。','excerpt'));
  const meta=el('div',undefined,'metadata');meta.append(el('span',c.sources.length+' 条来源'),el('span','最近检查 '+date(c.last_checked)));article.append(meta);
- const hits=lastResults?.filter(r=>r.company_id===c.id);(hits?.length?hits.slice(0,2):c.sources.slice(0,1)).forEach(s=>article.append(source(s)));return article}
+ const hits=lastResults?.filter(r=>r.company_id===c.id);const cited=descriptionFact?.evidence?.[0]?.document_id;const primary=c.sources.find(s=>s.id===cited);(hits?.length?hits.slice(0,2):primary?[primary]:c.sources.slice(0,1)).forEach(s=>article.append(source(s)));return article}
 const expansion={'开源':'open source','语音':'voice speech audio','推理':'inference reasoning','融资':'funding investment','视频':'video','芯片':'chip processor','招聘':'careers hiring','智能体':'agent','大模型':'model llm','搜索':'search retrieval','医疗':'medical healthcare'};
 function searchText(c){return [c.name,c.website,...c.aliases,...c.tags,...Object.values(c.facts).flat().map(v=>v.value),...c.sources.flatMap(s=>[s.title,s.excerpt])].join(' ').toLowerCase()}
 function filtered(){

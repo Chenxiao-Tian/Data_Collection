@@ -70,19 +70,23 @@ def wikidata_document(client, company):
 
 
 def discover(client, store, limit=50):
+    saved = store.db.execute("SELECT value FROM settings WHERE key='discovery_offset'").fetchone()
+    offset = max(0, int(saved[0])) if saved else 0
     query = """SELECT DISTINCT ?company ?companyLabel ?website WHERE {
       ?company wdt:P452 wd:Q11660; wdt:P856 ?website.
       SERVICE wikibase:label { bd:serviceParam wikibase:language "en,zh". }
-    } LIMIT """ + str(min(max(limit, 1), 200))
+    } ORDER BY ?company ?website LIMIT """ + str(min(max(limit, 1), 200)) + " OFFSET " + str(offset)
     data, _ = client.json("https://query.wikidata.org/sparql", {"query": query, "format": "json"}, headers={"Accept": "application/sparql-results+json"})
     count = 0
-    for row in data.get("results", {}).get("bindings", []):
+    rows = data.get("results", {}).get("bindings", [])
+    for row in rows:
         try:
             website = canonical_url(row["website"]["value"])
-            store.candidate(row["companyLabel"]["value"], website, row["company"]["value"])
-            count += 1
+            count += int(store.candidate(row["companyLabel"]["value"], website, row["company"]["value"]))
         except (KeyError, FetchError):
             continue
+    with store.db:
+        store.db.execute("INSERT OR REPLACE INTO settings VALUES('discovery_offset',?)", (str(offset + len(rows) if rows else 0),))
     return count
 
 

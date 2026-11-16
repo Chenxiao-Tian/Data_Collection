@@ -4,7 +4,7 @@
 
 `config/companies.json` → bounded official-site crawler / domain-matched Wikidata enrichment → SQLite documents + claims + FTS5 → reciprocal-rank retrieval → local API / self-contained dashboard / CSV + JSON.
 
-Discovery runs separately: Wikidata AI-industry companies → candidate queue → human verifies company identity and official domain → registry edit → collection. Discovery is automatic; promotion is deliberately reviewed.
+Discovery runs separately: Wikidata AI-industry companies → candidate queue → human verifies company identity and official domain → registry edit → collection. Discovery is automatic; promotion is deliberately reviewed. A persisted cursor rotates through ordered Wikidata result pages, resets on exhaustion, deduplicates candidates by source entity, and excludes already tracked website domains.
 
 ## Identity and evidence
 

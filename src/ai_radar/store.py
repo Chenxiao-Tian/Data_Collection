@@ -6,6 +6,7 @@ import sqlite3
 import re
 from datetime import datetime, timezone
 from pathlib import Path
+from .net import domain, FetchError
 
 
 def now():
@@ -56,6 +57,7 @@ class Store:
         CREATE TABLE IF NOT EXISTS vectors(
           document_id TEXT, content_hash TEXT, model TEXT, vector TEXT,
           PRIMARY KEY(document_id, model));
+        CREATE TABLE IF NOT EXISTS settings(key TEXT PRIMARY KEY, value TEXT NOT NULL);
         """)
 
     def close(self):
@@ -69,6 +71,17 @@ class Store:
                 ON CONFLICT(id) DO UPDATE SET name=excluded.name, website=excluded.website,
                   tags=excluded.tags, aliases=excluded.aliases, active=1""",
                 (c["id"], c["name"], c["website"], json.dumps(c.get("tags", []), ensure_ascii=False), json.dumps(c.get("aliases", []), ensure_ascii=False)))
+            # Upgrade earlier queue IDs and collapse multiple URLs for one source entity.
+            old_candidates = [dict(r) for r in self.db.execute("SELECT * FROM candidates ORDER BY length(website),discovered_at")]
+            known_domains = {domain(c["website"]) for c in companies}
+            self.db.execute("DELETE FROM candidates")
+            for candidate in old_candidates:
+                try:
+                    if domain(candidate["website"]) in known_domains:
+                        continue
+                except FetchError:
+                    continue
+                self.db.execute("INSERT OR IGNORE INTO candidates VALUES(?,?,?,?,?,?)", (digest(candidate["source"]), candidate["name"], candidate["website"], candidate["source"], candidate["discovered_at"], candidate["status"]))
 
     def upsert(self, company, url, page, *, kind="official", publisher=None):
         stamp = now()
@@ -115,8 +128,12 @@ class Store:
             self.db.execute("DELETE FROM changes WHERE id NOT IN (SELECT id FROM changes ORDER BY id DESC LIMIT 10000)")
 
     def candidate(self, name, website, source):
+        known = {domain(r[0]) for r in self.db.execute("SELECT website FROM companies WHERE active=1")}
+        if domain(website) in known:
+            return False
         with self.db:
-            self.db.execute("INSERT OR IGNORE INTO candidates(id,name,website,source,discovered_at) VALUES(?,?,?,?,?)", (digest(website), name, website, source, now()))
+            cursor = self.db.execute("INSERT OR IGNORE INTO candidates(id,name,website,source,discovered_at) VALUES(?,?,?,?,?)", (digest(source), name, website, source, now()))
+        return cursor.rowcount > 0
 
     def snapshot(self):
         companies = []

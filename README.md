@@ -5,7 +5,7 @@
 [![Tests](https://github.com/Chenxiao-Tian/Data_Collection/actions/workflows/tests.yml/badge.svg)](https://github.com/Chenxiao-Tian/Data_Collection/actions/workflows/tests.yml)
 [![Collection](https://github.com/Chenxiao-Tian/Data_Collection/actions/workflows/ai-radar.yml/badge.svg)](https://github.com/Chenxiao-Tian/Data_Collection/actions/workflows/ai-radar.yml)
 
-[最新公司清单](https://github.com/Chenxiao-Tian/Data_Collection/tree/ai-radar-data) · [采集运行与下载](https://github.com/Chenxiao-Tian/Data_Collection/actions/workflows/ai-radar.yml) · [公司跟踪清单](config/companies.json) · [设计与边界](docs/radar_design.md)
+[在线检索页面（本人访问）](https://chenxiao-ai-company-radar.ct3471.chatgpt.site) · [最新公司清单](https://github.com/Chenxiao-Tian/Data_Collection/tree/ai-radar-data) · [采集运行与下载](https://github.com/Chenxiao-Tian/Data_Collection/actions/workflows/ai-radar.yml) · [公司跟踪清单](config/companies.json) · [设计与边界](docs/radar_design.md)
 
 这个版本将原来的特征收集范例升级为一个可以运行、定时更新、搜索和核查的公司资料系统。它不宣称“全球最准确”：当前没有经过外部公司情报基准评测，来源也可能错误或过时。系统的目标是让每个结果有出处，让不确定性可以看见。
 
@@ -14,7 +14,7 @@
 | 能力 | 行为 |
 |---|---|
 | 官网采集 | 读取 HTML、meta 描述和匹配官网域名的 Organization JSON-LD；沿官网 about/company/news/research/careers 等链接扩展，默认每家公司最多 3 页 |
-| 公司发现 | 从 Wikidata 的 AI 行业标签和官网地址发现线索；进入 `needs_review` 队列，不自动认定为真实 AI 公司 |
+| 公司发现 | 从 Wikidata 的 AI 行业标签和官网地址按分页轮转发现线索，按来源实体去重并排除已跟踪官网；进入 `needs_review` 队列，不自动认定为真实 AI 公司 |
 | 实体核对 | Wikidata 实体必须与登记官网域名精确匹配且唯一，不能仅按名字相同合并 |
 | 结构化证据 | 公司自述、法定名称、成立日期等实际取得的字段有来源、提取方式和检查时间；未取得的融资、估值等字段明确为未知 |
 | 混合检索 | SQLite FTS5 BM25 + 词项匹配 + Reciprocal Rank Fusion；内置常用中文研究词到英文词的扩展 |
@@ -32,7 +32,7 @@
 2. 查看运行 Summary 的成功/失败统计。下载 **`ai-company-radar`** artifact，解压后打开 `index.html`，即可离线搜索、筛选、查看引用和导出 CSV。
 3. 浏览 [ai-radar-data 分支](https://github.com/Chenxiao-Tian/Data_Collection/tree/ai-radar-data) 读取最新清单、JSON 或下载 HTML。
 
-离线 HTML 检索的是导出的档案、摘要和引用；完整网页文本检索需要下面的本地服务。GitHub 仓库文件预览不会执行 HTML。当前没有为此项目启用 GitHub Pages 或公共服务器。
+离线 HTML 检索的是导出的档案、摘要和引用；完整网页文本检索需要下面的本地服务。GitHub 仓库文件预览不会执行 HTML。已部署本人可访问的在线检索页面，每次打开从 GitHub 读取最新数据；在线页面检索导出的档案、摘要和引用。完整原文 BM25 检索使用本地服务。GitHub Pages 未启用。
 
 ## 本地运行（Python 3.10+）
 
@@ -112,3 +112,7 @@ python -m compileall -q src scripts tests
 测试包含幂等更新、冲突保留、来源独立性、过期信息、未知字段、同名实体隔离、检索注入、脚本注入、SSRF 地址拒绝和离线采集到检索的完整流程。测试 fixture 不是生产数据。
 
 `src/data_collection/` 和 `scripts/collect_features.py` 保留旧接口；修复了合并残留导致的语法错误、HTTP 参数编码/缓存与部分缺失值语义。旧版 SSFF 的启发式分数和第三方适配器未经全面验证，**不进入新 Radar 的事实数据库或定时任务**。历史说明保存在 [legacy_collector.md](docs/legacy_collector.md)。
+
+## 在线页面源码
+
+`python scripts/build_viewer.py --out dist` 生成与主界面共用模板的在线只读页面。页面通过 GitHub Contents API 获取最新 `ai-radar-data/companies.json`，避免分支 raw 文件的缓存延迟；无需密钥，但受 GitHub 公共 API 限流影响，失败时明确显示错误。关闭页面不会停止 GitHub Actions 的后台采集。
