@@ -3,6 +3,7 @@ from __future__ import annotations
 import hashlib
 import json
 import sqlite3
+import re
 from datetime import datetime, timezone
 from pathlib import Path
 
@@ -13,6 +14,14 @@ def now():
 
 def digest(value):
     return hashlib.sha256(value.encode()).hexdigest()[:24]
+
+
+def compatible(field, a, b):
+    if a == b:
+        return True
+    if field == "founded_date" and all(re.fullmatch(r"\d{4}(?:-\d{2}){0,2}", x) for x in (a, b)):
+        return a.startswith(b + "-") or b.startswith(a + "-")
+    return False
 
 
 class Store:
@@ -133,12 +142,13 @@ class Store:
             c["facts"] = {}
             for field, values in facts.items():
                 output = []
-                fresh_values = sum(v["fresh"] for v in values.values())
+                fresh_values = [k for k, v in values.items() if v["fresh"]]
+                conflict = any(not compatible(field, a, b) for i, a in enumerate(fresh_values) for b in fresh_values[i+1:])
                 for v in values.values():
                     n = len(v.pop("publishers"))
                     n_fresh = len(v.pop("fresh_publishers"))
                     fresh = v.pop("fresh")
-                    status = "stale" if not fresh else "conflict" if fresh_values > 1 and field != "self_description" else "corroborated" if n_fresh >= 2 else "single_source"
+                    status = "stale" if not fresh else "conflict" if conflict and field not in {"self_description", "page_description"} else "corroborated" if n_fresh >= 2 else "single_source"
                     output.append(v | {"status": status, "publisher_groups": n, "fresh_publisher_groups": n_fresh})
                 c["facts"][field] = output
             c["sources"] = sources

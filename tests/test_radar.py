@@ -39,6 +39,12 @@ def test_foreign_jsonld_not_merged():
     assert not any(c["field"] == "legal_name" for c in p["claims"])
 
 
+def test_article_description_is_not_company_description():
+    p = extract_page(HTML, C["website"] + "blog/customer-story", C)
+    assert any(c["field"] == "page_description" for c in p["claims"])
+    assert not any(c["field"] == "self_description" for c in p["claims"])
+
+
 @pytest.mark.parametrize("url", ["file:///etc/passwd", "http://user:password@example.com/", "ftp://example.com", "https://example.com:9000/"])
 def test_invalid_urls(url):
     with pytest.raises(FetchError):
@@ -82,6 +88,12 @@ def test_same_publisher_not_independent(store):
     v = store.snapshot()["companies"][0]["facts"]["founded_date"][0]
     assert v["status"] == "single_source"
     assert v["publisher_groups"] == 1
+
+
+def test_partial_date_precision_is_not_a_conflict(store):
+    store.upsert(C, C["website"], page("2020-04"))
+    store.upsert(C, C["website"] + "about", page("2020-04-01"))
+    assert all(v["status"] == "single_source" for v in store.snapshot()["companies"][0]["facts"]["founded_date"])
 
 
 def test_independent_groups_corroborate(store):

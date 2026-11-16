@@ -76,7 +76,8 @@ def extract_page(html, url, company):
     claims = []
     # Marketing copy is attributed as self-description, never treated as objective performance.
     if description:
-        claims.append({"field": "self_description", "value": description[:1200], "quote": description[:1200], "method": "html_meta"})
+        field = "self_description" if urlsplit(url).path.rstrip("/") == urlsplit(company["website"]).path.rstrip("/") else "page_description"
+        claims.append({"field": field, "value": description[:1200], "quote": description[:1200], "method": "html_meta"})
     for raw in parser.ld:
         try:
             nodes = objects(json.loads(raw))

@@ -77,6 +77,7 @@ class Client:
         self.opener = build_opener(NoRedirect())
         self.last = {}
         self.robots = {}
+        self.delays = {}
 
     def get(self, url: str, *, robots=False, headers=None, allowed_site=None) -> Response:
         for _ in range(6):
@@ -87,7 +88,7 @@ class Client:
                 raise FetchError("robots.txt disallows or cannot authorize this URL")
             host = domain(url)
             for attempt in range(3):
-                time.sleep(max(0, self.delay - (time.monotonic() - self.last.get(host, 0))))
+                time.sleep(max(0, self.delays.get(host, self.delay) - (time.monotonic() - self.last.get(host, 0))))
                 self.last[host] = time.monotonic()
                 try:
                     request = Request(url, headers={"User-Agent": AGENT, "Accept": "text/html,application/json,application/xml;q=0.9,*/*;q=0.5", **(headers or {})})
@@ -144,6 +145,10 @@ class Client:
             except FetchError as exc:
                 self.robots[origin] = str(exc) in {"HTTP 404", "HTTP 410"}
         rule = self.robots[origin]
+        if not isinstance(rule, bool):
+            delay = rule.crawl_delay(AGENT) or rule.crawl_delay("*")
+            if delay:
+                self.delays[domain(url)] = max(self.delay, delay)
         return rule if isinstance(rule, bool) else rule.can_fetch(AGENT, url)
 
     def json(self, url, params=None, headers=None):
