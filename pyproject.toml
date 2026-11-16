@@ -1,20 +1,21 @@
 [project]
 name = "startup_feature_collector"
-version = "0.1.0"
+version = "0.2.0"
 description = "Open-source pipeline for collecting AI startup features from multiple data sources."
-authors = [{name = "OpenAI Assistant"}]
+authors = [{name = "Chenxiao Tian"}]
 readme = "README.md"
 requires-python = ">=3.10"
 dependencies = [
     "httpx>=0.25",
     "pandas>=2.0",
     "pyarrow>=14.0",
-    "typer[all]>=0.9",
+    "typer>=0.9",
     "tqdm>=4.65",
     "python-dotenv>=1.0"
 ]
 
 [project.optional-dependencies]
+semantic = ["sentence-transformers>=3,<6"]
 test = [
     "pytest>=7.0"
 ]
@@ -22,3 +23,15 @@ test = [
 [build-system]
 requires = ["setuptools>=67.0"]
 build-backend = "setuptools.build_meta"
+
+[project.scripts]
+ai-radar = "ai_radar.cli:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+
+[tool.setuptools.package-data]
+ai_radar = ["dashboard.html"]

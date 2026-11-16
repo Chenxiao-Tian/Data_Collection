@@ -21,15 +21,13 @@ class ExternalKnowledgeBlock(FeatureBlock):
         knowledge = payload.get("knowledge", {})
 
         result: Dict[str, Any] = {
-
-        return {
-            "market_size_usd": float(market.get("size_usd", 0.0)),
-            "cagr": float(market.get("cagr", 0.0)),
-            "competitor_count": int(competition.get("competitor_count", 0)),
-            "average_sentiment": float(sentiment.get("average", 0.0)),
-            "patent_count": int(compliance.get("patent_count", 0)),
-            "regulation_mentions": int(compliance.get("regulation_mentions", 0)),
-            "investor_diversity": float(competition.get("investor_diversity", 0.0)),
+            "market_size_usd": float(market["size_usd"]) if market.get("size_usd") is not None else None,
+            "cagr": float(market["cagr"]) if market.get("cagr") is not None else None,
+            "competitor_count": int(competition["competitor_count"]) if competition.get("competitor_count") is not None else None,
+            "average_sentiment": float(sentiment["average"]) if sentiment.get("average") is not None else None,
+            "patent_count": int(compliance["patent_count"]) if compliance.get("patent_count") is not None else None,
+            "regulation_mentions": int(compliance["regulation_mentions"]) if compliance.get("regulation_mentions") is not None else None,
+            "investor_diversity": float(competition["investor_diversity"]) if competition.get("investor_diversity") is not None else None,
         }
 
         knowledge_summary: Dict[str, Any] = {

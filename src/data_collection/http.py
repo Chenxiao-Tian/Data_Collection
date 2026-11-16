@@ -24,47 +24,24 @@ class CachedAsyncClient:
         self._cache_dir = cache_dir
         self._cache_dir.mkdir(parents=True, exist_ok=True)
 
-    async def get_json(
-        self,
-        url: str,
-        *,
-        params: Optional[Dict[str, Any]] = None,
-        headers: Optional[Dict[str, str]] = None,
-    ) -> Any:
+    async def get_json(self, url: str, *, params=None, headers=None):
+        from urllib.parse import urlencode
         cache_key = self._cache_key("GET", url, params, headers)
-    async def get_json(self, url: str, *, params: Optional[Dict[str, Any]] = None) -> Any:
-        cache_key = self._cache_key("GET", url, params)
         cached = self._read_cache(cache_key)
         if cached is not None:
             return cached
-
         if params:
-            query = "&".join(f"{k}={v}" for k, v in params.items())
-            url = f"{url}?{query}"
+            url += ("&" if "?" in url else "?") + urlencode(params)
         data = await asyncio.to_thread(self._sync_request, url, None, headers=headers)
-        data = await asyncio.to_thread(self._sync_request, url, None)
         self._write_cache(cache_key, data)
         return data
 
-    async def post_json(
-        self,
-        url: str,
-        payload: Dict[str, Any],
-        *,
-        headers: Optional[Dict[str, str]] = None,
-    ) -> Any:
+    async def post_json(self, url: str, payload, *, headers=None):
         cache_key = self._cache_key("POST", url, payload, headers)
-        cache_key = self._cache_key("POST", url, payload)
         cached = self._read_cache(cache_key)
         if cached is not None:
             return cached
-
-        data = await asyncio.to_thread(
-            self._sync_request,
-            url,
-            json.dumps(payload).encode("utf-8"),
-            headers=headers,
-        )
+        data = await asyncio.to_thread(self._sync_request, url, json.dumps(payload).encode(), headers=headers)
         self._write_cache(cache_key, data)
         return data
 
@@ -86,24 +63,17 @@ class CachedAsyncClient:
         except json.JSONDecodeError:
             return content
 
-    def _cache_key(
-        self,
-        method: str,
-        url: str,
-        params: Optional[Dict[str, Any]],
-        headers: Optional[Dict[str, str]],
-    ) -> str:
-        serialized = json.dumps(
-            {"url": url, "params": params, "method": method, "headers": headers},
-            sort_keys=True,
-        )
-    def _cache_key(self, method: str, url: str, params: Optional[Dict[str, Any]]) -> str:
-        serialized = json.dumps({"url": url, "params": params, "method": method}, sort_keys=True)
-        return str(abs(hash(serialized)))
+    def _cache_key(self, method, url, params, headers=None):
+        import hashlib
+        value = json.dumps({"url": url, "params": params, "method": method, "headers": headers}, sort_keys=True)
+        return hashlib.sha256(value.encode()).hexdigest()
 
     def _read_cache(self, key: str) -> Optional[Any]:
         path = self._cache_dir / f"{key}.json"
         if not path.exists():
+            return None
+        import time
+        if time.time() - path.stat().st_mtime > 3600:
             return None
         with path.open("r", encoding="utf-8") as fh:
             return json.load(fh)

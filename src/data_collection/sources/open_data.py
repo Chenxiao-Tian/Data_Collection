@@ -35,23 +35,7 @@ NEGATIVE_WORDS = {
 
 
 class OpenDataSource(DataSource):
-    """Collect signals by combining multiple reliable information sources."""
-"""Composite data source that stitches information from open datasets."""
-
-from __future__ import annotations
-
-import json
-from pathlib import Path
-from typing import Any, Dict, Iterable, List
-
-from ..config import RuntimeConfig
-from ..http import CachedAsyncClient
-from ..utils import softmax
-from .base import DataSource
-
-
-class OpenDataSource(DataSource):
-    """Collect signals by combining multiple lightweight open endpoints."""
+    """Legacy feature collector; use ai-radar for evidence-based company research."""
 
     name = "open_data"
 
@@ -104,40 +88,6 @@ class OpenDataSource(DataSource):
         payload.setdefault("profile", {})["name"] = (
             payload.get("profile", {}).get("name") or startup_name
         )
-        self.client = CachedAsyncClient(cache_dir=config.cache_dir, timeout=config.request_timeout)
-
-    async def fetch(self, query: Dict[str, Any]) -> Dict[str, Any]:
-        domain = query.get("domain")
-        startup_name = query.get("name")
-        local_profile = query.get("profile_path")
-
-        payload = {}
-        if local_profile:
-            payload = self._load_local_profile(Path(local_profile))
-        if domain:
-            payload.setdefault("profile", {})["domain"] = domain
-        if startup_name:
-            payload.setdefault("profile", {})["name"] = startup_name
-
-        payload.setdefault("sentiment", {}).update(
-            await self._news_sentiment(startup_name or domain)
-        )
-        payload.setdefault("market", {}).update(
-            await self._market_size_estimate(query)
-        )
-        payload.setdefault("competition", {}).update(
-            await self._competition_metrics(query)
-        )
-        payload.setdefault("compliance", {}).update(
-            await self._compliance_metrics(query)
-        )
-        payload.setdefault("product", {}).update(
-            await self._product_signals(query)
-        )
-        payload.setdefault("funding", {}).update(
-            await self._funding_signals(query)
-        )
-        payload.setdefault("founders", payload.get("founders", []))
         return payload
 
     # ------------------------------------------------------------------

@@ -1,144 +1,114 @@
-# AI Startup Feature Collector
+# AI Company Radar
 
-该仓库提供了一个面向研究者与投资分析的开源范例工程，演示如何沿用论文中提出的 **Startup Success Feature Framework (SSFF)**，自动化收集 AI 创业公司的结构化特征。项目通过模块化的数据源接入层、特征抽取层与 CLI 工具，帮助你快速构建预测模型（Random Forest、神经网络等）所需的 `Prediction Block`、`Founder Segmentation Block` 以及 `External Knowledge Block` 特征表。
+**自动采集 AI 公司公开信息，用证据回答检索问题。**
 
-## 功能概览
+[![Tests](https://github.com/Chenxiao-Tian/Data_Collection/actions/workflows/tests.yml/badge.svg)](https://github.com/Chenxiao-Tian/Data_Collection/actions/workflows/tests.yml)
+[![Collection](https://github.com/Chenxiao-Tian/Data_Collection/actions/workflows/ai-radar.yml/badge.svg)](https://github.com/Chenxiao-Tian/Data_Collection/actions/workflows/ai-radar.yml)
 
-- ✅ **Prediction Block**：聚合产品、市场、融资、执行力等 14 类分类特征，输出到 `features_ssff.parquet`。
-- ✅ **Founder Segmentation Block**：依据教育背景、领导力、过往创业经验和“Founder-Idea Fit (FIFS)” 得分，输出创始人分层指标到 `features_founder.parquet`。
-- ✅ **External Knowledge Block**：整合 SERP / 市场报告 / 舆情等扩展信号，生成 `features_external.json`。
-- ✅ **开放数据接入**：内置 `OpenDataSource` 会并行请求 SerpAPI、Crunchbase、NewsAPI、Product Hunt、OpenCorporates、Proxycurl 等可靠公开渠道；通过 `.env` 注入 API 凭证后，仅输入创业公司名称即可自动抓取并落地特征。
-- ✅ **开放数据接入**：默认使用 `OpenDataSource` 模拟接入 Product Hunt、Crunchbase、市场报告等开放数据源，方便在无密钥环境中演示；支持通过 `.env` 注入真实 API 凭证后替换为生产级连接器。
-- ✅ **Typer CLI**：`scripts/collect_features.py` 提供一键收集命令，可输出特征并打印 JSON。
-- ✅ **Pytest 用例**：`tests/test_pipeline.py` 验证三大特征模块的核心逻辑。
+[最新公司清单](https://github.com/Chenxiao-Tian/Data_Collection/tree/ai-radar-data) · [采集运行与下载](https://github.com/Chenxiao-Tian/Data_Collection/actions/workflows/ai-radar.yml) · [公司跟踪清单](config/companies.json) · [设计与边界](docs/radar_design.md)
 
-## 快速上手
+这个版本将原来的特征收集范例升级为一个可以运行、定时更新、搜索和核查的公司资料系统。它不宣称“全球最准确”：当前没有经过外部公司情报基准评测，来源也可能错误或过时。系统的目标是让每个结果有出处，让不确定性可以看见。
+
+## 已实现
+
+| 能力 | 行为 |
+|---|---|
+| 官网采集 | 读取 HTML、meta 描述和匹配官网域名的 Organization JSON-LD；沿官网 about/company/news/research/careers 等链接扩展，默认每家公司最多 3 页 |
+| 公司发现 | 从 Wikidata 的 AI 行业标签和官网地址发现线索；进入 `needs_review` 队列，不自动认定为真实 AI 公司 |
+| 实体核对 | Wikidata 实体必须与登记官网域名精确匹配且唯一，不能仅按名字相同合并 |
+| 结构化证据 | 公司自述、法定名称、成立日期等实际取得的字段有来源、提取方式和检查时间；未取得的融资、估值等字段明确为未知 |
+| 混合检索 | SQLite FTS5 BM25 + 词项匹配 + Reciprocal Rank Fusion；内置常用中文研究词到英文词的扩展 |
+| 可选语义检索 | 可显式启用本地 sentence-transformers 多语言向量检索，与关键词结果融合；默认未下载、未开启 |
+| 冲突与新鲜度 | 不同字段值保留证据；30 天未检查标记 stale；同一家公司及其 Wikidata 摘要不作为多个独立来源计数 |
+| 更新与追溯 | 内容哈希去重、首次见到/内容变更/最后检查时间分离，保留字段变更历史；页面删除或失败不会把旧资料清零 |
+| 界面与导出 | 中文响应式仪表盘、公司详情、来源引用、筛选、分页、待核验队列、失败原因、CSV/JSON |
+| 自动运行 | GitHub Actions 每天 07:23 UTC，支持手动运行；数据库 artifact 保存 90 天，最新摘要另存 `ai-radar-data` 分支 |
+
+初始清单为 **16 家公司**。人工方向标签仅用于筛选，不等同于采集确认的事实。新增公司时编辑 `config/companies.json`，无需写代码。
+
+## 直接使用
+
+1. 打开 [AI Company Radar Actions](https://github.com/Chenxiao-Tian/Data_Collection/actions/workflows/ai-radar.yml)，选择最近一次运行。
+2. 查看运行 Summary 的成功/失败统计。下载 **`ai-company-radar`** artifact，解压后打开 `index.html`，即可离线搜索、筛选、查看引用和导出 CSV。
+3. 浏览 [ai-radar-data 分支](https://github.com/Chenxiao-Tian/Data_Collection/tree/ai-radar-data) 读取最新清单、JSON 或下载 HTML。
+
+离线 HTML 检索的是导出的档案、摘要和引用；完整网页文本检索需要下面的本地服务。GitHub 仓库文件预览不会执行 HTML。当前没有为此项目启用 GitHub Pages 或公共服务器。
+
+## 本地运行（Python 3.10+）
+
+新采集器和网页服务本身仅使用 Python 标准库，不需要付费 API 密钥。
 
 ```bash
-# 1. 安装依赖
-pip install -e .[test]
+git clone https://github.com/Chenxiao-Tian/Data_Collection.git
+cd Data_Collection
+export PYTHONPATH=src
 
-# 2. 在仓库根目录创建 .env，填入所需 API 凭证（任意缺失的服务将自动跳过）
-cat <<'ENV' > .env
-SERPAPI_KEY=your_serpapi_key
-CRUNCHBASE_KEY=your_crunchbase_user_key
-NEWSAPI_KEY=your_newsapi_key
-PRODUCTHUNT_TOKEN=your_producthunt_token
-PROXYCURL_API_KEY=your_proxycurl_key
-OPENCORPORATES_APP_TOKEN=optional_opencorporates_token
-ENV
-
-# 3. 输入公司名称，自动全网抓取（示例：Scam AI）
-python scripts/collect_features.py "Scam AI" --output-dir outputs/scam_ai
-
-# 4. 查看结果
-ls outputs/scam_ai
-parquet-tools show outputs/scam_ai/features_ssff.parquet
-cat outputs/scam_ai/features_external.json
-
-# 5. 运行测试
-pytest
+# 采集并自动发现候选公司
+python -m ai_radar collect
+# 检索原文，有来源和时间
+python -m ai_radar search "开源推理"
+# 中文网页界面，只监听本机
+python -m ai_radar serve --port 8080
+# 导出独立 HTML、JSON、CSV
+python -m ai_radar export --out radar-output
+# 查看运行状态
+python -m ai_radar status
 ```
 
-运行完毕后，可在 `outputs/scam_ai/` 中找到三份特征文件：
+浏览器打开 `http://127.0.0.1:8080`。支持只读 API：`GET /api/companies`、`GET /api/search?q=inference` 和 `GET /health`。不提供远程任意 URL 抓取接口。
 
-- `features_ssff.parquet`：14 个分类特征，可直接喂给分类模型。
-- `features_founder.parquet`：创始人分层 & FIFS 指标。
-- `features_external.json`：市场规模、CAGR、竞争格局、舆情与基于公开资料整理的知识摘要（公司概况、创始人履历、风险、数据缺口等），并附带 API 来源链接。
-# 2. 使用样例数据收集特征（Scam AI 案例）
-python scripts/collect_features.py \
-  --profile-path sample_data/startup_profile.json \
-  --name "Scam AI" \
-  --domain "scam.ai" \
-  --industry "AI anti-fraud" \
-  --stage "Unknown" \
-# 2. 使用样例数据收集特征
-python scripts/collect_features.py \
-  --profile-path sample_data/startup_profile.json \
-  --name "SynthPilot" \
-  --domain "synthpilot.ai" \
-  --industry "AI" \
-  --stage "Series A" \
-  --region "US" \
-  --output-dir outputs/demo
+也可以 `pip install -e .` 后使用 `ai-radar` 命令；此安装会同时装入旧版特征导出依赖。Windows PowerShell 设置源路径用 `$env:PYTHONPATH="src"`。
 
-# 3. 查看结果
-ls outputs/demo
-parquet-tools show outputs/demo/features_ssff.parquet
-cat outputs/demo/features_external.json
+### 可选本地多语言向量检索
 
-# 4. 运行测试
-pytest
+```bash
+pip install -e '.[semantic]'
+ai-radar search '语音合成' --semantic-model sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2
 ```
 
-运行完毕后，可在 `outputs/demo/` 中找到三份特征文件：
+首次会下载模型权重并需要额外内存；文本在本地编码，不调用付费模型 API。模型启用是显式选择；默认 GitHub 定时采集和网页 API 使用 BM25 + 词项融合。向量检索未经实网端到端验收，不应将安装选项当成已运行服务。
 
-- `features_ssff.parquet`：14 个分类特征，可直接喂给分类模型。
-- `features_founder.parquet`：创始人分层 & FIFS 指标。
-- `features_external.json`：市场规模、CAGR、竞争格局、舆情与基于公开资料整理的知识摘要（公司概况、创始人履历、风险、数据缺口等）。
-- `features_external.json`：市场规模、CAGR、竞争格局、舆情等扩展信号。
+## 扩展公司清单
 
-## 项目结构
-
-```
-├── pyproject.toml                # 项目元数据与依赖
-├── README.md                     # 当前文档
-├── sample_data/                  # 示范数据（可替换为真实抓取结果）
-│   └── startup_profile.json
-├── scripts/
-│   └── collect_features.py       # Typer CLI，负责命令行调用
-├── src/
-│   └── data_collection/
-│       ├── config.py             # 环境变量加载与运行配置
-│       ├── http.py               # 轻量 HTTP 客户端 + 缓存
-│       ├── pipeline.py           # 管道编排、落盘逻辑
-│       ├── utils.py              # 通用工具函数
-│       ├── features/             # 特征抽取模块
-│       │   ├── base.py
-│       │   ├── prediction.py
-│       │   ├── founder.py
-│       │   └── external.py
-│       └── sources/              # 数据源封装
-│           ├── base.py
-│           └── open_data.py
- └── tests/
-    └── test_pipeline.py          # 单元测试
+```json
+{
+  "id": "example-ai",
+  "name": "Example AI",
+  "website": "https://company.example/",
+  "aliases": ["公司中文名"],
+  "tags": ["语音"],
+  "pages": ["https://company.example/about"],
+  "wikidata": true
+}
 ```
 
-### 支持的 API 凭证
+这是格式示例，不是真实公司。`pages` 优先于自动发现的官网子页。跨域改名/迁站需人工核实后修改官网；不要将目录网站、产品名、实验室或同名实体直接当成公司。
 
-| 环境变量 | 用途 | 备注 |
-| --- | --- | --- |
-| `SERPAPI_KEY` | 通过 Google Search 提取官网、简介、招聘信号 | [SerpAPI](https://serpapi.com/) 用户密钥 |
-| `CRUNCHBASE_KEY` | 获取融资、创始人和竞争格局 | Crunchbase `user_key` |
-| `NEWSAPI_KEY` | 收集新闻舆情并计算情绪分值 | [NewsAPI](https://newsapi.org/) |
-| `PRODUCTHUNT_TOKEN` | GraphQL 查询 Product Hunt 投票、评论、评分 | 需要 `Developer Token` |
-| `PROXYCURL_API_KEY` | 解析创始人 LinkedIn 履历，补充 FIFS 特征 | [Proxycurl](https://nubela.co/proxycurl) |
-| `OPENCORPORATES_APP_TOKEN` | 查询注册号、成立日期等合规字段 | 可选，OpenCorporates 免费 token |
+## 准确性约束
 
-任意密钥缺失时，对应模块将自动跳过并返回 `Unknown`，但不会阻断整体流程。
+- 不用 LLM 生成事实或填补融资、营收、员工数量；官网营销文案标为“官网自述”。
+- 单一来源、冲突、过期与未知分别展示；排名分数是检索相关性，**不是正确率或投资评分**。
+- 多来源支持只说明来源组一致，不构成保证。默认采集来源不会自动获得“独立交叉核验”状态。
+- 发现覆盖依赖 Wikidata 行业标注，不等于全网所有公司。付费数据库、搜索引擎付费 API、动态网页渲染、登录站点和完整融资数据库尚未接入。
+- robots.txt 授权不明、反爬页面、非公开 IP、过大响应和跨域跳转会拒绝；错误写入状态报告，不伪造成功。
+- 检查时间不是发布日期。页面可访问不意味着全部内容最新；过去抓到的事实在失败后保留旧时间戳。
 
-## 扩展与定制
+## 运维
 
-1. **替换数据源**：继承 `DataSource`，在 `pipeline.run_from_config` 中注入自定义的可信渠道（如 PitchBook、Tracxn、Dealroom）。
-└── tests/
-    └── test_pipeline.py          # 单元测试
+工作流在推送代码或清单后触发，也可以在 Actions 页面手动运行。定时为 07:23 UTC（纽约冬令时 02:23，夏令时 03:23），GitHub 调度可能延迟；长期无活动可能停用计划任务。源站不可达时会保留此前证据并记录失败，完全无成功来源时工作流失败。
+
+数据库由上一份未过期 `radar-database` artifact 恢复。恢复失败时任务停止，避免用空库覆盖已有状态。超过 90 天没有成功上传，完整文本/历史可能需要重新采集；`ai-radar-data` 的摘要仍有 Git 版本历史。建议定期下载数据库做独立备份。
+
+GitHub Actions 是否计费以账号额度及平台政策为准；系统不申请或购买第三方付费服务。公开仓库的 artifact、数据分支与代码均应视为公开资料，不写入私密业务资料或凭证。
+
+## 测试和旧代码
+
+```bash
+python -m pip install pytest==8.4.2
+PYTHONPATH=src python -m pytest -q
+python -m compileall -q src scripts tests
 ```
 
-## 扩展与定制
+测试包含幂等更新、冲突保留、来源独立性、过期信息、未知字段、同名实体隔离、检索注入、脚本注入、SSRF 地址拒绝和离线采集到检索的完整流程。测试 fixture 不是生产数据。
 
-1. **替换数据源**：继承 `DataSource`，在 `pipeline.run_from_config` 中注入真实的 Product Hunt / Crunchbase / News API 适配器即可。
-2. **引入 RAG 信号**：在 `OpenDataSource` 中新增 `async def _rag_signals()`，调用 SERP API + LLM，总结后写入 `payload["external_rag_summary"]`。
-3. **增强 Founder-Idea Fit**：在 `FounderFeatureBlock` 中，接入 `text-embedding-3-large` 的余弦相似度，将结果归一化到 [-1, 1]，并记录成功 / 失败样本。
-4. **模型训练**：将 `features_ssff.parquet` 与 `features_external.json` 读入 Pandas DataFrame，结合历史标签训练随机森林或神经网络。
-
-欢迎根据实际需求扩展此仓库，构建更全面的 AI startup 数据资产。
-
-## Scam AI 实战数据说明
-
-- 默认命令会实时访问上述 API，若某些密钥缺失，可使用 `--profile-path sample_data/startup_profile.json` 注入离线快照进行演示。
-- 所有事实均来自官方站点与创始人 LinkedIn 页面，详细整理过程、字段解释与校验步骤见 [`docs/scam_ai_collection.md`](docs/scam_ai_collection.md)。
-- 运行示例命令即可在 `features_external.json` 中看到实时抓取的市场指标与知识摘要，并自动合并离线补充数据。
-- `sample_data/startup_profile.json` 现已收录 Scam AI 的公开资料，包括创始人履历、产品定位、公开风险提示以及待补齐的数据缺口。
-- 所有事实均来自官方站点与创始人 LinkedIn 页面，详细整理过程、字段解释与校验步骤见 [`docs/scam_ai_collection.md`](docs/scam_ai_collection.md)。
-- 运行示例命令即可在 `features_external.json` 中看到上述知识摘要与结构化指标的融合结果，方便下游模型直接引用。
+`src/data_collection/` 和 `scripts/collect_features.py` 保留旧接口；修复了合并残留导致的语法错误、HTTP 参数编码/缓存与部分缺失值语义。旧版 SSFF 的启发式分数和第三方适配器未经全面验证，**不进入新 Radar 的事实数据库或定时任务**。历史说明保存在 [legacy_collector.md](docs/legacy_collector.md)。

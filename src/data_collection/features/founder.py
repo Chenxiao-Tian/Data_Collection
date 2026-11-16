@@ -32,8 +32,8 @@ class FounderFeatureBlock(FeatureBlock):
         founder_profiles = [self._parse_founder(f) for f in founders]
         if not founder_profiles:
             return {
-                "founder_level": "L1",
-                "fifs_score": 0.0,
+                "founder_level": "Unknown",
+                "fifs_score": None,
                 "founder_count": 0,
             }
         level = self._aggregate_level(founder_profiles)
