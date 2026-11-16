@@ -1,0 +1,17 @@
+﻿company,website,status,source_count,last_checked,unknown_fields
+Anthropic,https://www.anthropic.com/,evidence_available,3,2026-11-16T02:41:39+00:00,legal_name;founded_date;founders;headquarters;funding;valuation;employee_count
+Cerebras,https://www.cerebras.ai/,evidence_available,3,2026-11-16T02:42:13+00:00,legal_name;founders;headquarters;funding;valuation;employee_count
+Cohere,https://cohere.com/,evidence_available,4,2026-11-16T02:41:49+00:00,legal_name;founders;headquarters;funding;valuation;employee_count
+DeepSeek,https://www.deepseek.com/,evidence_available,4,2026-11-16T02:42:25+00:00,legal_name;founders;headquarters;funding;valuation;employee_count
+ElevenLabs,https://elevenlabs.io/,evidence_available,4,2026-11-16T02:42:20+00:00,legal_name;founders;headquarters;funding;valuation;employee_count
+Fireworks AI,https://fireworks.ai/,evidence_available,3,2026-11-16T02:42:05+00:00,founded_date;founders;headquarters;funding;valuation;employee_count
+Groq,https://groq.com/,evidence_available,3,2026-11-16T02:42:08+00:00,legal_name;founded_date;founders;headquarters;funding;valuation;employee_count
+Hugging Face,https://huggingface.co/,evidence_available,3,2026-11-16T02:41:53+00:00,legal_name;founded_date;founders;headquarters;funding;valuation;employee_count
+MiniMax,https://www.minimax.io/,evidence_available,4,2026-11-16T02:42:34+00:00,founders;headquarters;funding;valuation;employee_count
+Mistral AI,https://mistral.ai/,conflict,4,2026-11-16T02:41:45+00:00,founders;headquarters;funding;valuation;employee_count
+Moonshot AI,https://www.moonshot.ai/,evidence_available,3,2026-11-16T02:42:28+00:00,legal_name;founders;headquarters;funding;valuation;employee_count
+OpenAI,https://openai.com/,no_evidence,0,,legal_name;founded_date;founders;headquarters;funding;valuation;employee_count
+Perplexity,https://www.perplexity.ai/,no_evidence,0,,legal_name;founded_date;founders;headquarters;funding;valuation;employee_count
+Runway,https://runwayml.com/,evidence_available,1,2026-11-16T02:42:15+00:00,legal_name;founders;headquarters;funding;valuation;employee_count
+Together AI,https://www.together.ai/,evidence_available,4,2026-11-16T02:42:01+00:00,legal_name;founders;headquarters;funding;valuation;employee_count
+Z.ai,https://z.ai/,evidence_available,2,2026-11-16T02:42:40+00:00,legal_name;founded_date;founders;headquarters;funding;valuation;employee_count
