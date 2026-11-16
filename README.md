@@ -1,6 +1,6 @@
 # AI Company Radar — latest collection
 
-Generated: 2026-11-16T02:42:41+00:00
+Generated: 2026-11-16T02:46:18+00:00
 
 Companies: 16; successful sources this run: 45; failed sources: 4.
 
@@ -17,7 +17,7 @@ Download `index.html` and open it locally for the searchable dashboard. Full-tex
 | [Groq](https://groq.com/) | evidence_available | 3 |
 | [Hugging Face](https://huggingface.co/) | evidence_available | 3 |
 | [MiniMax](https://www.minimax.io/) | evidence_available | 4 |
-| [Mistral AI](https://mistral.ai/) | conflict | 4 |
+| [Mistral AI](https://mistral.ai/) | evidence_available | 4 |
 | [Moonshot AI](https://www.moonshot.ai/) | evidence_available | 3 |
 | [OpenAI](https://openai.com/) | no_evidence | 0 |
 | [Perplexity](https://www.perplexity.ai/) | no_evidence | 0 |
