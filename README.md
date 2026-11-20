@@ -1,6 +1,6 @@
 # AI Company Radar — latest collection
 
-Generated: 2026-11-19T16:40:27+00:00
+Generated: 2026-11-20T16:16:40+00:00
 
 Companies: 16; successful sources this run: 46; failed sources: 3.
 
