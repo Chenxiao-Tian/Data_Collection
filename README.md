@@ -1,8 +1,8 @@
 # AI Company Radar — latest collection
 
-Generated: 2026-11-20T16:16:40+00:00
+Generated: 2026-11-21T15:28:28+00:00
 
-Companies: 16; successful sources this run: 46; failed sources: 3.
+Companies: 16; successful sources this run: 49; failed sources: 2.
 
 Download `index.html` and open it locally for the searchable dashboard. Full-text API search: `ai-radar serve`. CSV/JSON contain source links and missing-field labels.
 
@@ -19,7 +19,7 @@ Download `index.html` and open it locally for the searchable dashboard. Full-tex
 | [MiniMax](https://www.minimax.io/) | evidence_available | 4 |
 | [Mistral AI](https://mistral.ai/) | evidence_available | 4 |
 | [Moonshot AI](https://www.moonshot.ai/) | evidence_available | 3 |
-| [OpenAI](https://openai.com/) | no_evidence | 0 |
+| [OpenAI](https://openai.com/) | evidence_available | 3 |
 | [Perplexity](https://www.perplexity.ai/) | no_evidence | 0 |
 | [Runway](https://runwayml.com/) | evidence_available | 1 |
 | [Together AI](https://www.together.ai/) | evidence_available | 4 |
