@@ -1,8 +1,8 @@
 # AI Company Radar — latest collection
 
-Generated: 2026-11-24T18:59:12+00:00
+Generated: 2026-11-25T18:03:26+00:00
 
-Companies: 16; successful sources this run: 49; failed sources: 2.
+Companies: 16; successful sources this run: 48; failed sources: 2.
 
 Download `index.html` and open it locally for the searchable dashboard. Full-text API search: `ai-radar serve`. CSV/JSON contain source links and missing-field labels.
 
@@ -10,7 +10,7 @@ Download `index.html` and open it locally for the searchable dashboard. Full-tex
 |---|---|---:|
 | [Anthropic](https://www.anthropic.com/) | evidence_available | 3 |
 | [Cerebras](https://www.cerebras.ai/) | evidence_available | 5 |
-| [Cohere](https://cohere.com/) | evidence_available | 4 |
+| [Cohere](https://cohere.com/) | evidence_available | 5 |
 | [DeepSeek](https://www.deepseek.com/) | evidence_available | 4 |
 | [ElevenLabs](https://elevenlabs.io/) | evidence_available | 4 |
 | [Fireworks AI](https://fireworks.ai/) | evidence_available | 3 |
