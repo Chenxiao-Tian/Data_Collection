@@ -1,8 +1,8 @@
 # AI Company Radar — latest collection
 
-Generated: 2026-11-25T18:03:26+00:00
+Generated: 2026-11-26T17:48:39+00:00
 
-Companies: 16; successful sources this run: 48; failed sources: 2.
+Companies: 16; successful sources this run: 46; failed sources: 3.
 
 Download `index.html` and open it locally for the searchable dashboard. Full-text API search: `ai-radar serve`. CSV/JSON contain source links and missing-field labels.
 
