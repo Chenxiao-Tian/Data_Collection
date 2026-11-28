@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-27T17:33:33+00:00",
+  "generated_at": "2026-11-28T16:18:40+00:00",
   "schema_version": 1,
   "companies": [
     {
@@ -22,7 +22,7 @@
                 "url": "https://www.anthropic.com/news/announcements",
                 "quote": "Anthropic is an AI safety and research company that's working to build reliable, interpretable, and steerable AI systems.",
                 "method": "html_meta",
-                "checked_at": "2026-11-27T17:32:30+00:00",
+                "checked_at": "2026-11-28T16:17:18+00:00",
                 "stale": false
               },
               {
@@ -30,7 +30,7 @@
                 "url": "https://www.anthropic.com/news",
                 "quote": "Anthropic is an AI safety and research company that's working to build reliable, interpretable, and steerable AI systems.",
                 "method": "html_meta",
-                "checked_at": "2026-11-27T17:32:29+00:00",
+                "checked_at": "2026-11-28T16:17:17+00:00",
                 "stale": false
               }
             ],
@@ -48,7 +48,7 @@
                 "url": "https://www.anthropic.com/",
                 "quote": "Anthropic is an AI safety and research company that's working to build reliable, interpretable, and steerable AI systems.",
                 "method": "html_meta",
-                "checked_at": "2026-11-27T17:32:28+00:00",
+                "checked_at": "2026-11-28T16:17:16+00:00",
                 "stale": false
               }
             ],
@@ -68,7 +68,7 @@
           "content_hash": "c8ff42a0ab8af780971e544f",
           "first_seen": "2026-11-16T02:41:39+00:00",
           "changed_at": "2026-11-20T16:15:39+00:00",
-          "checked_at": "2026-11-27T17:32:30+00:00",
+          "checked_at": "2026-11-28T16:17:18+00:00",
           "published_at": null,
           "excerpt": "Announcements \\ Anthropic\nAnthropic is an AI safety and research company that's working to build reliable, interpretable, and steerable AI systems.\nNews Research Policy Commitments\nAnthropic announces closing of initial public offering, including full exercise of underwriters’ op",
           "stale": false
@@ -79,12 +79,12 @@
           "title": "Newsroom \\ Anthropic",
           "kind": "official",
           "publisher": "anthropic",
-          "content_hash": "8403e2e65b9581caf882ce40",
+          "content_hash": "3a80426187e1a19479c8bb89",
           "first_seen": "2026-11-16T02:41:38+00:00",
-          "changed_at": "2026-11-27T17:32:29+00:00",
-          "checked_at": "2026-11-27T17:32:29+00:00",
+          "changed_at": "2026-11-28T16:17:17+00:00",
+          "checked_at": "2026-11-28T16:17:17+00:00",
           "published_at": null,
-          "excerpt": "Newsroom \\ Anthropic\nAnthropic is an AI safety and research company that's working to build reliable, interpretable, and steerable AI systems.\nNews Research Policy Commitments\nLatest news November 27, 2026\nIntroducing Claude Fable 5.2 and Claude Mythos 5.2\nOur most capable models",
+          "excerpt": "Newsroom \\ Anthropic\nAnthropic is an AI safety and research company that's working to build reliable, interpretable, and steerable AI systems.\nNews Research Policy Commitments\nLatest news November 28, 2026\nIntroducing Claude Fable 5.2 and Claude Mythos 5.2\nOur most capable models",
           "stale": false
         },
         {
@@ -96,13 +96,13 @@
           "content_hash": "11897eee5d801db4505474b8",
           "first_seen": "2026-11-16T02:41:37+00:00",
           "changed_at": "2026-11-24T18:58:08+00:00",
-          "checked_at": "2026-11-27T17:32:28+00:00",
+          "checked_at": "2026-11-28T16:17:16+00:00",
           "published_at": null,
           "excerpt": "Home \\ Anthropic\nAnthropic is an AI safety and research company that's working to build reliable, interpretable, and steerable AI systems.\nNews Research Policy Commitments\nAI research and products that put safety at the frontier. AI will have a vast impact on the world. Anthropic",
           "stale": false
         }
       ],
-      "last_checked": "2026-11-27T17:32:30+00:00",
+      "last_checked": "2026-11-28T16:17:18+00:00",
       "status": "evidence_available",
       "unknown_fields": [
         "legal_name",
@@ -133,7 +133,7 @@
                 "url": "https://www.wikidata.org/wiki/Q66604886",
                 "quote": "+2016-00-00T00:00:00Z",
                 "method": "wikidata:P571",
-                "checked_at": "2026-11-27T17:33:05+00:00",
+                "checked_at": "2026-11-28T16:17:51+00:00",
                 "stale": false
               }
             ],
@@ -151,7 +151,7 @@
                 "url": "https://www.cerebras.ai/company",
                 "quote": "Learn about Cerebras, the AI compute company behind wafer-scale processors and high-speed inference, including its history, leaders, milestones, and investors.",
                 "method": "html_meta",
-                "checked_at": "2026-11-27T17:33:04+00:00",
+                "checked_at": "2026-11-28T16:17:50+00:00",
                 "stale": false
               }
             ],
@@ -167,7 +167,7 @@
                 "url": "https://www.cerebras.ai/blog/cerebras-launches-disaggregated-inference",
                 "quote": "Cerebras pairs AMD GPUs for prefill with wafer-scale decode to deliver 5× more tokens per megawatt without reducing token generation speed.",
                 "method": "html_meta",
-                "checked_at": "2026-11-27T17:33:03+00:00",
+                "checked_at": "2026-11-28T16:17:49+00:00",
                 "stale": false
               }
             ],
@@ -201,7 +201,7 @@
                 "url": "https://www.cerebras.ai/",
                 "quote": "Cerebras powers the world's fastest AI inference on the biggest wafer chip. Cerebras CS-4 delivers up to 30x faster inference than GPUs.",
                 "method": "html_meta",
-                "checked_at": "2026-11-27T17:33:02+00:00",
+                "checked_at": "2026-11-28T16:17:48+00:00",
                 "stale": false
               }
             ],
@@ -221,7 +221,7 @@
           "content_hash": "9b92e98c215a9e3b90003bd9",
           "first_seen": "2026-11-16T02:42:13+00:00",
           "changed_at": "2026-11-16T02:42:13+00:00",
-          "checked_at": "2026-11-27T17:33:05+00:00",
+          "checked_at": "2026-11-28T16:17:51+00:00",
           "published_at": null,
           "excerpt": "Cerebras\nbusiness\nFounded: 2016",
           "stale": false
@@ -235,7 +235,7 @@
           "content_hash": "327017cd386b7bff6f3c9795",
           "first_seen": "2026-11-16T02:42:12+00:00",
           "changed_at": "2026-11-19T16:39:59+00:00",
-          "checked_at": "2026-11-27T17:33:04+00:00",
+          "checked_at": "2026-11-28T16:17:50+00:00",
           "published_at": null,
           "excerpt": "About Cerebras | AI Inference and Wafer-Scale Computing\nLearn about Cerebras, the AI compute company behind wafer-scale processors and high-speed inference, including its history, leaders, milestones, and investors.\nAbout Cerebras | AI Inference and Wafer-Scale Computing\nCerebras",
           "stale": false
@@ -249,7 +249,7 @@
           "content_hash": "4239e59ac06108d425dd554f",
           "first_seen": "2026-11-19T16:39:58+00:00",
           "changed_at": "2026-11-19T16:39:58+00:00",
-          "checked_at": "2026-11-27T17:33:03+00:00",
+          "checked_at": "2026-11-28T16:17:49+00:00",
           "published_at": null,
           "excerpt": "Cerebras Launches Disaggregated Inference\nCerebras pairs AMD GPUs for prefill with wafer-scale decode to deliver 5× more tokens per megawatt without reducing token generation speed.\nCerebras Launches Disaggregated Inference\nCerebras launches disaggregated inference >>\nCerebras la",
           "stale": false
@@ -263,7 +263,7 @@
           "content_hash": "8cf36eefd2dc8c5d81a4d30e",
           "first_seen": "2026-11-16T02:42:11+00:00",
           "changed_at": "2026-11-26T17:48:11+00:00",
-          "checked_at": "2026-11-27T17:33:02+00:00",
+          "checked_at": "2026-11-28T16:17:48+00:00",
           "published_at": null,
           "excerpt": "Cerebras\nCerebras powers the world's fastest AI inference on the biggest wafer chip. Cerebras CS-4 delivers up to 30x faster inference than GPUs.\nCerebras launches disaggregated inference >>\nPerformance comparisons are based on third-party benchmarking or internal testing. Observ",
           "stale": false
@@ -283,7 +283,7 @@
           "stale": false
         }
       ],
-      "last_checked": "2026-11-27T17:33:05+00:00",
+      "last_checked": "2026-11-28T16:17:51+00:00",
       "status": "evidence_available",
       "unknown_fields": [
         "legal_name",
@@ -314,7 +314,7 @@
                 "url": "https://www.wikidata.org/wiki/Q110363143",
                 "quote": "+2019-00-00T00:00:00Z",
                 "method": "wikidata:P571",
-                "checked_at": "2026-11-27T17:32:41+00:00",
+                "checked_at": "2026-11-28T16:17:27+00:00",
                 "stale": false
               },
               {
@@ -322,7 +322,7 @@
                 "url": "https://cohere.com/blog",
                 "quote": "2019",
                 "method": "jsonld:foundingDate",
-                "checked_at": "2026-11-27T17:32:39+00:00",
+                "checked_at": "2026-11-28T16:17:26+00:00",
                 "stale": false
               },
               {
@@ -330,7 +330,7 @@
                 "url": "https://cohere.com/research",
                 "quote": "2019",
                 "method": "jsonld:foundingDate",
-                "checked_at": "2026-11-27T17:32:39+00:00",
+                "checked_at": "2026-11-28T16:17:26+00:00",
                 "stale": false
               },
               {
@@ -338,7 +338,7 @@
                 "url": "https://cohere.com/",
                 "quote": "2019",
                 "method": "jsonld:foundingDate",
-                "checked_at": "2026-11-27T17:32:37+00:00",
+                "checked_at": "2026-11-28T16:17:24+00:00",
                 "stale": false
               },
               {
@@ -364,7 +364,7 @@
                 "url": "https://cohere.com/blog",
                 "quote": "Explore our collection of insightful blog posts covering a diverse range of generative AI topics. Our articles offer in-depth analyses, expert opinions, and practical advice to inform and inspire.",
                 "method": "html_meta",
-                "checked_at": "2026-11-27T17:32:39+00:00",
+                "checked_at": "2026-11-28T16:17:26+00:00",
                 "stale": false
               }
             ],
@@ -380,7 +380,7 @@
                 "url": "https://cohere.com/research",
                 "quote": "Cohere Labs is Cohere's research lab that seeks to solve complex machine learning problems.",
                 "method": "html_meta",
-                "checked_at": "2026-11-27T17:32:39+00:00",
+                "checked_at": "2026-11-28T16:17:26+00:00",
                 "stale": false
               }
             ],
@@ -414,7 +414,7 @@
                 "url": "https://cohere.com/",
                 "quote": "Cohere builds powerful models and AI solutions enabling enterprises to automate processes, empower employees, and turn fragmented data into actionable insights.",
                 "method": "html_meta",
-                "checked_at": "2026-11-27T17:32:37+00:00",
+                "checked_at": "2026-11-28T16:17:24+00:00",
                 "stale": false
               }
             ],
@@ -434,7 +434,7 @@
           "content_hash": "851fcf174d0e4f1f1bf4d7e1",
           "first_seen": "2026-11-16T02:41:49+00:00",
           "changed_at": "2026-11-16T02:41:49+00:00",
-          "checked_at": "2026-11-27T17:32:41+00:00",
+          "checked_at": "2026-11-28T16:17:27+00:00",
           "published_at": null,
           "excerpt": "Cohere\nCanadian artificial intelligence company building foundational models\nFounded: 2019",
           "stale": false
@@ -448,7 +448,7 @@
           "content_hash": "bfc66b39af89615d5ea7acaa",
           "first_seen": "2026-11-16T02:41:48+00:00",
           "changed_at": "2026-11-25T18:02:34+00:00",
-          "checked_at": "2026-11-27T17:32:39+00:00",
+          "checked_at": "2026-11-28T16:17:26+00:00",
           "published_at": null,
           "excerpt": "The Cohere Blog\nExplore our collection of insightful blog posts covering a diverse range of generative AI topics. Our articles offer in-depth analyses, expert opinions, and practical advice to inform and inspire.\nEnterprise-ready AI for business\nIntelligent search and discovery\nD",
           "stale": false
@@ -459,10 +459,10 @@
           "title": "Research | Cohere Labs",
           "kind": "official",
           "publisher": "cohere",
-          "content_hash": "2fdb9788cf9eafcf981173d9",
+          "content_hash": "b4955342554d26de204fb431",
           "first_seen": "2026-11-25T18:02:35+00:00",
-          "changed_at": "2026-11-26T17:47:48+00:00",
-          "checked_at": "2026-11-27T17:32:39+00:00",
+          "changed_at": "2026-11-28T16:17:26+00:00",
+          "checked_at": "2026-11-28T16:17:26+00:00",
           "published_at": null,
           "excerpt": "Research | Cohere Labs\nCohere Labs is Cohere's research lab that seeks to solve complex machine learning problems.\nEnterprise-ready AI for business\nIntelligent search and discovery\nDedicated model inference platform\nGenerative language models\nSemantic representation model\nRetriev",
           "stale": false
@@ -476,7 +476,7 @@
           "content_hash": "f966c6de7cc379e9477e3fee",
           "first_seen": "2026-11-16T02:41:46+00:00",
           "changed_at": "2026-11-25T18:02:33+00:00",
-          "checked_at": "2026-11-27T17:32:37+00:00",
+          "checked_at": "2026-11-28T16:17:24+00:00",
           "published_at": null,
           "excerpt": "Enterprise AI: Private, Secure, Customizable | Cohere\nCohere builds powerful models and AI solutions enabling enterprises to automate processes, empower employees, and turn fragmented data into actionable insights.\nEnterprise AI: Private, Secure, Customizable | Cohere\nEnterprise-",
           "stale": false
@@ -496,7 +496,7 @@
           "stale": false
         }
       ],
-      "last_checked": "2026-11-27T17:32:41+00:00",
+      "last_checked": "2026-11-28T16:17:27+00:00",
       "status": "evidence_available",
       "unknown_fields": [
         "legal_name",
@@ -527,7 +527,7 @@
                 "url": "https://www.wikidata.org/wiki/Q131577453",
                 "quote": "+2023-05-00T00:00:00Z",
                 "method": "wikidata:P571",
-                "checked_at": "2026-11-27T17:33:17+00:00",
+                "checked_at": "2026-11-28T16:18:02+00:00",
                 "stale": false
               }
             ],
@@ -545,7 +545,7 @@
                 "url": "https://www.deepseek.com/news/v4-preview/",
                 "quote": "DeepSeek 全新系列模型 V4 预览版正式上线并同步开源，拥有百万字超长上下文。",
                 "method": "html_meta",
-                "checked_at": "2026-11-27T17:33:15+00:00",
+                "checked_at": "2026-11-28T16:18:01+00:00",
                 "stale": false
               }
             ],
@@ -561,7 +561,7 @@
                 "url": "https://www.deepseek.com/news/deepseek-v4-1-flash/",
                 "quote": "DeepSeek V4.1 Flash 正式发布，具备原生多模态视觉理解能力。全新非对称模型结构，能力更强、速度更快、成本更低。",
                 "method": "html_meta",
-                "checked_at": "2026-11-27T17:33:14+00:00",
+                "checked_at": "2026-11-28T16:18:00+00:00",
                 "stale": false
               }
             ],
@@ -579,7 +579,7 @@
                 "url": "https://www.deepseek.com/",
                 "quote": "深度求索（DeepSeek），探索未至之境。专注于研究世界领先的通用人工智能底层模型与技术，开源 DeepSeek-V4、DeepSeek-R1 等前沿大模型。和 DeepSeek AI 对话，轻松接入 API。",
                 "method": "html_meta",
-                "checked_at": "2026-11-27T17:33:13+00:00",
+                "checked_at": "2026-11-28T16:17:59+00:00",
                 "stale": false
               }
             ],
@@ -599,7 +599,7 @@
           "content_hash": "7e0692c15771e8dee1b288b9",
           "first_seen": "2026-11-16T02:42:25+00:00",
           "changed_at": "2026-11-16T02:42:25+00:00",
-          "checked_at": "2026-11-27T17:33:17+00:00",
+          "checked_at": "2026-11-28T16:18:02+00:00",
           "published_at": null,
           "excerpt": "DeepSeek\nChinese artificial intelligence company\nFounded: 2023-05",
           "stale": false
@@ -613,7 +613,7 @@
           "content_hash": "ecac3a55f5669addc60f4081",
           "first_seen": "2026-11-16T02:42:23+00:00",
           "changed_at": "2026-11-16T02:46:03+00:00",
-          "checked_at": "2026-11-27T17:33:15+00:00",
+          "checked_at": "2026-11-28T16:18:01+00:00",
           "published_at": "2026-04-24",
           "excerpt": "DeepSeek | DeepSeek-V4 预览版：迈入百万上下文普惠时代\nDeepSeek 全新系列模型 V4 预览版正式上线并同步开源，拥有百万字超长上下文。\nDeepSeek | DeepSeek-V4 预览版：迈入百万上下文普惠时代\nDeepSeek 网页版 DeepSeek Harness API 开放平台 API 文档 DeepSeek 应用下载 加入我们\nDeepSeek-V4 预览版：迈入百万上下文普惠时代\n今天，我们全新系列模型 DeepSeek-V4 的预览版本正式上线并同步开源。\nDeepSeek-V4 拥有百万字超长上下文，在 ",
           "stale": false
@@ -627,7 +627,7 @@
           "content_hash": "c315dfc31c6080abbc1a9cdd",
           "first_seen": "2026-11-16T02:42:22+00:00",
           "changed_at": "2026-11-16T02:46:02+00:00",
-          "checked_at": "2026-11-27T17:33:14+00:00",
+          "checked_at": "2026-11-28T16:18:00+00:00",
           "published_at": "2026-09-10",
           "excerpt": "DeepSeek | DeepSeek V4.1 Flash：更强、更快、更普惠\nDeepSeek V4.1 Flash 正式发布，具备原生多模态视觉理解能力。全新非对称模型结构，能力更强、速度更快、成本更低。\nDeepSeek | DeepSeek V4.1 Flash：更强、更快、更普惠\nDeepSeek 网页版 DeepSeek Harness API 开放平台 API 文档 DeepSeek 应用下载 加入我们\nDeepSeek V4.1 Flash：更强、更快、更普惠\n今天，我们正式发布 DeepSeek V4.1 Flash 模型。这是我们全",
           "stale": false
@@ -641,13 +641,13 @@
           "content_hash": "62ab29d4f07ba97d97506873",
           "first_seen": "2026-11-16T02:42:22+00:00",
           "changed_at": "2026-11-16T02:42:22+00:00",
-          "checked_at": "2026-11-27T17:33:13+00:00",
+          "checked_at": "2026-11-28T16:17:59+00:00",
           "published_at": null,
           "excerpt": "DeepSeek | 深度求索\n深度求索（DeepSeek），探索未至之境。专注于研究世界领先的通用人工智能底层模型与技术，开源 DeepSeek-V4、DeepSeek-R1 等前沿大模型。和 DeepSeek AI 对话，轻松接入 API。\nDeepSeek 网页版 DeepSeek Harness API 开放平台 API 文档 DeepSeek 应用下载 加入我们\nDeepSeek V4.1 Flash 现已更新至 V4.1-Flash-1017 版本，项目开发能力提升显著，更低成本、更快速度完成任务；新增 API 支持网页搜索与抓取，欢迎测试和",
           "stale": false
         }
       ],
-      "last_checked": "2026-11-27T17:33:17+00:00",
+      "last_checked": "2026-11-28T16:18:02+00:00",
       "status": "evidence_available",
       "unknown_fields": [
         "legal_name",
@@ -677,7 +677,7 @@
                 "url": "https://www.wikidata.org/wiki/Q116798355",
                 "quote": "+2022-00-00T00:00:00Z",
                 "method": "wikidata:P571",
-                "checked_at": "2026-11-27T17:33:12+00:00",
+                "checked_at": "2026-11-28T16:17:58+00:00",
                 "stale": false
               },
               {
@@ -685,7 +685,7 @@
                 "url": "https://elevenlabs.io/blog/kpn-mobiel-ai",
                 "quote": "2022",
                 "method": "jsonld:foundingDate",
-                "checked_at": "2026-11-27T17:33:11+00:00",
+                "checked_at": "2026-11-28T16:17:56+00:00",
                 "stale": false
               },
               {
@@ -693,7 +693,7 @@
                 "url": "https://elevenlabs.io/blog/twilio-conversation-relay",
                 "quote": "2022",
                 "method": "jsonld:foundingDate",
-                "checked_at": "2026-11-27T17:33:10+00:00",
+                "checked_at": "2026-11-28T16:17:55+00:00",
                 "stale": false
               },
               {
@@ -701,7 +701,7 @@
                 "url": "https://elevenlabs.io/",
                 "quote": "2022",
                 "method": "jsonld:foundingDate",
-                "checked_at": "2026-11-27T17:33:09+00:00",
+                "checked_at": "2026-11-28T16:17:54+00:00",
                 "stale": false
               }
             ],
@@ -719,7 +719,7 @@
                 "url": "https://elevenlabs.io/blog/kpn-mobiel-ai",
                 "quote": "KPN partnered with ElevenLabs to build Mobiel AI, an AI assistant inside KPN's business mobile plans that helps Dutch entrepreneurs manage every call.",
                 "method": "html_meta",
-                "checked_at": "2026-11-27T17:33:11+00:00",
+                "checked_at": "2026-11-28T16:17:56+00:00",
                 "stale": false
               }
             ],
@@ -735,7 +735,7 @@
                 "url": "https://elevenlabs.io/blog/twilio-conversation-relay",
                 "quote": "Create conversational AI voice interactions directly from the Twilio CPaaS platform",
                 "method": "html_meta",
-                "checked_at": "2026-11-27T17:33:10+00:00",
+                "checked_at": "2026-11-28T16:17:55+00:00",
                 "stale": false
               }
             ],
@@ -753,7 +753,7 @@
                 "url": "https://elevenlabs.io/",
                 "quote": "Create lifelike speech with our AI voice generator and voice agents platform. Access 17,500+ voices in 90+ languages with secure APIs and SDKs.",
                 "method": "html_meta",
-                "checked_at": "2026-11-27T17:33:09+00:00",
+                "checked_at": "2026-11-28T16:17:54+00:00",
                 "stale": false
               }
             ],
@@ -773,7 +773,7 @@
           "content_hash": "2e90ef5c262c0792ec9bb303",
           "first_seen": "2026-11-16T02:42:20+00:00",
           "changed_at": "2026-11-23T19:21:51+00:00",
-          "checked_at": "2026-11-27T17:33:12+00:00",
+          "checked_at": "2026-11-28T16:17:58+00:00",
           "published_at": null,
           "excerpt": "ElevenLabs\nAI voice technology company specializing in Speech to Text and Text to Speech.\nFounded: 2022",
           "stale": false
@@ -787,7 +787,7 @@
           "content_hash": "4add19e57136a998df6345ac",
           "first_seen": "2026-11-16T02:42:19+00:00",
           "changed_at": "2026-11-27T17:33:11+00:00",
-          "checked_at": "2026-11-27T17:33:11+00:00",
+          "checked_at": "2026-11-28T16:17:56+00:00",
           "published_at": null,
           "excerpt": "How KPN and ElevenLabs Serve Entrepreneurs With Mobiel AI\nKPN partnered with ElevenLabs to build Mobiel AI, an AI assistant inside KPN's business mobile plans that helps Dutch entrepreneurs manage every call.\nHow KPN and ElevenLabs Serve Entrepreneurs With Mobiel AI\nIntroducing E",
           "stale": false
@@ -801,7 +801,7 @@
           "content_hash": "3a352b730f56c5d0ed96c034",
           "first_seen": "2026-11-16T02:42:18+00:00",
           "changed_at": "2026-11-27T17:33:10+00:00",
-          "checked_at": "2026-11-27T17:33:10+00:00",
+          "checked_at": "2026-11-28T16:17:55+00:00",
           "published_at": null,
           "excerpt": "Twilio Integrates ElevenLabs’ AI Voices Into ConversationRelay for More Natural Customer Interactions\nCreate conversational AI voice interactions directly from the Twilio CPaaS platform\nTwilio Integrates ElevenLabs’ AI Voices Into ConversationRelay for More Natural Customer Inter",
           "stale": false
@@ -815,13 +815,13 @@
           "content_hash": "c2767068f9acf332ff15456f",
           "first_seen": "2026-11-16T02:42:17+00:00",
           "changed_at": "2026-11-24T18:58:50+00:00",
-          "checked_at": "2026-11-27T17:33:09+00:00",
+          "checked_at": "2026-11-28T16:17:54+00:00",
           "published_at": null,
           "excerpt": "Free AI Voice Generator & Voice Agents Platform | ElevenLabs\nCreate lifelike speech with our AI voice generator and voice agents platform. Access 17,500+ voices in 90+ languages with secure APIs and SDKs.\nFree AI Voice Generator & Voice Agents Platform | ElevenLabs\nFirst month fo",
           "stale": false
         }
       ],
-      "last_checked": "2026-11-27T17:33:12+00:00",
+      "last_checked": "2026-11-28T16:17:58+00:00",
       "status": "evidence_available",
       "unknown_fields": [
         "legal_name",
@@ -851,7 +851,7 @@
                 "url": "https://fireworks.ai/about",
                 "quote": "Meet the exceptional team driving Fireworks and ML excellence.",
                 "method": "html_meta",
-                "checked_at": "2026-11-27T17:32:56+00:00",
+                "checked_at": "2026-11-28T16:17:42+00:00",
                 "stale": false
               }
             ],
@@ -869,7 +869,7 @@
                 "url": "https://fireworks.ai/about",
                 "quote": "Fireworks AI, Inc.",
                 "method": "jsonld:legalName",
-                "checked_at": "2026-11-27T17:32:56+00:00",
+                "checked_at": "2026-11-28T16:17:42+00:00",
                 "stale": false
               },
               {
@@ -877,7 +877,7 @@
                 "url": "https://fireworks.ai/blog",
                 "quote": "Fireworks AI, Inc.",
                 "method": "jsonld:legalName",
-                "checked_at": "2026-11-27T17:32:54+00:00",
+                "checked_at": "2026-11-28T16:17:41+00:00",
                 "stale": false
               },
               {
@@ -885,7 +885,7 @@
                 "url": "https://fireworks.ai/",
                 "quote": "Fireworks AI, Inc.",
                 "method": "jsonld:legalName",
-                "checked_at": "2026-11-27T17:32:53+00:00",
+                "checked_at": "2026-11-28T16:17:40+00:00",
                 "stale": false
               }
             ],
@@ -903,7 +903,7 @@
                 "url": "https://fireworks.ai/",
                 "quote": "Fireworks’ state of the art training and inference platform take you beyond the frontier, transforming open models into your specialized intelligence.",
                 "method": "html_meta",
-                "checked_at": "2026-11-27T17:32:53+00:00",
+                "checked_at": "2026-11-28T16:17:40+00:00",
                 "stale": false
               }
             ],
@@ -923,7 +923,7 @@
           "content_hash": "c075a170914eb88115e0850e",
           "first_seen": "2026-11-16T02:42:05+00:00",
           "changed_at": "2026-11-16T02:45:45+00:00",
-          "checked_at": "2026-11-27T17:32:56+00:00",
+          "checked_at": "2026-11-28T16:17:42+00:00",
           "published_at": null,
           "excerpt": "About Fireworks\nMeet the exceptional team driving Fireworks and ML excellence.\nThe right model for every task. Try Nexus\nNexus For work and co-work\nPlatform For systems and apps\nFireworks was started on a simple conviction: the intelligence that matters most will be specialized. ",
           "stale": false
@@ -937,7 +937,7 @@
           "content_hash": "4788c56b6e2cdd61dc9d2cab",
           "first_seen": "2026-11-16T02:42:04+00:00",
           "changed_at": "2026-11-26T17:48:03+00:00",
-          "checked_at": "2026-11-27T17:32:54+00:00",
+          "checked_at": "2026-11-28T16:17:41+00:00",
           "published_at": null,
           "excerpt": "Blog | Fireworks AI\n\nThe right model for every task. Try Nexus\nNexus For work and co-work\nPlatform For systems and apps\nTrain Muse Glimmer for free: Our recipe for out-betting Jev\nOne training pass, better predictions. See how we trained Muse Glimmer to outperform Jev on unseen K",
           "stale": false
@@ -951,13 +951,13 @@
           "content_hash": "60b04402e370034d7ffdbea6",
           "first_seen": "2026-11-16T02:42:02+00:00",
           "changed_at": "2026-11-24T18:58:34+00:00",
-          "checked_at": "2026-11-27T17:32:53+00:00",
+          "checked_at": "2026-11-28T16:17:40+00:00",
           "published_at": null,
           "excerpt": "Own your specialized intelligence | Fireworks\nFireworks’ state of the art training and inference platform take you beyond the frontier, transforming open models into your specialized intelligence.\nOwn your specialized intelligence | Fireworks\nThe right model for every task. Try N",
           "stale": false
         }
       ],
-      "last_checked": "2026-11-27T17:32:56+00:00",
+      "last_checked": "2026-11-28T16:17:42+00:00",
       "status": "evidence_available",
       "unknown_fields": [
         "founded_date",
@@ -988,7 +988,7 @@
                 "url": "https://groq.com/blog/meta-s-muse-spark-open-release-is-now-in-limited-preview-on-groqcloud",
                 "quote": "Groq is the premier neocloud for fast inference. One fully integrated platform for infrastructure, inference, and control. Millions of developers run trillions of tokens on Groq every week.",
                 "method": "html_meta",
-                "checked_at": "2026-11-27T17:32:59+00:00",
+                "checked_at": "2026-11-28T16:17:45+00:00",
                 "stale": false
               },
               {
@@ -996,7 +996,7 @@
                 "url": "https://groq.com/blog",
                 "quote": "Groq is the premier neocloud for fast inference. One fully integrated platform for infrastructure, inference, and control. Millions of developers run trillions of tokens on Groq every week.",
                 "method": "html_meta",
-                "checked_at": "2026-11-27T17:32:58+00:00",
+                "checked_at": "2026-11-28T16:17:44+00:00",
                 "stale": false
               }
             ],
@@ -1014,7 +1014,7 @@
                 "url": "https://groq.com/",
                 "quote": "Groq is the premier neocloud for fast inference. One fully integrated platform for infrastructure, inference, and control. Millions of developers run trillions of tokens on Groq every week.",
                 "method": "html_meta",
-                "checked_at": "2026-11-27T17:32:57+00:00",
+                "checked_at": "2026-11-28T16:17:43+00:00",
                 "stale": false
               }
             ],
@@ -1034,7 +1034,7 @@
           "content_hash": "60f85272867ee673dc7ca4ea",
           "first_seen": "2026-11-16T02:42:08+00:00",
           "changed_at": "2026-11-16T02:45:48+00:00",
-          "checked_at": "2026-11-27T17:32:59+00:00",
+          "checked_at": "2026-11-28T16:17:45+00:00",
           "published_at": null,
           "excerpt": "Meta's Muse Spark open-weight release Is Now in Limited Preview on GroqCloud | Groq is the premier neocloud for fast inference\nGroq is the premier neocloud for fast inference. One fully integrated platform for infrastructure, inference, and control. Millions of developers run tri",
           "stale": false
@@ -1048,7 +1048,7 @@
           "content_hash": "56c4c1cd8ddd3dc34affe3a6",
           "first_seen": "2026-11-16T02:42:07+00:00",
           "changed_at": "2026-11-16T02:45:47+00:00",
-          "checked_at": "2026-11-27T17:32:58+00:00",
+          "checked_at": "2026-11-28T16:17:44+00:00",
           "published_at": null,
           "excerpt": "Blog | Groq is the premier neocloud for fast inference\nGroq is the premier neocloud for fast inference. One fully integrated platform for infrastructure, inference, and control. Millions of developers run trillions of tokens on Groq every week.\nBlog | Groq is the premier neocloud",
           "stale": false
@@ -1062,13 +1062,13 @@
           "content_hash": "d8a95228c41d4d2973fd8cca",
           "first_seen": "2026-11-16T02:42:06+00:00",
           "changed_at": "2026-11-16T02:42:06+00:00",
-          "checked_at": "2026-11-27T17:32:57+00:00",
+          "checked_at": "2026-11-28T16:17:43+00:00",
           "published_at": null,
           "excerpt": "Groq is the premier neocloud for fast inference\nGroq is the premier neocloud for fast inference. One fully integrated platform for infrastructure, inference, and control. Millions of developers run trillions of tokens on Groq every week.\nGroq is the premier neocloud for fast infe",
           "stale": false
         }
       ],
-      "last_checked": "2026-11-27T17:32:59+00:00",
+      "last_checked": "2026-11-28T16:17:45+00:00",
       "status": "evidence_available",
       "unknown_fields": [
         "legal_name",
@@ -1100,7 +1100,7 @@
                 "url": "https://huggingface.co/blog/community",
                 "quote": "We’re on a journey to advance and democratize artificial intelligence through open source and open science.",
                 "method": "html_meta",
-                "checked_at": "2026-11-27T17:32:44+00:00",
+                "checked_at": "2026-11-28T16:17:31+00:00",
                 "stale": false
               },
               {
@@ -1108,7 +1108,7 @@
                 "url": "https://huggingface.co/blog",
                 "quote": "We’re on a journey to advance and democratize artificial intelligence through open source and open science.",
                 "method": "html_meta",
-                "checked_at": "2026-11-27T17:32:43+00:00",
+                "checked_at": "2026-11-28T16:17:30+00:00",
                 "stale": false
               }
             ],
@@ -1126,7 +1126,7 @@
                 "url": "https://huggingface.co/",
                 "quote": "We’re on a journey to advance and democratize artificial intelligence through open source and open science.",
                 "method": "html_meta",
-                "checked_at": "2026-11-27T17:32:42+00:00",
+                "checked_at": "2026-11-28T16:17:29+00:00",
                 "stale": false
               }
             ],
@@ -1143,10 +1143,10 @@
           "title": "Hugging Face – Community Blogs",
           "kind": "official",
           "publisher": "hugging-face",
-          "content_hash": "fe08cc29b4495de055196189",
+          "content_hash": "0da53122dc0cdb2b93925058",
           "first_seen": "2026-11-16T02:41:53+00:00",
-          "changed_at": "2026-11-27T17:32:44+00:00",
-          "checked_at": "2026-11-27T17:32:44+00:00",
+          "changed_at": "2026-11-28T16:17:31+00:00",
+          "checked_at": "2026-11-28T16:17:31+00:00",
           "published_at": null,
           "excerpt": "Hugging Face – Community Blogs\nWe’re on a journey to advance and democratize artificial intelligence through open source and open science.\nHugging Face – Community Blogs\nSearch models, datasets, users... Ctrl K\nCommunity Articles Back to Articles\nNEW Articles from Team or Enterpr",
           "stale": false
@@ -1157,10 +1157,10 @@
           "title": "Hugging Face – Blog",
           "kind": "official",
           "publisher": "hugging-face",
-          "content_hash": "9a640fa4e00535fbafbf559d",
+          "content_hash": "b8687e2c5c30eef413e4bcca",
           "first_seen": "2026-11-16T02:41:52+00:00",
-          "changed_at": "2026-11-27T17:32:43+00:00",
-          "checked_at": "2026-11-27T17:32:43+00:00",
+          "changed_at": "2026-11-28T16:17:30+00:00",
+          "checked_at": "2026-11-28T16:17:30+00:00",
           "published_at": null,
           "excerpt": "Hugging Face – Blog\nWe’re on a journey to advance and democratize artificial intelligence through open source and open science.\nSearch models, datasets, users... Ctrl K\nCommunity Blog & Articles New Article\ncommunity guide open source collab partnerships research NLP Audio CV RL ",
           "stale": false
@@ -1171,16 +1171,16 @@
           "title": "Hugging Face – The AI community building the future.",
           "kind": "official",
           "publisher": "hugging-face",
-          "content_hash": "7f25917eaab07b0883beb762",
+          "content_hash": "f0f244db9288418a159058f7",
           "first_seen": "2026-11-16T02:41:51+00:00",
-          "changed_at": "2026-11-27T17:32:42+00:00",
-          "checked_at": "2026-11-27T17:32:42+00:00",
+          "changed_at": "2026-11-28T16:17:29+00:00",
+          "checked_at": "2026-11-28T16:17:29+00:00",
           "published_at": null,
           "excerpt": "Hugging Face – The AI community building the future.\nWe’re on a journey to advance and democratize artificial intelligence through open source and open science.\nHugging Face – The AI community building the future.\nSearch models, datasets, users... Ctrl K\nThe AI community building",
           "stale": false
         }
       ],
-      "last_checked": "2026-11-27T17:32:44+00:00",
+      "last_checked": "2026-11-28T16:17:31+00:00",
       "status": "evidence_available",
       "unknown_fields": [
         "legal_name",
@@ -1211,7 +1211,7 @@
                 "url": "https://www.minimax.io/blog/minimax-h3",
                 "quote": "Today, we're officially launching MiniMax H3, a general-purpose omni-modal generation model. H3 can jointly understand multimodal contexts spanning text, images, video, and audio. It generates video with native stereo audio at up to 2K resolution and 15 seconds in length.",
                 "method": "html_meta",
-                "checked_at": "2026-11-27T17:33:24+00:00",
+                "checked_at": "2026-11-28T16:18:09+00:00",
                 "stale": false
               }
             ],
@@ -1227,7 +1227,7 @@
                 "url": "https://www.minimax.io/blog/minimax-m31f",
                 "quote": "Today, we officially roll out MiniMax M3.1 Flash. As a next-generation Flash model, M3.1 Flash delivers a generational leap in agentic tasks, coding, Computer Use and cybersecurity, while making online inference nearly three times faster and reducing usage costs by 70%.",
                 "method": "html_meta",
-                "checked_at": "2026-11-27T17:33:23+00:00",
+                "checked_at": "2026-11-28T16:18:08+00:00",
                 "stale": false
               }
             ],
@@ -1245,7 +1245,7 @@
                 "url": "https://www.minimax.io/blog/minimax-h3",
                 "quote": "MiniMax",
                 "method": "jsonld:legalName",
-                "checked_at": "2026-11-27T17:33:24+00:00",
+                "checked_at": "2026-11-28T16:18:09+00:00",
                 "stale": false
               },
               {
@@ -1253,7 +1253,7 @@
                 "url": "https://www.minimax.io/blog/minimax-m31f",
                 "quote": "MiniMax",
                 "method": "jsonld:legalName",
-                "checked_at": "2026-11-27T17:33:23+00:00",
+                "checked_at": "2026-11-28T16:18:08+00:00",
                 "stale": false
               },
               {
@@ -1261,7 +1261,7 @@
                 "url": "https://www.minimax.io/",
                 "quote": "MiniMax",
                 "method": "jsonld:legalName",
-                "checked_at": "2026-11-27T17:33:22+00:00",
+                "checked_at": "2026-11-28T16:18:07+00:00",
                 "stale": false
               }
             ],
@@ -1279,7 +1279,7 @@
                 "url": "https://www.minimax.io/blog/minimax-h3",
                 "quote": "2021-12",
                 "method": "jsonld:foundingDate",
-                "checked_at": "2026-11-27T17:33:24+00:00",
+                "checked_at": "2026-11-28T16:18:09+00:00",
                 "stale": false
               },
               {
@@ -1287,7 +1287,7 @@
                 "url": "https://www.minimax.io/blog/minimax-m31f",
                 "quote": "2021-12",
                 "method": "jsonld:foundingDate",
-                "checked_at": "2026-11-27T17:33:23+00:00",
+                "checked_at": "2026-11-28T16:18:08+00:00",
                 "stale": false
               },
               {
@@ -1295,7 +1295,7 @@
                 "url": "https://www.minimax.io/",
                 "quote": "2021-12",
                 "method": "jsonld:foundingDate",
-                "checked_at": "2026-11-27T17:33:22+00:00",
+                "checked_at": "2026-11-28T16:18:07+00:00",
                 "stale": false
               }
             ],
@@ -1313,7 +1313,7 @@
                 "url": "https://www.minimax.io/",
                 "quote": "Building AGI with our mission Intelligence with Everyone. Global leader in multi-modal models and AI-native products with over 300 million users.",
                 "method": "html_meta",
-                "checked_at": "2026-11-27T17:33:22+00:00",
+                "checked_at": "2026-11-28T16:18:07+00:00",
                 "stale": false
               }
             ],
@@ -1333,7 +1333,7 @@
           "content_hash": "fef0910eec762bfa6af60c91",
           "first_seen": "2026-11-16T02:42:34+00:00",
           "changed_at": "2026-11-16T02:42:34+00:00",
-          "checked_at": "2026-11-27T17:33:26+00:00",
+          "checked_at": "2026-11-28T16:18:10+00:00",
           "published_at": null,
           "excerpt": "MiniMax\nChinese multinational artificial intelligence company",
           "stale": false
@@ -1347,7 +1347,7 @@
           "content_hash": "082b1e66076359c3b808411f",
           "first_seen": "2026-11-16T02:42:32+00:00",
           "changed_at": "2026-11-16T02:46:11+00:00",
-          "checked_at": "2026-11-27T17:33:24+00:00",
+          "checked_at": "2026-11-28T16:18:09+00:00",
           "published_at": null,
           "excerpt": "MiniMax H3: An Open Model Breaking the Boundaries Between Tasks and Modalities - MiniMax Research | MiniMax\nToday, we're officially launching MiniMax H3, a general-purpose omni-modal generation model. H3 can jointly understand multimodal contexts spanning text, images, video, and",
           "stale": false
@@ -1361,7 +1361,7 @@
           "content_hash": "0ff1de36e8d501ca2b18f7a0",
           "first_seen": "2026-11-16T02:42:32+00:00",
           "changed_at": "2026-11-16T02:46:10+00:00",
-          "checked_at": "2026-11-27T17:33:23+00:00",
+          "checked_at": "2026-11-28T16:18:08+00:00",
           "published_at": null,
           "excerpt": "MiniMax M3.1 Flash: Redefining Agent Performance and Cost - MiniMax Research | MiniMax\nToday, we officially roll out MiniMax M3.1 Flash. As a next-generation Flash model, M3.1 Flash delivers a generational leap in agentic tasks, coding, Computer Use and cybersecurity, while makin",
           "stale": false
@@ -1375,13 +1375,13 @@
           "content_hash": "177616d5462adba2c7578caf",
           "first_seen": "2026-11-16T02:42:30+00:00",
           "changed_at": "2026-11-26T17:48:28+00:00",
-          "checked_at": "2026-11-27T17:33:22+00:00",
+          "checked_at": "2026-11-28T16:18:07+00:00",
           "published_at": null,
           "excerpt": "MiniMax\nBuilding AGI with our mission Intelligence with Everyone. Global leader in multi-modal models and AI-native products with over 300 million users.\nLLM MiniMax M3.1 Flash MiniMax M3\nVideo & Image MiniMax H3 MiniMax H3 Image\nSPEECH & MUSIC MiniMax Speech 2.8 MiniMax Music 3.",
           "stale": false
         }
       ],
-      "last_checked": "2026-11-27T17:33:26+00:00",
+      "last_checked": "2026-11-28T16:18:10+00:00",
       "status": "evidence_available",
       "unknown_fields": [
         "founders",
@@ -1411,7 +1411,7 @@
                 "url": "https://www.wikidata.org/wiki/Q119718658",
                 "quote": "+2023-04-28T00:00:00Z",
                 "method": "wikidata:P571",
-                "checked_at": "2026-11-27T17:32:36+00:00",
+                "checked_at": "2026-11-28T16:17:23+00:00",
                 "stale": false
               }
             ],
@@ -1427,7 +1427,7 @@
                 "url": "https://mistral.ai/",
                 "quote": "2023-04",
                 "method": "jsonld:foundingDate",
-                "checked_at": "2026-11-27T17:32:33+00:00",
+                "checked_at": "2026-11-28T16:17:20+00:00",
                 "stale": false
               }
             ],
@@ -1445,7 +1445,7 @@
                 "url": "https://mistral.ai/news/",
                 "quote": "Read our blogs to stay up to date on the latest news and research from Mistral.",
                 "method": "html_meta",
-                "checked_at": "2026-11-27T17:32:34+00:00",
+                "checked_at": "2026-11-28T16:17:22+00:00",
                 "stale": false
               }
             ],
@@ -1461,7 +1461,7 @@
                 "url": "https://mistral.ai/research/",
                 "quote": "Mistral AI is the European frontier AI lab: open-weight models from Large 4 to Voxtral and OCR, plus the research, papers, and benchmarks behind them.",
                 "method": "html_meta",
-                "checked_at": "2026-11-27T17:32:34+00:00",
+                "checked_at": "2026-11-28T16:17:21+00:00",
                 "stale": false
               }
             ],
@@ -1479,7 +1479,7 @@
                 "url": "https://mistral.ai/",
                 "quote": "Mistral AI builds frontier open-weight models you own. Customize with Forge, deploy agents with Studio, run on-prem, your VPC, or our European sovereign cloud.",
                 "method": "html_meta",
-                "checked_at": "2026-11-27T17:32:33+00:00",
+                "checked_at": "2026-11-28T16:17:20+00:00",
                 "stale": false
               }
             ],
@@ -1497,7 +1497,7 @@
                 "url": "https://mistral.ai/",
                 "quote": "Mistral AI SAS",
                 "method": "jsonld:legalName",
-                "checked_at": "2026-11-27T17:32:33+00:00",
+                "checked_at": "2026-11-28T16:17:20+00:00",
                 "stale": false
               }
             ],
@@ -1517,7 +1517,7 @@
           "content_hash": "ba816667ef60a26a904f16fb",
           "first_seen": "2026-11-16T02:41:45+00:00",
           "changed_at": "2026-11-16T02:41:45+00:00",
-          "checked_at": "2026-11-27T17:32:36+00:00",
+          "checked_at": "2026-11-28T16:17:23+00:00",
           "published_at": null,
           "excerpt": "Mistral AI\nFrench AI company\nFounded: 2023-04-28",
           "stale": false
@@ -1531,7 +1531,7 @@
           "content_hash": "f84d6834cd57309d1c357127",
           "first_seen": "2026-11-16T02:41:43+00:00",
           "changed_at": "2026-11-16T02:45:24+00:00",
-          "checked_at": "2026-11-27T17:32:34+00:00",
+          "checked_at": "2026-11-28T16:17:22+00:00",
           "published_at": null,
           "excerpt": "Latest news | Mistral\nRead our blogs to stay up to date on the latest news and research from Mistral.\nLatest news | Mistral Skip to content\nResearch Sovereign AI Cloud Customers Company\nLatest updates from Mistral.\nLe Chonk brings the brains. Studio puts it to work.\nBuild and dep",
           "stale": false
@@ -1545,7 +1545,7 @@
           "content_hash": "e86e2459e180c2af1b077ee2",
           "first_seen": "2026-11-16T02:41:42+00:00",
           "changed_at": "2026-11-25T18:02:28+00:00",
-          "checked_at": "2026-11-27T17:32:34+00:00",
+          "checked_at": "2026-11-28T16:17:21+00:00",
           "published_at": null,
           "excerpt": "Mistral Models & AI Research | Open-Weight Frontier Models\nMistral AI is the European frontier AI lab: open-weight models from Large 4 to Voxtral and OCR, plus the research, papers, and benchmarks behind them.\nMistral Models & AI Research | Open-Weight Frontier Models Skip to con",
           "stale": false
@@ -1559,13 +1559,13 @@
           "content_hash": "039089d5735e301fc81e9b3f",
           "first_seen": "2026-11-16T02:41:41+00:00",
           "changed_at": "2026-11-22T15:28:22+00:00",
-          "checked_at": "2026-11-27T17:32:33+00:00",
+          "checked_at": "2026-11-28T16:17:20+00:00",
           "published_at": null,
           "excerpt": "Mistral | #1 in Sovereign AI: Frontier Open Models You Own\nMistral AI builds frontier open-weight models you own. Customize with Forge, deploy agents with Studio, run on-prem, your VPC, or our European sovereign cloud.\nMistral | #1 in Sovereign AI: Frontier Open Models You Own Sk",
           "stale": false
         }
       ],
-      "last_checked": "2026-11-27T17:32:36+00:00",
+      "last_checked": "2026-11-28T16:17:23+00:00",
       "status": "evidence_available",
       "unknown_fields": [
         "founders",
@@ -1594,7 +1594,7 @@
                 "url": "https://www.wikidata.org/wiki/Q130270266",
                 "quote": "+2023-03-00T00:00:00Z",
                 "method": "wikidata:P571",
-                "checked_at": "2026-11-27T17:33:20+00:00",
+                "checked_at": "2026-11-28T16:18:05+00:00",
                 "stale": false
               }
             ],
@@ -1612,7 +1612,7 @@
                 "url": "https://www.moonshot.ai/about",
                 "quote": "Welcome to Moonshot AI. Our mission is to seek the optimal conversion from energy to intelligence.",
                 "method": "html_meta",
-                "checked_at": "2026-11-27T17:33:19+00:00",
+                "checked_at": "2026-11-28T16:18:04+00:00",
                 "stale": false
               }
             ],
@@ -1630,7 +1630,7 @@
                 "url": "https://www.moonshot.ai/",
                 "quote": "Welcome to Moonshot AI. Our mission is to seek the optimal conversion from energy to intelligence.",
                 "method": "html_meta",
-                "checked_at": "2026-11-27T17:33:18+00:00",
+                "checked_at": "2026-11-28T16:18:03+00:00",
                 "stale": false
               }
             ],
@@ -1650,7 +1650,7 @@
           "content_hash": "37f1612161b74d0a619fea8f",
           "first_seen": "2026-11-16T02:42:28+00:00",
           "changed_at": "2026-11-16T02:42:28+00:00",
-          "checked_at": "2026-11-27T17:33:20+00:00",
+          "checked_at": "2026-11-28T16:18:05+00:00",
           "published_at": null,
           "excerpt": "Moonshot AI\nChinese multinational artificial intelligence company\nFounded: 2023-03",
           "stale": false
@@ -1664,7 +1664,7 @@
           "content_hash": "0bb46abd2a151d1311cc4d4d",
           "first_seen": "2026-11-16T02:42:27+00:00",
           "changed_at": "2026-11-26T17:48:25+00:00",
-          "checked_at": "2026-11-27T17:33:19+00:00",
+          "checked_at": "2026-11-28T16:18:04+00:00",
           "published_at": null,
           "excerpt": "Moonshot AI\nWelcome to Moonshot AI. Our mission is to seek the optimal conversion from energy to intelligence.\nKimi Business API Research Download Careers About\nA S D F G H J K L ； W E T Y U O P\nSeeking the optimal conversion from energy to intelligence\nT h e f a r s i d e o f t ",
           "stale": false
@@ -1678,13 +1678,13 @@
           "content_hash": "d3305b60037ed22a16d9d170",
           "first_seen": "2026-11-16T02:42:26+00:00",
           "changed_at": "2026-11-26T17:48:25+00:00",
-          "checked_at": "2026-11-27T17:33:18+00:00",
+          "checked_at": "2026-11-28T16:18:03+00:00",
           "published_at": null,
           "excerpt": "Moonshot AI\nWelcome to Moonshot AI. Our mission is to seek the optimal conversion from energy to intelligence.\nKimi Business API Research Download Careers About\nSeeking the optimal conversion from energy to intelligence\nOur research team works toward AGI while sharing the latest ",
           "stale": false
         }
       ],
-      "last_checked": "2026-11-27T17:33:20+00:00",
+      "last_checked": "2026-11-28T16:18:05+00:00",
       "status": "evidence_available",
       "unknown_fields": [
         "legal_name",
@@ -1715,7 +1715,7 @@
                 "url": "https://openai.com/about/",
                 "quote": "OpenAI is an AI research and deployment company. Our mission is to ensure that artificial general intelligence benefits all of humanity.",
                 "method": "html_meta",
-                "checked_at": "2026-11-27T17:32:25+00:00",
+                "checked_at": "2026-11-28T16:17:13+00:00",
                 "stale": false
               }
             ],
@@ -1731,7 +1731,7 @@
                 "url": "https://openai.com/research/index/",
                 "quote": "We believe our research will eventually lead to artificial general intelligence, a system that can solve human-level problems. Building safe and beneficial AGI is our mission.",
                 "method": "html_meta",
-                "checked_at": "2026-11-27T17:32:24+00:00",
+                "checked_at": "2026-11-28T16:17:12+00:00",
                 "stale": false
               }
             ],
@@ -1749,7 +1749,7 @@
                 "url": "https://openai.com/",
                 "quote": "We believe our research will eventually lead to artificial general intelligence, a system that can solve human-level problems.",
                 "method": "html_meta",
-                "checked_at": "2026-11-27T17:32:23+00:00",
+                "checked_at": "2026-11-28T16:17:11+00:00",
                 "stale": false
               }
             ],
@@ -1769,7 +1769,7 @@
           "content_hash": "2cdd22896be8460862e48fda",
           "first_seen": "2026-11-21T15:27:22+00:00",
           "changed_at": "2026-11-25T18:02:20+00:00",
-          "checked_at": "2026-11-27T17:32:25+00:00",
+          "checked_at": "2026-11-28T16:17:13+00:00",
           "published_at": null,
           "excerpt": "About | OpenAI\nOpenAI is an AI research and deployment company. Our mission is to ensure that artificial general intelligence benefits all of humanity.\nFoundation (opens in a new window)\nLog in Try ChatGPT (opens in a new window)\nTry ChatGPT (opens in a new window) Login\nOpenAI i",
           "stale": false
@@ -1783,7 +1783,7 @@
           "content_hash": "11ca91d910d79f4f87e035a5",
           "first_seen": "2026-11-21T15:27:21+00:00",
           "changed_at": "2026-11-25T18:02:19+00:00",
-          "checked_at": "2026-11-27T17:32:24+00:00",
+          "checked_at": "2026-11-28T16:17:12+00:00",
           "published_at": null,
           "excerpt": "OpenAI Research | OpenAI\nWe believe our research will eventually lead to artificial general intelligence, a system that can solve human-level problems. Building safe and beneficial AGI is our mission.\nFoundation (opens in a new window)\nLog in Try ChatGPT (opens in a new window)\nT",
           "stale": false
@@ -1797,13 +1797,13 @@
           "content_hash": "82665ae6150cc62070596f6d",
           "first_seen": "2026-11-21T15:27:20+00:00",
           "changed_at": "2026-11-25T18:02:18+00:00",
-          "checked_at": "2026-11-27T17:32:23+00:00",
+          "checked_at": "2026-11-28T16:17:11+00:00",
           "published_at": null,
           "excerpt": "OpenAI | Research & Deployment\nWe believe our research will eventually lead to artificial general intelligence, a system that can solve human-level problems.\nOpenAI | Research & Deployment\nFoundation (opens in a new window)\nLog in Talk to us Try ChatGPT (opens in a new window)\nTa",
           "stale": false
         }
       ],
-      "last_checked": "2026-11-27T17:32:25+00:00",
+      "last_checked": "2026-11-28T16:17:13+00:00",
       "status": "evidence_available",
       "unknown_fields": [
         "legal_name",
@@ -1857,7 +1857,7 @@
                 "url": "https://www.wikidata.org/wiki/Q123367593",
                 "quote": "+2018-00-00T00:00:00Z",
                 "method": "wikidata:P571",
-                "checked_at": "2026-11-27T17:33:08+00:00",
+                "checked_at": "2026-11-28T16:17:53+00:00",
                 "stale": false
               }
             ],
@@ -1877,13 +1877,13 @@
           "content_hash": "850696e3c4784a527d13d3d2",
           "first_seen": "2026-11-16T02:42:15+00:00",
           "changed_at": "2026-11-16T02:42:15+00:00",
-          "checked_at": "2026-11-27T17:33:08+00:00",
+          "checked_at": "2026-11-28T16:17:53+00:00",
           "published_at": null,
           "excerpt": "Runway\nAmerican research company\nFounded: 2018",
           "stale": false
         }
       ],
-      "last_checked": "2026-11-27T17:33:08+00:00",
+      "last_checked": "2026-11-28T16:17:53+00:00",
       "status": "evidence_available",
       "unknown_fields": [
         "legal_name",
@@ -1914,7 +1914,7 @@
                 "url": "https://www.together.ai/blog/together-link-frontier-quality-open-models-in-the-harness-you-already-use",
                 "quote": "Together Link brings frontier open models like GLM 5.3 and Kimi K3 into the coding agent your team already uses, cutting model spend by over 50%.",
                 "method": "html_meta",
-                "checked_at": "2026-11-27T17:32:51+00:00",
+                "checked_at": "2026-11-28T16:17:38+00:00",
                 "stale": false
               }
             ],
@@ -1930,7 +1930,7 @@
                 "url": "https://www.together.ai/blog/together-post-training",
                 "quote": "Post-train open LLMs like Qwen, GLM and Kimi into custom models you own, with SFT or RL. You write the training loop. Together runs the hard infrastructure.",
                 "method": "html_meta",
-                "checked_at": "2026-11-27T17:32:50+00:00",
+                "checked_at": "2026-11-28T16:17:37+00:00",
                 "stale": false
               }
             ],
@@ -1948,7 +1948,7 @@
                 "url": "https://www.together.ai/",
                 "quote": "Build what's next on the AI Native Cloud. Full-stack AI platform for inference, fine-tuning, and GPU clusters — powered by cutting-edge research.",
                 "method": "html_meta",
-                "checked_at": "2026-11-27T17:32:49+00:00",
+                "checked_at": "2026-11-28T16:17:36+00:00",
                 "stale": false
               }
             ],
@@ -1966,7 +1966,7 @@
                 "url": "https://www.together.ai/",
                 "quote": "2022",
                 "method": "jsonld:foundingDate",
-                "checked_at": "2026-11-27T17:32:49+00:00",
+                "checked_at": "2026-11-28T16:17:36+00:00",
                 "stale": false
               }
             ],
@@ -1986,7 +1986,7 @@
           "content_hash": "da36d5c720171713febf900e",
           "first_seen": "2026-11-16T02:42:01+00:00",
           "changed_at": "2026-11-16T02:42:01+00:00",
-          "checked_at": "2026-11-27T17:32:52+00:00",
+          "checked_at": "2026-11-28T16:17:39+00:00",
           "published_at": null,
           "excerpt": "Together AI\nAI startup",
           "stale": false
@@ -2000,7 +2000,7 @@
           "content_hash": "2a7bed46bc0dab046bb69143",
           "first_seen": "2026-11-16T02:42:00+00:00",
           "changed_at": "2026-11-27T17:32:51+00:00",
-          "checked_at": "2026-11-27T17:32:51+00:00",
+          "checked_at": "2026-11-28T16:17:38+00:00",
           "published_at": null,
           "excerpt": "Together Link: open models in the harness you already use. Start with one command today.\nTogether Link brings frontier open models like GLM 5.3 and Kimi K3 into the coding agent your team already uses, cutting model spend by over 50%.\nTogether Link: open models in the harness you",
           "stale": false
@@ -2014,7 +2014,7 @@
           "content_hash": "57e43f2647ffd68d7be8ccc9",
           "first_seen": "2026-11-16T02:41:59+00:00",
           "changed_at": "2026-11-26T17:47:59+00:00",
-          "checked_at": "2026-11-27T17:32:50+00:00",
+          "checked_at": "2026-11-28T16:17:37+00:00",
           "published_at": null,
           "excerpt": "Together Post-Training: frontier-grade model shaping, the way that fits you\nPost-train open LLMs like Qwen, GLM and Kimi into custom models you own, with SFT or RL. You write the training loop. Together runs the hard infrastructure.\nTogether Post-Training: frontier-grade model sh",
           "stale": false
@@ -2028,13 +2028,13 @@
           "content_hash": "a527c752ba589cc54e4feea8",
           "first_seen": "2026-11-16T02:41:58+00:00",
           "changed_at": "2026-11-26T17:47:58+00:00",
-          "checked_at": "2026-11-27T17:32:49+00:00",
+          "checked_at": "2026-11-28T16:17:36+00:00",
           "published_at": null,
           "excerpt": "Together AI | The AI Native Cloud\nBuild what's next on the AI Native Cloud. Full-stack AI platform for inference, fine-tuning, and GPU clusters — powered by cutting-edge research.\nTogether AI | The AI Native Cloud\nIntroducing Polymorphic Inference, starting with Together Compiler",
           "stale": false
         }
       ],
-      "last_checked": "2026-11-27T17:32:52+00:00",
+      "last_checked": "2026-11-28T16:17:39+00:00",
       "status": "evidence_available",
       "unknown_fields": [
         "legal_name",
@@ -2064,7 +2064,7 @@
                 "url": "https://chat.z.ai/",
                 "quote": "Meet Z.ai, the AI assistant powered by GLM-5.3-Flash. Build websites, write code, handle long-horizon tasks, and get instant answers. Fast, smart, and reliable.",
                 "method": "html_meta",
-                "checked_at": "2026-11-27T17:33:31+00:00",
+                "checked_at": "2026-11-28T16:18:15+00:00",
                 "stale": false
               }
             ],
@@ -2084,7 +2084,7 @@
           "content_hash": "00d1e482479ab09f2ad813b4",
           "first_seen": "2026-11-16T02:42:40+00:00",
           "changed_at": "2026-11-16T02:42:40+00:00",
-          "checked_at": "2026-11-27T17:33:32+00:00",
+          "checked_at": "2026-11-28T16:18:16+00:00",
           "published_at": null,
           "excerpt": "Z.ai\nChinese technology company based in Beijing",
           "stale": false
@@ -2098,13 +2098,13 @@
           "content_hash": "706e8502c6d954625cedf3fa",
           "first_seen": "2026-11-16T02:42:39+00:00",
           "changed_at": "2026-11-16T02:42:39+00:00",
-          "checked_at": "2026-11-27T17:33:31+00:00",
+          "checked_at": "2026-11-28T16:18:15+00:00",
           "published_at": null,
           "excerpt": "Z.ai - Advanced AI Chatbot & Agent powered by GLM-5.3-Flash\nMeet Z.ai, the AI assistant powered by GLM-5.3-Flash. Build websites, write code, handle long-horizon tasks, and get instant answers. Fast, smart, and reliable.\nZ.ai - Advanced AI Chatbot & Agent powered by GLM-5.3-Flash",
           "stale": false
         }
       ],
-      "last_checked": "2026-11-27T17:33:32+00:00",
+      "last_checked": "2026-11-28T16:18:16+00:00",
       "status": "evidence_available",
       "unknown_fields": [
         "legal_name",
@@ -2118,6 +2118,19 @@
     }
   ],
   "runs": [
+    {
+      "id": "2026-11-28T16:17:10+00:00-4a5b98",
+      "started_at": "2026-11-28T16:17:10+00:00",
+      "finished_at": "2026-11-28T16:18:40+00:00",
+      "summary": {
+        "companies": 16,
+        "successful_sources": 49,
+        "failed_sources": 2,
+        "changed_sources": 5,
+        "discovered_candidates": 49,
+        "status": "partial"
+      }
+    },
     {
       "id": "2026-11-27T17:32:22+00:00-548c43",
       "started_at": "2026-11-27T17:32:22+00:00",
@@ -2234,517 +2247,880 @@
         "discovered_candidates": 10,
         "status": "partial"
       }
-    },
-    {
-      "id": "2026-11-18T16:34:15+00:00-f23bf2",
-      "started_at": "2026-11-18T16:34:15+00:00",
-      "finished_at": "2026-11-18T16:35:22+00:00",
-      "summary": {
-        "companies": 16,
-        "successful_sources": 46,
-        "failed_sources": 3,
-        "changed_sources": 14,
-        "discovered_candidates": 24,
-        "status": "partial"
-      }
     }
   ],
   "attempts": [
     {
-      "run_id": "2026-11-27T17:32:22+00:00-548c43",
+      "run_id": "2026-11-28T16:17:10+00:00-4a5b98",
       "company_id": "openai",
       "url": "https://openai.com/",
       "status": "ok",
       "reason": "",
-      "checked_at": "2026-11-27T17:32:23+00:00"
+      "checked_at": "2026-11-28T16:17:11+00:00"
     },
     {
-      "run_id": "2026-11-27T17:32:22+00:00-548c43",
+      "run_id": "2026-11-28T16:17:10+00:00-4a5b98",
       "company_id": "openai",
       "url": "https://openai.com/research/index/",
       "status": "ok",
       "reason": "",
-      "checked_at": "2026-11-27T17:32:24+00:00"
+      "checked_at": "2026-11-28T16:17:12+00:00"
     },
     {
-      "run_id": "2026-11-27T17:32:22+00:00-548c43",
+      "run_id": "2026-11-28T16:17:10+00:00-4a5b98",
       "company_id": "openai",
       "url": "https://openai.com/about/",
       "status": "ok",
       "reason": "",
-      "checked_at": "2026-11-27T17:32:25+00:00"
+      "checked_at": "2026-11-28T16:17:13+00:00"
     },
     {
-      "run_id": "2026-11-27T17:32:22+00:00-548c43",
+      "run_id": "2026-11-28T16:17:10+00:00-4a5b98",
       "company_id": "openai",
       "url": "https://www.wikidata.org/w/api.php",
       "status": "unmatched",
       "reason": "No unique website-domain match; not merged",
-      "checked_at": "2026-11-27T17:32:27+00:00"
+      "checked_at": "2026-11-28T16:17:14+00:00"
     },
     {
-      "run_id": "2026-11-27T17:32:22+00:00-548c43",
+      "run_id": "2026-11-28T16:17:10+00:00-4a5b98",
       "company_id": "anthropic",
       "url": "https://www.anthropic.com/",
       "status": "ok",
       "reason": "",
-      "checked_at": "2026-11-27T17:32:28+00:00"
+      "checked_at": "2026-11-28T16:17:16+00:00"
     },
     {
-      "run_id": "2026-11-27T17:32:22+00:00-548c43",
+      "run_id": "2026-11-28T16:17:10+00:00-4a5b98",
       "company_id": "anthropic",
       "url": "https://www.anthropic.com/news",
       "status": "ok",
       "reason": "",
-      "checked_at": "2026-11-27T17:32:29+00:00"
+      "checked_at": "2026-11-28T16:17:17+00:00"
     },
     {
-      "run_id": "2026-11-27T17:32:22+00:00-548c43",
+      "run_id": "2026-11-28T16:17:10+00:00-4a5b98",
       "company_id": "anthropic",
       "url": "https://www.anthropic.com/news/announcements",
       "status": "ok",
       "reason": "",
-      "checked_at": "2026-11-27T17:32:30+00:00"
+      "checked_at": "2026-11-28T16:17:18+00:00"
     },
     {
-      "run_id": "2026-11-27T17:32:22+00:00-548c43",
+      "run_id": "2026-11-28T16:17:10+00:00-4a5b98",
       "company_id": "anthropic",
       "url": "https://www.wikidata.org/w/api.php",
       "status": "unmatched",
       "reason": "No unique website-domain match; not merged",
-      "checked_at": "2026-11-27T17:32:31+00:00"
+      "checked_at": "2026-11-28T16:17:19+00:00"
     },
     {
-      "run_id": "2026-11-27T17:32:22+00:00-548c43",
+      "run_id": "2026-11-28T16:17:10+00:00-4a5b98",
       "company_id": "mistral",
       "url": "https://mistral.ai/",
       "status": "ok",
       "reason": "",
-      "checked_at": "2026-11-27T17:32:33+00:00"
+      "checked_at": "2026-11-28T16:17:20+00:00"
     },
     {
-      "run_id": "2026-11-27T17:32:22+00:00-548c43",
+      "run_id": "2026-11-28T16:17:10+00:00-4a5b98",
       "company_id": "mistral",
       "url": "https://mistral.ai/research/",
       "status": "ok",
       "reason": "",
-      "checked_at": "2026-11-27T17:32:34+00:00"
+      "checked_at": "2026-11-28T16:17:21+00:00"
     },
     {
-      "run_id": "2026-11-27T17:32:22+00:00-548c43",
+      "run_id": "2026-11-28T16:17:10+00:00-4a5b98",
       "company_id": "mistral",
       "url": "https://mistral.ai/news/",
       "status": "ok",
       "reason": "",
-      "checked_at": "2026-11-27T17:32:34+00:00"
+      "checked_at": "2026-11-28T16:17:22+00:00"
     },
     {
-      "run_id": "2026-11-27T17:32:22+00:00-548c43",
+      "run_id": "2026-11-28T16:17:10+00:00-4a5b98",
       "company_id": "mistral",
       "url": "https://www.wikidata.org/wiki/Q119718658",
       "status": "ok",
       "reason": "",
-      "checked_at": "2026-11-27T17:32:36+00:00"
+      "checked_at": "2026-11-28T16:17:23+00:00"
     },
     {
-      "run_id": "2026-11-27T17:32:22+00:00-548c43",
+      "run_id": "2026-11-28T16:17:10+00:00-4a5b98",
       "company_id": "cohere",
       "url": "https://cohere.com/",
       "status": "ok",
       "reason": "",
-      "checked_at": "2026-11-27T17:32:37+00:00"
+      "checked_at": "2026-11-28T16:17:24+00:00"
     },
     {
-      "run_id": "2026-11-27T17:32:22+00:00-548c43",
+      "run_id": "2026-11-28T16:17:10+00:00-4a5b98",
       "company_id": "cohere",
       "url": "https://cohere.com/blog",
       "status": "ok",
       "reason": "",
-      "checked_at": "2026-11-27T17:32:39+00:00"
+      "checked_at": "2026-11-28T16:17:26+00:00"
     },
     {
-      "run_id": "2026-11-27T17:32:22+00:00-548c43",
+      "run_id": "2026-11-28T16:17:10+00:00-4a5b98",
       "company_id": "cohere",
       "url": "https://cohere.com/research",
       "status": "ok",
       "reason": "",
-      "checked_at": "2026-11-27T17:32:39+00:00"
+      "checked_at": "2026-11-28T16:17:26+00:00"
     },
     {
-      "run_id": "2026-11-27T17:32:22+00:00-548c43",
+      "run_id": "2026-11-28T16:17:10+00:00-4a5b98",
       "company_id": "cohere",
       "url": "https://www.wikidata.org/wiki/Q110363143",
       "status": "ok",
       "reason": "",
-      "checked_at": "2026-11-27T17:32:41+00:00"
+      "checked_at": "2026-11-28T16:17:28+00:00"
     },
     {
-      "run_id": "2026-11-27T17:32:22+00:00-548c43",
+      "run_id": "2026-11-28T16:17:10+00:00-4a5b98",
       "company_id": "hugging-face",
       "url": "https://huggingface.co/",
       "status": "ok",
       "reason": "",
-      "checked_at": "2026-11-27T17:32:42+00:00"
+      "checked_at": "2026-11-28T16:17:29+00:00"
     },
     {
-      "run_id": "2026-11-27T17:32:22+00:00-548c43",
+      "run_id": "2026-11-28T16:17:10+00:00-4a5b98",
       "company_id": "hugging-face",
       "url": "https://huggingface.co/blog",
       "status": "ok",
       "reason": "",
-      "checked_at": "2026-11-27T17:32:43+00:00"
+      "checked_at": "2026-11-28T16:17:30+00:00"
     },
     {
-      "run_id": "2026-11-27T17:32:22+00:00-548c43",
+      "run_id": "2026-11-28T16:17:10+00:00-4a5b98",
       "company_id": "hugging-face",
       "url": "https://huggingface.co/blog/community",
       "status": "ok",
       "reason": "",
-      "checked_at": "2026-11-27T17:32:44+00:00"
+      "checked_at": "2026-11-28T16:17:31+00:00"
     },
     {
-      "run_id": "2026-11-27T17:32:22+00:00-548c43",
+      "run_id": "2026-11-28T16:17:10+00:00-4a5b98",
       "company_id": "hugging-face",
       "url": "https://www.wikidata.org/w/api.php",
       "status": "unmatched",
       "reason": "No unique website-domain match; not merged",
-      "checked_at": "2026-11-27T17:32:45+00:00"
+      "checked_at": "2026-11-28T16:17:32+00:00"
     },
     {
-      "run_id": "2026-11-27T17:32:22+00:00-548c43",
+      "run_id": "2026-11-28T16:17:10+00:00-4a5b98",
       "company_id": "perplexity",
       "url": "https://www.perplexity.ai/",
       "status": "failed",
       "reason": "HTTP 403",
-      "checked_at": "2026-11-27T17:32:46+00:00"
+      "checked_at": "2026-11-28T16:17:33+00:00"
     },
     {
-      "run_id": "2026-11-27T17:32:22+00:00-548c43",
+      "run_id": "2026-11-28T16:17:10+00:00-4a5b98",
       "company_id": "perplexity",
       "url": "https://www.wikidata.org/w/api.php",
       "status": "unmatched",
       "reason": "No unique website-domain match; not merged",
-      "checked_at": "2026-11-27T17:32:48+00:00"
+      "checked_at": "2026-11-28T16:17:34+00:00"
     },
     {
-      "run_id": "2026-11-27T17:32:22+00:00-548c43",
+      "run_id": "2026-11-28T16:17:10+00:00-4a5b98",
       "company_id": "together",
       "url": "https://www.together.ai/",
       "status": "ok",
       "reason": "",
-      "checked_at": "2026-11-27T17:32:49+00:00"
+      "checked_at": "2026-11-28T16:17:36+00:00"
     },
     {
-      "run_id": "2026-11-27T17:32:22+00:00-548c43",
+      "run_id": "2026-11-28T16:17:10+00:00-4a5b98",
       "company_id": "together",
       "url": "https://www.together.ai/blog/together-post-training",
       "status": "ok",
       "reason": "",
-      "checked_at": "2026-11-27T17:32:50+00:00"
+      "checked_at": "2026-11-28T16:17:37+00:00"
     },
     {
-      "run_id": "2026-11-27T17:32:22+00:00-548c43",
+      "run_id": "2026-11-28T16:17:10+00:00-4a5b98",
       "company_id": "together",
       "url": "https://www.together.ai/blog/together-link-frontier-quality-open-models-in-the-harness-you-already-use",
       "status": "ok",
       "reason": "",
-      "checked_at": "2026-11-27T17:32:51+00:00"
+      "checked_at": "2026-11-28T16:17:38+00:00"
     },
     {
-      "run_id": "2026-11-27T17:32:22+00:00-548c43",
+      "run_id": "2026-11-28T16:17:10+00:00-4a5b98",
       "company_id": "together",
       "url": "https://www.wikidata.org/wiki/Q124071418",
       "status": "ok",
       "reason": "",
-      "checked_at": "2026-11-27T17:32:52+00:00"
+      "checked_at": "2026-11-28T16:17:39+00:00"
     },
     {
-      "run_id": "2026-11-27T17:32:22+00:00-548c43",
+      "run_id": "2026-11-28T16:17:10+00:00-4a5b98",
       "company_id": "fireworks",
       "url": "https://fireworks.ai/",
       "status": "ok",
       "reason": "",
-      "checked_at": "2026-11-27T17:32:53+00:00"
+      "checked_at": "2026-11-28T16:17:40+00:00"
     },
     {
-      "run_id": "2026-11-27T17:32:22+00:00-548c43",
+      "run_id": "2026-11-28T16:17:10+00:00-4a5b98",
       "company_id": "fireworks",
       "url": "https://fireworks.ai/blog",
       "status": "ok",
       "reason": "",
-      "checked_at": "2026-11-27T17:32:54+00:00"
+      "checked_at": "2026-11-28T16:17:41+00:00"
     },
     {
-      "run_id": "2026-11-27T17:32:22+00:00-548c43",
+      "run_id": "2026-11-28T16:17:10+00:00-4a5b98",
       "company_id": "fireworks",
       "url": "https://fireworks.ai/about",
       "status": "ok",
       "reason": "",
-      "checked_at": "2026-11-27T17:32:56+00:00"
+      "checked_at": "2026-11-28T16:17:42+00:00"
     },
     {
-      "run_id": "2026-11-27T17:32:22+00:00-548c43",
+      "run_id": "2026-11-28T16:17:10+00:00-4a5b98",
       "company_id": "fireworks",
       "url": "https://www.wikidata.org/w/api.php",
       "status": "unmatched",
       "reason": "No unique website-domain match; not merged",
-      "checked_at": "2026-11-27T17:32:56+00:00"
+      "checked_at": "2026-11-28T16:17:42+00:00"
     },
     {
-      "run_id": "2026-11-27T17:32:22+00:00-548c43",
+      "run_id": "2026-11-28T16:17:10+00:00-4a5b98",
       "company_id": "groq",
       "url": "https://groq.com/",
       "status": "ok",
       "reason": "",
-      "checked_at": "2026-11-27T17:32:57+00:00"
+      "checked_at": "2026-11-28T16:17:43+00:00"
     },
     {
-      "run_id": "2026-11-27T17:32:22+00:00-548c43",
+      "run_id": "2026-11-28T16:17:10+00:00-4a5b98",
       "company_id": "groq",
       "url": "https://groq.com/blog",
       "status": "ok",
       "reason": "",
-      "checked_at": "2026-11-27T17:32:58+00:00"
+      "checked_at": "2026-11-28T16:17:44+00:00"
     },
     {
-      "run_id": "2026-11-27T17:32:22+00:00-548c43",
+      "run_id": "2026-11-28T16:17:10+00:00-4a5b98",
       "company_id": "groq",
       "url": "https://groq.com/blog/meta-s-muse-spark-open-release-is-now-in-limited-preview-on-groqcloud",
       "status": "ok",
       "reason": "",
-      "checked_at": "2026-11-27T17:32:59+00:00"
+      "checked_at": "2026-11-28T16:17:45+00:00"
     },
     {
-      "run_id": "2026-11-27T17:32:22+00:00-548c43",
+      "run_id": "2026-11-28T16:17:10+00:00-4a5b98",
       "company_id": "groq",
       "url": "https://www.wikidata.org/w/api.php",
       "status": "unmatched",
       "reason": "No unique website-domain match; not merged",
-      "checked_at": "2026-11-27T17:33:01+00:00"
+      "checked_at": "2026-11-28T16:17:46+00:00"
     },
     {
-      "run_id": "2026-11-27T17:32:22+00:00-548c43",
+      "run_id": "2026-11-28T16:17:10+00:00-4a5b98",
       "company_id": "cerebras",
       "url": "https://www.cerebras.ai/",
       "status": "ok",
       "reason": "",
-      "checked_at": "2026-11-27T17:33:02+00:00"
+      "checked_at": "2026-11-28T16:17:48+00:00"
     },
     {
-      "run_id": "2026-11-27T17:32:22+00:00-548c43",
+      "run_id": "2026-11-28T16:17:10+00:00-4a5b98",
       "company_id": "cerebras",
       "url": "https://www.cerebras.ai/blog/cerebras-launches-disaggregated-inference",
       "status": "ok",
       "reason": "",
-      "checked_at": "2026-11-27T17:33:03+00:00"
+      "checked_at": "2026-11-28T16:17:49+00:00"
     },
     {
-      "run_id": "2026-11-27T17:32:22+00:00-548c43",
+      "run_id": "2026-11-28T16:17:10+00:00-4a5b98",
       "company_id": "cerebras",
       "url": "https://www.cerebras.ai/company",
       "status": "ok",
       "reason": "",
-      "checked_at": "2026-11-27T17:33:04+00:00"
+      "checked_at": "2026-11-28T16:17:50+00:00"
     },
     {
-      "run_id": "2026-11-27T17:32:22+00:00-548c43",
+      "run_id": "2026-11-28T16:17:10+00:00-4a5b98",
       "company_id": "cerebras",
       "url": "https://www.wikidata.org/wiki/Q66604886",
       "status": "ok",
       "reason": "",
-      "checked_at": "2026-11-27T17:33:05+00:00"
+      "checked_at": "2026-11-28T16:17:51+00:00"
     },
     {
-      "run_id": "2026-11-27T17:32:22+00:00-548c43",
+      "run_id": "2026-11-28T16:17:10+00:00-4a5b98",
       "company_id": "runway",
       "url": "https://runwayml.com/",
       "status": "failed",
       "reason": "robots.txt disallows or cannot authorize this URL",
-      "checked_at": "2026-11-27T17:33:06+00:00"
+      "checked_at": "2026-11-28T16:17:51+00:00"
     },
     {
-      "run_id": "2026-11-27T17:32:22+00:00-548c43",
+      "run_id": "2026-11-28T16:17:10+00:00-4a5b98",
       "company_id": "runway",
       "url": "https://www.wikidata.org/wiki/Q123367593",
       "status": "ok",
       "reason": "",
-      "checked_at": "2026-11-27T17:33:08+00:00"
+      "checked_at": "2026-11-28T16:17:53+00:00"
     },
     {
-      "run_id": "2026-11-27T17:32:22+00:00-548c43",
+      "run_id": "2026-11-28T16:17:10+00:00-4a5b98",
       "company_id": "elevenlabs",
       "url": "https://elevenlabs.io/",
       "status": "ok",
       "reason": "",
-      "checked_at": "2026-11-27T17:33:09+00:00"
+      "checked_at": "2026-11-28T16:17:54+00:00"
     },
     {
-      "run_id": "2026-11-27T17:32:22+00:00-548c43",
+      "run_id": "2026-11-28T16:17:10+00:00-4a5b98",
       "company_id": "elevenlabs",
       "url": "https://elevenlabs.io/blog/twilio-conversation-relay",
       "status": "ok",
       "reason": "",
-      "checked_at": "2026-11-27T17:33:10+00:00"
+      "checked_at": "2026-11-28T16:17:55+00:00"
     },
     {
-      "run_id": "2026-11-27T17:32:22+00:00-548c43",
+      "run_id": "2026-11-28T16:17:10+00:00-4a5b98",
       "company_id": "elevenlabs",
       "url": "https://elevenlabs.io/blog/kpn-mobiel-ai",
       "status": "ok",
       "reason": "",
-      "checked_at": "2026-11-27T17:33:11+00:00"
+      "checked_at": "2026-11-28T16:17:56+00:00"
     },
     {
-      "run_id": "2026-11-27T17:32:22+00:00-548c43",
+      "run_id": "2026-11-28T16:17:10+00:00-4a5b98",
       "company_id": "elevenlabs",
       "url": "https://www.wikidata.org/wiki/Q116798355",
       "status": "ok",
       "reason": "",
-      "checked_at": "2026-11-27T17:33:12+00:00"
+      "checked_at": "2026-11-28T16:17:58+00:00"
     },
     {
-      "run_id": "2026-11-27T17:32:22+00:00-548c43",
+      "run_id": "2026-11-28T16:17:10+00:00-4a5b98",
       "company_id": "deepseek",
       "url": "https://www.deepseek.com/",
       "status": "ok",
       "reason": "",
-      "checked_at": "2026-11-27T17:33:13+00:00"
+      "checked_at": "2026-11-28T16:17:59+00:00"
     },
     {
-      "run_id": "2026-11-27T17:32:22+00:00-548c43",
+      "run_id": "2026-11-28T16:17:10+00:00-4a5b98",
       "company_id": "deepseek",
       "url": "https://www.deepseek.com/news/deepseek-v4-1-flash/",
       "status": "ok",
       "reason": "",
-      "checked_at": "2026-11-27T17:33:14+00:00"
+      "checked_at": "2026-11-28T16:18:00+00:00"
     },
     {
-      "run_id": "2026-11-27T17:32:22+00:00-548c43",
+      "run_id": "2026-11-28T16:17:10+00:00-4a5b98",
       "company_id": "deepseek",
       "url": "https://www.deepseek.com/news/v4-preview/",
       "status": "ok",
       "reason": "",
-      "checked_at": "2026-11-27T17:33:15+00:00"
+      "checked_at": "2026-11-28T16:18:01+00:00"
     },
     {
-      "run_id": "2026-11-27T17:32:22+00:00-548c43",
+      "run_id": "2026-11-28T16:17:10+00:00-4a5b98",
       "company_id": "deepseek",
       "url": "https://www.wikidata.org/wiki/Q131577453",
       "status": "ok",
       "reason": "",
-      "checked_at": "2026-11-27T17:33:17+00:00"
+      "checked_at": "2026-11-28T16:18:02+00:00"
     },
     {
-      "run_id": "2026-11-27T17:32:22+00:00-548c43",
+      "run_id": "2026-11-28T16:17:10+00:00-4a5b98",
       "company_id": "moonshot",
       "url": "https://www.moonshot.ai/",
       "status": "ok",
       "reason": "",
-      "checked_at": "2026-11-27T17:33:18+00:00"
+      "checked_at": "2026-11-28T16:18:03+00:00"
     },
     {
-      "run_id": "2026-11-27T17:32:22+00:00-548c43",
+      "run_id": "2026-11-28T16:17:10+00:00-4a5b98",
       "company_id": "moonshot",
       "url": "https://www.moonshot.ai/about",
       "status": "ok",
       "reason": "",
-      "checked_at": "2026-11-27T17:33:19+00:00"
+      "checked_at": "2026-11-28T16:18:04+00:00"
     },
     {
-      "run_id": "2026-11-27T17:32:22+00:00-548c43",
+      "run_id": "2026-11-28T16:17:10+00:00-4a5b98",
       "company_id": "moonshot",
       "url": "https://www.wikidata.org/wiki/Q130270266",
       "status": "ok",
       "reason": "",
-      "checked_at": "2026-11-27T17:33:20+00:00"
+      "checked_at": "2026-11-28T16:18:05+00:00"
     },
     {
-      "run_id": "2026-11-27T17:32:22+00:00-548c43",
+      "run_id": "2026-11-28T16:17:10+00:00-4a5b98",
       "company_id": "minimax",
       "url": "https://www.minimax.io/",
       "status": "ok",
       "reason": "",
-      "checked_at": "2026-11-27T17:33:22+00:00"
+      "checked_at": "2026-11-28T16:18:07+00:00"
     },
     {
-      "run_id": "2026-11-27T17:32:22+00:00-548c43",
+      "run_id": "2026-11-28T16:17:10+00:00-4a5b98",
       "company_id": "minimax",
       "url": "https://www.minimax.io/blog/minimax-m31f",
       "status": "ok",
       "reason": "",
-      "checked_at": "2026-11-27T17:33:23+00:00"
+      "checked_at": "2026-11-28T16:18:08+00:00"
     },
     {
-      "run_id": "2026-11-27T17:32:22+00:00-548c43",
+      "run_id": "2026-11-28T16:17:10+00:00-4a5b98",
       "company_id": "minimax",
       "url": "https://www.minimax.io/blog/minimax-h3",
       "status": "ok",
       "reason": "",
-      "checked_at": "2026-11-27T17:33:24+00:00"
+      "checked_at": "2026-11-28T16:18:09+00:00"
     },
     {
-      "run_id": "2026-11-27T17:32:22+00:00-548c43",
+      "run_id": "2026-11-28T16:17:10+00:00-4a5b98",
       "company_id": "minimax",
       "url": "https://www.wikidata.org/wiki/Q130263208",
       "status": "ok",
       "reason": "",
-      "checked_at": "2026-11-27T17:33:26+00:00"
+      "checked_at": "2026-11-28T16:18:10+00:00"
     },
     {
-      "run_id": "2026-11-27T17:32:22+00:00-548c43",
+      "run_id": "2026-11-28T16:17:10+00:00-4a5b98",
       "company_id": "z-ai",
       "url": "https://z.ai/",
       "status": "ok",
       "reason": "",
-      "checked_at": "2026-11-27T17:33:31+00:00"
+      "checked_at": "2026-11-28T16:18:15+00:00"
     },
     {
-      "run_id": "2026-11-27T17:32:22+00:00-548c43",
+      "run_id": "2026-11-28T16:17:10+00:00-4a5b98",
       "company_id": "z-ai",
       "url": "https://www.wikidata.org/wiki/Q129572031",
       "status": "ok",
       "reason": "",
-      "checked_at": "2026-11-27T17:33:32+00:00"
+      "checked_at": "2026-11-28T16:18:16+00:00"
     },
     {
-      "run_id": "2026-11-27T17:32:22+00:00-548c43",
+      "run_id": "2026-11-28T16:17:10+00:00-4a5b98",
       "company_id": "discovery",
       "url": "https://query.wikidata.org/sparql",
       "status": "ok",
       "reason": "",
-      "checked_at": "2026-11-27T17:33:33+00:00"
+      "checked_at": "2026-11-28T16:18:40+00:00"
     }
   ],
   "candidates": [
     {
-      "id": "fdd8258ddea337c2e0e9a093",
-      "name": "Nexco",
-      "website": "https://www.nexco.ai/",
-      "source": "http://www.wikidata.org/entity/Q139954206",
+      "id": "d8a2eaf8fb001ff72e002ff3",
+      "name": "Varela Insights",
+      "website": "https://varelainsights.com/",
+      "source": "http://www.wikidata.org/entity/Q140053766",
+      "discovered_at": "2026-11-28T16:18:40+00:00",
+      "status": "needs_review"
+    },
+    {
+      "id": "9942818f23b16436cb3b38cd",
+      "name": "EDRON AI",
+      "website": "https://edronai.com/",
+      "source": "http://www.wikidata.org/entity/Q140067381",
+      "discovered_at": "2026-11-28T16:18:40+00:00",
+      "status": "needs_review"
+    },
+    {
+      "id": "5db7fa4ae9bb0042a976309b",
+      "name": "FIDEIA",
+      "website": "https://fideia.ai/",
+      "source": "http://www.wikidata.org/entity/Q140067735",
+      "discovered_at": "2026-11-28T16:18:40+00:00",
+      "status": "needs_review"
+    },
+    {
+      "id": "7b912cc27c62b630ef5f9acd",
+      "name": "Blaksyd",
+      "website": "https://blaksyd.com/",
+      "source": "http://www.wikidata.org/entity/Q140068113",
+      "discovered_at": "2026-11-28T16:18:40+00:00",
+      "status": "needs_review"
+    },
+    {
+      "id": "207746e0a09326d073df1417",
+      "name": "Glavior",
+      "website": "https://glavior.ai/",
+      "source": "http://www.wikidata.org/entity/Q140068968",
+      "discovered_at": "2026-11-28T16:18:40+00:00",
+      "status": "needs_review"
+    },
+    {
+      "id": "677132fcbbb72375a25199a4",
+      "name": "Dezotech",
+      "website": "https://dezotech.com/",
+      "source": "http://www.wikidata.org/entity/Q140069369",
+      "discovered_at": "2026-11-28T16:18:40+00:00",
+      "status": "needs_review"
+    },
+    {
+      "id": "ae3324359ea934252ee40ceb",
+      "name": "feld.ai GmbH",
+      "website": "https://feld.ai/",
+      "source": "http://www.wikidata.org/entity/Q140070925",
+      "discovered_at": "2026-11-28T16:18:40+00:00",
+      "status": "needs_review"
+    },
+    {
+      "id": "cdd3feeae0d6d644558d1f76",
+      "name": "XELIA",
+      "website": "https://xelia.ai/",
+      "source": "http://www.wikidata.org/entity/Q140073881",
+      "discovered_at": "2026-11-28T16:18:40+00:00",
+      "status": "needs_review"
+    },
+    {
+      "id": "7af15446ea7b84dbfef7a06a",
+      "name": "FutureFrame",
+      "website": "https://www.futureframe.fr/",
+      "source": "http://www.wikidata.org/entity/Q140074846",
+      "discovered_at": "2026-11-28T16:18:40+00:00",
+      "status": "needs_review"
+    },
+    {
+      "id": "5f9c45a9a5b6b6369383c222",
+      "name": "Revenue Stream AI",
+      "website": "https://revenuestream.ai/",
+      "source": "http://www.wikidata.org/entity/Q140074852",
+      "discovered_at": "2026-11-28T16:18:40+00:00",
+      "status": "needs_review"
+    },
+    {
+      "id": "ed89f9558cf435786101938c",
+      "name": "AAAIBiz",
+      "website": "https://aaaibiz.com/",
+      "source": "http://www.wikidata.org/entity/Q140076315",
+      "discovered_at": "2026-11-28T16:18:40+00:00",
+      "status": "needs_review"
+    },
+    {
+      "id": "ecaaf4f3f3873622f05b766e",
+      "name": "Vebtual",
+      "website": "https://www.vebtual.com/",
+      "source": "http://www.wikidata.org/entity/Q140076807",
+      "discovered_at": "2026-11-28T16:18:40+00:00",
+      "status": "needs_review"
+    },
+    {
+      "id": "7a28d0b58cd9dd2c32e3916c",
+      "name": "Q140076991",
+      "website": "https://tolky.to/",
+      "source": "http://www.wikidata.org/entity/Q140076991",
+      "discovered_at": "2026-11-28T16:18:40+00:00",
+      "status": "needs_review"
+    },
+    {
+      "id": "cff12c0226a6a4a5de7c3d41",
+      "name": "9AI",
+      "website": "https://9ai.in/",
+      "source": "http://www.wikidata.org/entity/Q140078000",
+      "discovered_at": "2026-11-28T16:18:40+00:00",
+      "status": "needs_review"
+    },
+    {
+      "id": "d040e8d73009142fa09ea46d",
+      "name": "CallMeIE Technologies",
+      "website": "https://callmeie.ie/",
+      "source": "http://www.wikidata.org/entity/Q140078573",
+      "discovered_at": "2026-11-28T16:18:40+00:00",
+      "status": "needs_review"
+    },
+    {
+      "id": "e4fabc6885ed7c1ec7af87ad",
+      "name": "CitableHub",
+      "website": "https://citablehub.com/",
+      "source": "http://www.wikidata.org/entity/Q140078947",
+      "discovered_at": "2026-11-28T16:18:40+00:00",
+      "status": "needs_review"
+    },
+    {
+      "id": "39a578c503a584c0b7e5afa7",
+      "name": "Orizn AI",
+      "website": "https://orizn.ai/",
+      "source": "http://www.wikidata.org/entity/Q140084501",
+      "discovered_at": "2026-11-28T16:18:40+00:00",
+      "status": "needs_review"
+    },
+    {
+      "id": "9d10909bd23c7c0900829c86",
+      "name": "Aperion",
+      "website": "https://aperion.ai/",
+      "source": "http://www.wikidata.org/entity/Q140085162",
+      "discovered_at": "2026-11-28T16:18:40+00:00",
+      "status": "needs_review"
+    },
+    {
+      "id": "d60d0e36845fe63270e3221e",
+      "name": "beadedcloud",
+      "website": "https://beadedcloud.com/",
+      "source": "http://www.wikidata.org/entity/Q140087734",
+      "discovered_at": "2026-11-28T16:18:40+00:00",
+      "status": "needs_review"
+    },
+    {
+      "id": "4d1541ab51f2bbd8870cbffa",
+      "name": "Remetico",
+      "website": "https://remetico.com/",
+      "source": "http://www.wikidata.org/entity/Q140118320",
+      "discovered_at": "2026-11-28T16:18:40+00:00",
+      "status": "needs_review"
+    },
+    {
+      "id": "4e010db49bc8be26d0fc3d56",
+      "name": "Krazimo",
+      "website": "https://krazimo.com/",
+      "source": "http://www.wikidata.org/entity/Q140127945",
+      "discovered_at": "2026-11-28T16:18:40+00:00",
+      "status": "needs_review"
+    },
+    {
+      "id": "7a189147370695da7a3e06e4",
+      "name": "Zorix",
+      "website": "https://zorix.it/",
+      "source": "http://www.wikidata.org/entity/Q140128249",
+      "discovered_at": "2026-11-28T16:18:40+00:00",
+      "status": "needs_review"
+    },
+    {
+      "id": "584fc86284027f287caa6432",
+      "name": "BADIS AI",
+      "website": "https://badis.ai/",
+      "source": "http://www.wikidata.org/entity/Q140133259",
+      "discovered_at": "2026-11-28T16:18:40+00:00",
+      "status": "needs_review"
+    },
+    {
+      "id": "9851420341d415aef0ca2061",
+      "name": "apexAI",
+      "website": "https://apex-ai.ch/",
+      "source": "http://www.wikidata.org/entity/Q140133429",
+      "discovered_at": "2026-11-28T16:18:40+00:00",
+      "status": "needs_review"
+    },
+    {
+      "id": "6c149f07773c1dc595580eea",
+      "name": "Polarise",
+      "website": "https://polarise.eu/",
+      "source": "http://www.wikidata.org/entity/Q140136794",
+      "discovered_at": "2026-11-28T16:18:40+00:00",
+      "status": "needs_review"
+    },
+    {
+      "id": "d987c4e8d94cf4e5818d920c",
+      "name": "Pivot Partners",
+      "website": "https://pivot-partners.co/",
+      "source": "http://www.wikidata.org/entity/Q140142392",
+      "discovered_at": "2026-11-28T16:18:40+00:00",
+      "status": "needs_review"
+    },
+    {
+      "id": "b1602b1e560b6bc5f3deeec9",
+      "name": "Dallas AI Company",
+      "website": "https://dallasaicompany.com/",
+      "source": "http://www.wikidata.org/entity/Q140144506",
+      "discovered_at": "2026-11-28T16:18:40+00:00",
+      "status": "needs_review"
+    },
+    {
+      "id": "803c0eb638ede3361a30fa26",
+      "name": "Elevate AI",
+      "website": "https://elevate-ai.ch/",
+      "source": "http://www.wikidata.org/entity/Q140158544",
+      "discovered_at": "2026-11-28T16:18:40+00:00",
+      "status": "needs_review"
+    },
+    {
+      "id": "33cb56160cd6622a5e40ab0a",
+      "name": "TuxWeb",
+      "website": "https://www.tuxweb.it/",
+      "source": "http://www.wikidata.org/entity/Q140167440",
+      "discovered_at": "2026-11-28T16:18:40+00:00",
+      "status": "needs_review"
+    },
+    {
+      "id": "e9cb3e8a50cf3886e39d3eed",
+      "name": "Regent",
+      "website": "https://heyregent.com/",
+      "source": "http://www.wikidata.org/entity/Q140167607",
+      "discovered_at": "2026-11-28T16:18:40+00:00",
+      "status": "needs_review"
+    },
+    {
+      "id": "013ab7ead0e02dfe4d67d4be",
+      "name": "Synorb",
+      "website": "https://hangingcontext.com/",
+      "source": "http://www.wikidata.org/entity/Q140167615",
+      "discovered_at": "2026-11-28T16:18:40+00:00",
+      "status": "needs_review"
+    },
+    {
+      "id": "ff4aa8328ae7079ba162264e",
+      "name": "Unblocked",
+      "website": "https://getunblocked.com/",
+      "source": "http://www.wikidata.org/entity/Q140170015",
+      "discovered_at": "2026-11-28T16:18:40+00:00",
+      "status": "needs_review"
+    },
+    {
+      "id": "e8a4c682e35f4da3f8915fe8",
+      "name": "Veles Digital",
+      "website": "https://veles.digital/",
+      "source": "http://www.wikidata.org/entity/Q140170153",
+      "discovered_at": "2026-11-28T16:18:40+00:00",
+      "status": "needs_review"
+    },
+    {
+      "id": "b6e727c6952f775d3390bc79",
+      "name": "Call Setter AI",
+      "website": "https://callsetter.ai/",
+      "source": "http://www.wikidata.org/entity/Q140170213",
+      "discovered_at": "2026-11-28T16:18:40+00:00",
+      "status": "needs_review"
+    },
+    {
+      "id": "667b98e11d1d14e6dab942c6",
+      "name": "nao Labs",
+      "website": "https://getnao.io/",
+      "source": "http://www.wikidata.org/entity/Q140173421",
+      "discovered_at": "2026-11-28T16:18:40+00:00",
+      "status": "needs_review"
+    },
+    {
+      "id": "741cc5f5565d86c74bb5cb81",
+      "name": "Sapio AI",
+      "website": "https://sapio.ro/",
+      "source": "http://www.wikidata.org/entity/Q140175382",
+      "discovered_at": "2026-11-28T16:18:40+00:00",
+      "status": "needs_review"
+    },
+    {
+      "id": "ba8c5df2654e2e218bfc2e5d",
+      "name": "EVE NeuroSystems",
+      "website": "https://eveneurosystems.com/",
+      "source": "http://www.wikidata.org/entity/Q140175847",
+      "discovered_at": "2026-11-28T16:18:40+00:00",
+      "status": "needs_review"
+    },
+    {
+      "id": "9fec43cf066501dba7f1a3ae",
+      "name": "Melanized Limited",
+      "website": "https://www.melanized.co.uk/",
+      "source": "http://www.wikidata.org/entity/Q140176749",
+      "discovered_at": "2026-11-28T16:18:40+00:00",
+      "status": "needs_review"
+    },
+    {
+      "id": "1b24239c1f4b1c29ea1c3701",
+      "name": "AI Techno Center GmbH",
+      "website": "https://ai-tc.de/",
+      "source": "http://www.wikidata.org/entity/Q140176776",
+      "discovered_at": "2026-11-28T16:18:40+00:00",
+      "status": "needs_review"
+    },
+    {
+      "id": "61e918bb2e737f44ead7084c",
+      "name": "HeyLoopy",
+      "website": "https://heyloopy.com/",
+      "source": "http://www.wikidata.org/entity/Q140178617",
+      "discovered_at": "2026-11-28T16:18:40+00:00",
+      "status": "needs_review"
+    },
+    {
+      "id": "0183232832a3c0eab46e9a48",
+      "name": "Minerva BI",
+      "website": "https://www.minerva.io/",
+      "source": "http://www.wikidata.org/entity/Q140180128",
+      "discovered_at": "2026-11-28T16:18:40+00:00",
+      "status": "needs_review"
+    },
+    {
+      "id": "ded98dcb8af39b12c72e0c7b",
+      "name": "Briefdots Pty Ltd",
+      "website": "https://realmindsai.com.au/",
+      "source": "http://www.wikidata.org/entity/Q140180209",
+      "discovered_at": "2026-11-28T16:18:40+00:00",
+      "status": "needs_review"
+    },
+    {
+      "id": "f5a9cca5569e8cff3b354d97",
+      "name": "Orbit Dynamics",
+      "website": "https://orbitdynamics.tech/",
+      "source": "http://www.wikidata.org/entity/Q140183487",
+      "discovered_at": "2026-11-28T16:18:40+00:00",
+      "status": "needs_review"
+    },
+    {
+      "id": "987eefcbde06a97357223b54",
+      "name": "BlueJar",
+      "website": "https://bluejar.ai/",
+      "source": "http://www.wikidata.org/entity/Q140184503",
+      "discovered_at": "2026-11-28T16:18:40+00:00",
+      "status": "needs_review"
+    },
+    {
+      "id": "92944a01c29b050ebd64ad47",
+      "name": "Rierino",
+      "website": "https://rierino.com/",
+      "source": "http://www.wikidata.org/entity/Q140185126",
+      "discovered_at": "2026-11-28T16:18:40+00:00",
+      "status": "needs_review"
+    },
+    {
+      "id": "4b9b3ce3d522a22c5aa52db0",
+      "name": "AgentZap",
+      "website": "https://agentzap.ai/",
+      "source": "http://www.wikidata.org/entity/Q140185223",
+      "discovered_at": "2026-11-28T16:18:40+00:00",
+      "status": "needs_review"
+    },
+    {
+      "id": "5d9443e6729557c7bce6a524",
+      "name": "Thea Care",
+      "website": "https://www.theacare.de/",
+      "source": "http://www.wikidata.org/entity/Q140187842",
+      "discovered_at": "2026-11-28T16:18:40+00:00",
+      "status": "needs_review"
+    },
+    {
+      "id": "30d97ca44e9f839e9b0d9f92",
+      "name": "Mickai",
+      "website": "https://mickai.co.uk/",
+      "source": "http://www.wikidata.org/entity/Q140190597",
+      "discovered_at": "2026-11-28T16:18:40+00:00",
+      "status": "needs_review"
+    },
+    {
+      "id": "d50bdb0bd12c569a4057fe3a",
+      "name": "Josreal Innovative Services Limited",
+      "website": "https://josreal.tech/",
+      "source": "http://www.wikidata.org/entity/Q140190794",
+      "discovered_at": "2026-11-28T16:18:40+00:00",
+      "status": "needs_review"
+    },
+    {
+      "id": "75dcda807d8c4cc551557f60",
+      "name": "Q139995818",
+      "website": "https://fuubo.ai/",
+      "source": "http://www.wikidata.org/entity/Q139995818",
       "discovered_at": "2026-11-27T17:33:33+00:00",
       "status": "needs_review"
     },
     {
-      "id": "599ff8ea06e8d58e05bdf03b",
-      "name": "GetCode",
-      "website": "https://www.getcode.one/",
-      "source": "http://www.wikidata.org/entity/Q139955075",
-      "discovered_at": "2026-11-27T17:33:33+00:00",
-      "status": "needs_review"
-    },
-    {
-      "id": "29a5f76881ae58430470d023",
-      "name": "ZENIT KI GmbH",
-      "website": "https://www.zenit-ki.de/",
-      "source": "http://www.wikidata.org/entity/Q139955611",
-      "discovered_at": "2026-11-27T17:33:33+00:00",
-      "status": "needs_review"
-    },
-    {
-      "id": "0a6a926f16181cb40b620d1b",
-      "name": "IntelliStudio",
-      "website": "https://intellistudio.ai/",
-      "source": "http://www.wikidata.org/entity/Q139959944",
+      "id": "9e0d477d1396b4c5aaeee746",
+      "name": "Setix",
+      "website": "https://setix.ai/",
+      "source": "http://www.wikidata.org/entity/Q140043924",
       "discovered_at": "2026-11-27T17:33:33+00:00",
       "status": "needs_review"
     },
@@ -2757,18 +3133,50 @@
       "status": "needs_review"
     },
     {
-      "id": "bac2cf4ea7b4001192240e64",
-      "name": "Opstral",
-      "website": "https://www.opstral.ai/",
-      "source": "http://www.wikidata.org/entity/Q139964699",
+      "id": "9f265f647f38a531734eac9b",
+      "name": "Autima",
+      "website": "https://autima.de/",
+      "source": "http://www.wikidata.org/entity/Q140007774",
       "discovered_at": "2026-11-27T17:33:33+00:00",
       "status": "needs_review"
     },
     {
-      "id": "9026fcc7105dfc72c5912355",
-      "name": "Chasing Next",
-      "website": "https://chasingnext.com/",
-      "source": "http://www.wikidata.org/entity/Q139969782",
+      "id": "2d2518db72230c77de5d3a3d",
+      "name": "Q140008273",
+      "website": "https://teamia.ai/",
+      "source": "http://www.wikidata.org/entity/Q140008273",
+      "discovered_at": "2026-11-27T17:33:33+00:00",
+      "status": "needs_review"
+    },
+    {
+      "id": "95ee430c18a5907c0b648e5d",
+      "name": "Capafy",
+      "website": "https://capafy.ai/",
+      "source": "http://www.wikidata.org/entity/Q140028268",
+      "discovered_at": "2026-11-27T17:33:33+00:00",
+      "status": "needs_review"
+    },
+    {
+      "id": "f08c2d6dd29837bc14b0619d",
+      "name": "aissist",
+      "website": "https://aissist.io/",
+      "source": "http://www.wikidata.org/entity/Q139984242",
+      "discovered_at": "2026-11-27T17:33:33+00:00",
+      "status": "needs_review"
+    },
+    {
+      "id": "aa13374365575dbd89a7c7c4",
+      "name": "Watizi",
+      "website": "https://watizi.com/",
+      "source": "http://www.wikidata.org/entity/Q140045059",
+      "discovered_at": "2026-11-27T17:33:33+00:00",
+      "status": "needs_review"
+    },
+    {
+      "id": "cf02f7fd8ab4a69ddec9fb4c",
+      "name": "Zaiq",
+      "website": "https://zaiq.co.za/",
+      "source": "http://www.wikidata.org/entity/Q140051318",
       "discovered_at": "2026-11-27T17:33:33+00:00",
       "status": "needs_review"
     },
@@ -2781,14 +3189,6 @@
       "status": "needs_review"
     },
     {
-      "id": "89648f3432f4eda0ccf64ab7",
-      "name": "deBCor Engineering",
-      "website": "https://www.debcor.com/",
-      "source": "http://www.wikidata.org/entity/Q139971264",
-      "discovered_at": "2026-11-27T17:33:33+00:00",
-      "status": "needs_review"
-    },
-    {
       "id": "3a1cb2780f3bd69db2a90cf0",
       "name": "MosChip Technologies Limited",
       "website": "https://moschip.com/",
@@ -2797,26 +3197,26 @@
       "status": "needs_review"
     },
     {
-      "id": "c24a6a8a18b771d638a603bb",
-      "name": "Perspix.ai",
-      "website": "https://www.perspix.ai/",
-      "source": "http://www.wikidata.org/entity/Q139972663",
+      "id": "a9de53e1a4cad77b54b18faf",
+      "name": "Masheev",
+      "website": "https://masheev.com/",
+      "source": "http://www.wikidata.org/entity/Q140007941",
       "discovered_at": "2026-11-27T17:33:33+00:00",
       "status": "needs_review"
     },
     {
-      "id": "1f2f6cba4083b674d8f95936",
-      "name": "Pailot",
-      "website": "https://www.pailot.nl/",
-      "source": "http://www.wikidata.org/entity/Q139972917",
+      "id": "cc4f3c24bdf9d388ba93369f",
+      "name": "HOOKiQ",
+      "website": "https://hook-iq.com/",
+      "source": "http://www.wikidata.org/entity/Q140050382",
       "discovered_at": "2026-11-27T17:33:33+00:00",
       "status": "needs_review"
     },
     {
-      "id": "7ee33e09ca81fdcbf420cb7b",
-      "name": "FusionSync AI",
-      "website": "https://www.fusionsync.ai/",
-      "source": "http://www.wikidata.org/entity/Q139973222",
+      "id": "fdd8258ddea337c2e0e9a093",
+      "name": "Nexco",
+      "website": "https://www.nexco.ai/",
+      "source": "http://www.wikidata.org/entity/Q139954206",
       "discovered_at": "2026-11-27T17:33:33+00:00",
       "status": "needs_review"
     },
@@ -2837,50 +3237,66 @@
       "status": "needs_review"
     },
     {
+      "id": "1864791f149b47c3ac20d5eb",
+      "name": "IdeaProof",
+      "website": "https://ideaproof.io/",
+      "source": "http://www.wikidata.org/entity/Q140009803",
+      "discovered_at": "2026-11-27T17:33:33+00:00",
+      "status": "needs_review"
+    },
+    {
+      "id": "1f2f6cba4083b674d8f95936",
+      "name": "Pailot",
+      "website": "https://www.pailot.nl/",
+      "source": "http://www.wikidata.org/entity/Q139972917",
+      "discovered_at": "2026-11-27T17:33:33+00:00",
+      "status": "needs_review"
+    },
+    {
+      "id": "5f25b3caca2ed71a8f431847",
+      "name": "The AR Dept",
+      "website": "https://theardept.com/",
+      "source": "http://www.wikidata.org/entity/Q140044579",
+      "discovered_at": "2026-11-27T17:33:33+00:00",
+      "status": "needs_review"
+    },
+    {
+      "id": "46ca88a6882d8421fe93646c",
+      "name": "Attainable AI",
+      "website": "https://attainable.ai/",
+      "source": "http://www.wikidata.org/entity/Q140050482",
+      "discovered_at": "2026-11-27T17:33:33+00:00",
+      "status": "needs_review"
+    },
+    {
+      "id": "bac2cf4ea7b4001192240e64",
+      "name": "Opstral",
+      "website": "https://www.opstral.ai/",
+      "source": "http://www.wikidata.org/entity/Q139964699",
+      "discovered_at": "2026-11-27T17:33:33+00:00",
+      "status": "needs_review"
+    },
+    {
+      "id": "89648f3432f4eda0ccf64ab7",
+      "name": "deBCor Engineering",
+      "website": "https://www.debcor.com/",
+      "source": "http://www.wikidata.org/entity/Q139971264",
+      "discovered_at": "2026-11-27T17:33:33+00:00",
+      "status": "needs_review"
+    },
+    {
+      "id": "c24a6a8a18b771d638a603bb",
+      "name": "Perspix.ai",
+      "website": "https://www.perspix.ai/",
+      "source": "http://www.wikidata.org/entity/Q139972663",
+      "discovered_at": "2026-11-27T17:33:33+00:00",
+      "status": "needs_review"
+    },
+    {
       "id": "e6a702645cf0fdade0a7378a",
       "name": "EmpirioLabs AI",
       "website": "https://empiriolabs.ai/",
       "source": "http://www.wikidata.org/entity/Q139980540",
-      "discovered_at": "2026-11-27T17:33:33+00:00",
-      "status": "needs_review"
-    },
-    {
-      "id": "0a6461e6e17133590b591c06",
-      "name": "Soulcraft",
-      "website": "https://soulcraftagency.com/",
-      "source": "http://www.wikidata.org/entity/Q139981209",
-      "discovered_at": "2026-11-27T17:33:33+00:00",
-      "status": "needs_review"
-    },
-    {
-      "id": "f08c2d6dd29837bc14b0619d",
-      "name": "aissist",
-      "website": "https://aissist.io/",
-      "source": "http://www.wikidata.org/entity/Q139984242",
-      "discovered_at": "2026-11-27T17:33:33+00:00",
-      "status": "needs_review"
-    },
-    {
-      "id": "0c1025694323ef45d6c8255f",
-      "name": "Q139986359",
-      "website": "https://www.aeonrobotics.com/",
-      "source": "http://www.wikidata.org/entity/Q139986359",
-      "discovered_at": "2026-11-27T17:33:33+00:00",
-      "status": "needs_review"
-    },
-    {
-      "id": "be1f9dae93f422b5fff9c3be",
-      "name": "Flappie Technologies",
-      "website": "https://www.flappiedoors.com/",
-      "source": "http://www.wikidata.org/entity/Q139990243",
-      "discovered_at": "2026-11-27T17:33:33+00:00",
-      "status": "needs_review"
-    },
-    {
-      "id": "75dcda807d8c4cc551557f60",
-      "name": "Q139995818",
-      "website": "https://fuubo.ai/",
-      "source": "http://www.wikidata.org/entity/Q139995818",
       "discovered_at": "2026-11-27T17:33:33+00:00",
       "status": "needs_review"
     },
@@ -2901,66 +3317,10 @@
       "status": "needs_review"
     },
     {
-      "id": "9f265f647f38a531734eac9b",
-      "name": "Autima",
-      "website": "https://autima.de/",
-      "source": "http://www.wikidata.org/entity/Q140007774",
-      "discovered_at": "2026-11-27T17:33:33+00:00",
-      "status": "needs_review"
-    },
-    {
-      "id": "a9de53e1a4cad77b54b18faf",
-      "name": "Masheev",
-      "website": "https://masheev.com/",
-      "source": "http://www.wikidata.org/entity/Q140007941",
-      "discovered_at": "2026-11-27T17:33:33+00:00",
-      "status": "needs_review"
-    },
-    {
-      "id": "2d2518db72230c77de5d3a3d",
-      "name": "Q140008273",
-      "website": "https://teamia.ai/",
-      "source": "http://www.wikidata.org/entity/Q140008273",
-      "discovered_at": "2026-11-27T17:33:33+00:00",
-      "status": "needs_review"
-    },
-    {
-      "id": "1864791f149b47c3ac20d5eb",
-      "name": "IdeaProof",
-      "website": "https://ideaproof.io/",
-      "source": "http://www.wikidata.org/entity/Q140009803",
-      "discovered_at": "2026-11-27T17:33:33+00:00",
-      "status": "needs_review"
-    },
-    {
-      "id": "e8e252622319720eba129b40",
-      "name": "Q140011027",
-      "website": "https://www.photoroom.com/",
-      "source": "http://www.wikidata.org/entity/Q140011027",
-      "discovered_at": "2026-11-27T17:33:33+00:00",
-      "status": "needs_review"
-    },
-    {
       "id": "674356842e3578758e9a7f28",
       "name": "Logic",
       "website": "https://logic28.com.mx/",
       "source": "http://www.wikidata.org/entity/Q140011270",
-      "discovered_at": "2026-11-27T17:33:33+00:00",
-      "status": "needs_review"
-    },
-    {
-      "id": "5ac4814e367e5e78780593a7",
-      "name": "Roonify",
-      "website": "https://www.roonify.com/",
-      "source": "http://www.wikidata.org/entity/Q140021204",
-      "discovered_at": "2026-11-27T17:33:33+00:00",
-      "status": "needs_review"
-    },
-    {
-      "id": "95ee430c18a5907c0b648e5d",
-      "name": "Capafy",
-      "website": "https://capafy.ai/",
-      "source": "http://www.wikidata.org/entity/Q140028268",
       "discovered_at": "2026-11-27T17:33:33+00:00",
       "status": "needs_review"
     },
@@ -2973,22 +3333,6 @@
       "status": "needs_review"
     },
     {
-      "id": "7becc306dfa5da4b42f413d1",
-      "name": "SignalWorks",
-      "website": "https://www.signalworks.live/",
-      "source": "http://www.wikidata.org/entity/Q140041701",
-      "discovered_at": "2026-11-27T17:33:33+00:00",
-      "status": "needs_review"
-    },
-    {
-      "id": "376bae74b1745f61b3811f4c",
-      "name": "BEYONDER AG",
-      "website": "https://www.beyonder.ch/",
-      "source": "http://www.wikidata.org/entity/Q140041730",
-      "discovered_at": "2026-11-27T17:33:33+00:00",
-      "status": "needs_review"
-    },
-    {
       "id": "d378d37aedd716ca4327ec4a",
       "name": "AIT Computer Systems",
       "website": "https://www.ait.com.tr/",
@@ -2997,98 +3341,10 @@
       "status": "needs_review"
     },
     {
-      "id": "9e0d477d1396b4c5aaeee746",
-      "name": "Setix",
-      "website": "https://setix.ai/",
-      "source": "http://www.wikidata.org/entity/Q140043924",
-      "discovered_at": "2026-11-27T17:33:33+00:00",
-      "status": "needs_review"
-    },
-    {
-      "id": "5f25b3caca2ed71a8f431847",
-      "name": "The AR Dept",
-      "website": "https://theardept.com/",
-      "source": "http://www.wikidata.org/entity/Q140044579",
-      "discovered_at": "2026-11-27T17:33:33+00:00",
-      "status": "needs_review"
-    },
-    {
       "id": "d658043c4ce4e52617c68738",
       "name": "aiomics",
       "website": "https://www.aiomics.io/",
       "source": "http://www.wikidata.org/entity/Q140044681",
-      "discovered_at": "2026-11-27T17:33:33+00:00",
-      "status": "needs_review"
-    },
-    {
-      "id": "aa13374365575dbd89a7c7c4",
-      "name": "Watizi",
-      "website": "https://watizi.com/",
-      "source": "http://www.wikidata.org/entity/Q140045059",
-      "discovered_at": "2026-11-27T17:33:33+00:00",
-      "status": "needs_review"
-    },
-    {
-      "id": "3002a6e4d7804bdf690dc7be",
-      "name": "Choate Catalysts",
-      "website": "https://choatecatalysts.com/",
-      "source": "http://www.wikidata.org/entity/Q140045111",
-      "discovered_at": "2026-11-27T17:33:33+00:00",
-      "status": "needs_review"
-    },
-    {
-      "id": "1cb87e3dbe5f80435d7332d7",
-      "name": "Code and Trust",
-      "website": "https://www.codeandtrust.com/",
-      "source": "http://www.wikidata.org/entity/Q140045848",
-      "discovered_at": "2026-11-27T17:33:33+00:00",
-      "status": "needs_review"
-    },
-    {
-      "id": "57f6ae5d826400910a533008",
-      "name": "Lovelaice",
-      "website": "https://www.lovelaice.com/",
-      "source": "http://www.wikidata.org/entity/Q140047146",
-      "discovered_at": "2026-11-27T17:33:33+00:00",
-      "status": "needs_review"
-    },
-    {
-      "id": "81f951b78a0b155529bbce38",
-      "name": "Voyage",
-      "website": "https://www.thevoyage.ai/",
-      "source": "http://www.wikidata.org/entity/Q140047506",
-      "discovered_at": "2026-11-27T17:33:33+00:00",
-      "status": "needs_review"
-    },
-    {
-      "id": "f9730d6d19f6fe882e0d4a86",
-      "name": "Voyage Health Inc",
-      "website": "https://www.thevoyage.ai/",
-      "source": "http://www.wikidata.org/entity/Q140047548",
-      "discovered_at": "2026-11-27T17:33:33+00:00",
-      "status": "needs_review"
-    },
-    {
-      "id": "cc4f3c24bdf9d388ba93369f",
-      "name": "HOOKiQ",
-      "website": "https://hook-iq.com/",
-      "source": "http://www.wikidata.org/entity/Q140050382",
-      "discovered_at": "2026-11-27T17:33:33+00:00",
-      "status": "needs_review"
-    },
-    {
-      "id": "46ca88a6882d8421fe93646c",
-      "name": "Attainable AI",
-      "website": "https://attainable.ai/",
-      "source": "http://www.wikidata.org/entity/Q140050482",
-      "discovered_at": "2026-11-27T17:33:33+00:00",
-      "status": "needs_review"
-    },
-    {
-      "id": "cf02f7fd8ab4a69ddec9fb4c",
-      "name": "Zaiq",
-      "website": "https://zaiq.co.za/",
-      "source": "http://www.wikidata.org/entity/Q140051318",
       "discovered_at": "2026-11-27T17:33:33+00:00",
       "status": "needs_review"
     },
@@ -3109,10 +3365,146 @@
       "status": "needs_review"
     },
     {
+      "id": "599ff8ea06e8d58e05bdf03b",
+      "name": "GetCode",
+      "website": "https://www.getcode.one/",
+      "source": "http://www.wikidata.org/entity/Q139955075",
+      "discovered_at": "2026-11-27T17:33:33+00:00",
+      "status": "needs_review"
+    },
+    {
+      "id": "29a5f76881ae58430470d023",
+      "name": "ZENIT KI GmbH",
+      "website": "https://www.zenit-ki.de/",
+      "source": "http://www.wikidata.org/entity/Q139955611",
+      "discovered_at": "2026-11-27T17:33:33+00:00",
+      "status": "needs_review"
+    },
+    {
+      "id": "9026fcc7105dfc72c5912355",
+      "name": "Chasing Next",
+      "website": "https://chasingnext.com/",
+      "source": "http://www.wikidata.org/entity/Q139969782",
+      "discovered_at": "2026-11-27T17:33:33+00:00",
+      "status": "needs_review"
+    },
+    {
+      "id": "5ac4814e367e5e78780593a7",
+      "name": "Roonify",
+      "website": "https://www.roonify.com/",
+      "source": "http://www.wikidata.org/entity/Q140021204",
+      "discovered_at": "2026-11-27T17:33:33+00:00",
+      "status": "needs_review"
+    },
+    {
+      "id": "376bae74b1745f61b3811f4c",
+      "name": "BEYONDER AG",
+      "website": "https://www.beyonder.ch/",
+      "source": "http://www.wikidata.org/entity/Q140041730",
+      "discovered_at": "2026-11-27T17:33:33+00:00",
+      "status": "needs_review"
+    },
+    {
+      "id": "0a6a926f16181cb40b620d1b",
+      "name": "IntelliStudio",
+      "website": "https://intellistudio.ai/",
+      "source": "http://www.wikidata.org/entity/Q139959944",
+      "discovered_at": "2026-11-27T17:33:33+00:00",
+      "status": "needs_review"
+    },
+    {
+      "id": "81f951b78a0b155529bbce38",
+      "name": "Voyage",
+      "website": "https://www.thevoyage.ai/",
+      "source": "http://www.wikidata.org/entity/Q140047506",
+      "discovered_at": "2026-11-27T17:33:33+00:00",
+      "status": "needs_review"
+    },
+    {
+      "id": "f9730d6d19f6fe882e0d4a86",
+      "name": "Voyage Health Inc",
+      "website": "https://www.thevoyage.ai/",
+      "source": "http://www.wikidata.org/entity/Q140047548",
+      "discovered_at": "2026-11-27T17:33:33+00:00",
+      "status": "needs_review"
+    },
+    {
+      "id": "7ee33e09ca81fdcbf420cb7b",
+      "name": "FusionSync AI",
+      "website": "https://www.fusionsync.ai/",
+      "source": "http://www.wikidata.org/entity/Q139973222",
+      "discovered_at": "2026-11-27T17:33:33+00:00",
+      "status": "needs_review"
+    },
+    {
+      "id": "e8e252622319720eba129b40",
+      "name": "Q140011027",
+      "website": "https://www.photoroom.com/",
+      "source": "http://www.wikidata.org/entity/Q140011027",
+      "discovered_at": "2026-11-27T17:33:33+00:00",
+      "status": "needs_review"
+    },
+    {
+      "id": "57f6ae5d826400910a533008",
+      "name": "Lovelaice",
+      "website": "https://www.lovelaice.com/",
+      "source": "http://www.wikidata.org/entity/Q140047146",
+      "discovered_at": "2026-11-27T17:33:33+00:00",
+      "status": "needs_review"
+    },
+    {
       "id": "b64692aaedb99db94dc8bd03",
       "name": "Infor srl | B Corp",
       "website": "https://www.gruppoinfor.it/",
       "source": "http://www.wikidata.org/entity/Q140053546",
+      "discovered_at": "2026-11-27T17:33:33+00:00",
+      "status": "needs_review"
+    },
+    {
+      "id": "0a6461e6e17133590b591c06",
+      "name": "Soulcraft",
+      "website": "https://soulcraftagency.com/",
+      "source": "http://www.wikidata.org/entity/Q139981209",
+      "discovered_at": "2026-11-27T17:33:33+00:00",
+      "status": "needs_review"
+    },
+    {
+      "id": "3002a6e4d7804bdf690dc7be",
+      "name": "Choate Catalysts",
+      "website": "https://choatecatalysts.com/",
+      "source": "http://www.wikidata.org/entity/Q140045111",
+      "discovered_at": "2026-11-27T17:33:33+00:00",
+      "status": "needs_review"
+    },
+    {
+      "id": "0c1025694323ef45d6c8255f",
+      "name": "Q139986359",
+      "website": "https://www.aeonrobotics.com/",
+      "source": "http://www.wikidata.org/entity/Q139986359",
+      "discovered_at": "2026-11-27T17:33:33+00:00",
+      "status": "needs_review"
+    },
+    {
+      "id": "be1f9dae93f422b5fff9c3be",
+      "name": "Flappie Technologies",
+      "website": "https://www.flappiedoors.com/",
+      "source": "http://www.wikidata.org/entity/Q139990243",
+      "discovered_at": "2026-11-27T17:33:33+00:00",
+      "status": "needs_review"
+    },
+    {
+      "id": "7becc306dfa5da4b42f413d1",
+      "name": "SignalWorks",
+      "website": "https://www.signalworks.live/",
+      "source": "http://www.wikidata.org/entity/Q140041701",
+      "discovered_at": "2026-11-27T17:33:33+00:00",
+      "status": "needs_review"
+    },
+    {
+      "id": "1cb87e3dbe5f80435d7332d7",
+      "name": "Code and Trust",
+      "website": "https://www.codeandtrust.com/",
+      "source": "http://www.wikidata.org/entity/Q140045848",
       "discovered_at": "2026-11-27T17:33:33+00:00",
       "status": "needs_review"
     },
@@ -6323,401 +6715,44 @@
       "source": "http://www.wikidata.org/entity/Q111387693",
       "discovered_at": "2026-11-16T17:12:19+00:00",
       "status": "needs_review"
-    },
-    {
-      "id": "3dfb3b597eadb204bb8b8150",
-      "name": "Motalen",
-      "website": "https://www.motalen.com/",
-      "source": "http://www.wikidata.org/entity/Q117266352",
-      "discovered_at": "2026-11-16T17:12:19+00:00",
-      "status": "needs_review"
-    },
-    {
-      "id": "c4840ca8f01f4566dbcd9a55",
-      "name": "iMatrics",
-      "website": "https://www.imatrics.com/",
-      "source": "http://www.wikidata.org/entity/Q106998607",
-      "discovered_at": "2026-11-16T17:12:19+00:00",
-      "status": "needs_review"
-    },
-    {
-      "id": "f4fdb232e7cad82a39b2c197",
-      "name": "FinanceGPT",
-      "website": "https://financegpt.cloud/",
-      "source": "http://www.wikidata.org/entity/Q117861376",
-      "discovered_at": "2026-11-16T17:12:19+00:00",
-      "status": "needs_review"
-    },
-    {
-      "id": "aae573fe4c2dc425d7a463be",
-      "name": "AI@Centech",
-      "website": "https://ai-at-centech.com/",
-      "source": "http://www.wikidata.org/entity/Q106762406",
-      "discovered_at": "2026-11-16T17:12:19+00:00",
-      "status": "needs_review"
-    },
-    {
-      "id": "e18951590df52ba62b502447",
-      "name": "Trulience",
-      "website": "https://www.trulience.com/",
-      "source": "http://www.wikidata.org/entity/Q121088681",
-      "discovered_at": "2026-11-16T17:12:19+00:00",
-      "status": "needs_review"
-    },
-    {
-      "id": "d5eb88c4f7452e5d5b17aa52",
-      "name": "KMS Technology",
-      "website": "https://kms-technology.com/",
-      "source": "http://www.wikidata.org/entity/Q109438507",
-      "discovered_at": "2026-11-16T17:12:19+00:00",
-      "status": "needs_review"
-    },
-    {
-      "id": "b764418a16943117e44c45f0",
-      "name": "Respeecher",
-      "website": "https://www.respeecher.com/",
-      "source": "http://www.wikidata.org/entity/Q118904793",
-      "discovered_at": "2026-11-16T17:12:19+00:00",
-      "status": "needs_review"
-    },
-    {
-      "id": "5c46180d08bab573667e5ecd",
-      "name": "ContinualAI",
-      "website": "https://www.continualai.org/",
-      "source": "http://www.wikidata.org/entity/Q106642969",
-      "discovered_at": "2026-11-16T17:12:19+00:00",
-      "status": "needs_review"
-    },
-    {
-      "id": "593950534b17e2c3c5c688c5",
-      "name": "Project AINA",
-      "website": "https://www.projecteaina.cat/",
-      "source": "http://www.wikidata.org/entity/Q110943076",
-      "discovered_at": "2026-11-16T17:12:19+00:00",
-      "status": "needs_review"
-    },
-    {
-      "id": "e9fe18f044d9c1953f4a6986",
-      "name": "United Robotics Group",
-      "website": "https://unitedrobotics.group/",
-      "source": "http://www.wikidata.org/entity/Q116182177",
-      "discovered_at": "2026-11-16T17:12:19+00:00",
-      "status": "needs_review"
-    },
-    {
-      "id": "d51528cdb79464a7534c2f9e",
-      "name": "Soul Machines",
-      "website": "https://www.soulmachines.com/",
-      "source": "http://www.wikidata.org/entity/Q117354367",
-      "discovered_at": "2026-11-16T17:12:19+00:00",
-      "status": "needs_review"
-    },
-    {
-      "id": "f432115e1feab4101f60689f",
-      "name": "Salesforce",
-      "website": "https://www.salesforce.com/products/",
-      "source": "http://www.wikidata.org/entity/Q115602131",
-      "discovered_at": "2026-11-16T17:12:19+00:00",
-      "status": "needs_review"
-    },
-    {
-      "id": "bd6a9a8fb1d19070c6c3a5fb",
-      "name": "SpaceX Super Intelligence",
-      "website": "https://x.ai/",
-      "source": "http://www.wikidata.org/entity/Q120599684",
-      "discovered_at": "2026-11-16T02:46:18+00:00",
-      "status": "needs_review"
-    },
-    {
-      "id": "d80851c7ba8f4520bc45b5d6",
-      "name": "Q130337150",
-      "website": "https://prg.ai/",
-      "source": "http://www.wikidata.org/entity/Q130337150",
-      "discovered_at": "2026-11-16T02:46:18+00:00",
-      "status": "needs_review"
-    },
-    {
-      "id": "0d4035af8cf8bcf6b0f48388",
-      "name": "alt",
-      "website": "https://alt.ai/",
-      "source": "http://www.wikidata.org/entity/Q134286245",
-      "discovered_at": "2026-11-16T02:46:18+00:00",
-      "status": "needs_review"
-    },
-    {
-      "id": "8776f4d3c4d6a0e9cde2c895",
-      "name": "Senro",
-      "website": "https://senro.ai/",
-      "source": "http://www.wikidata.org/entity/Q134469437",
-      "discovered_at": "2026-11-16T02:46:18+00:00",
-      "status": "needs_review"
-    },
-    {
-      "id": "5f2013a8fbdf339acfde1482",
-      "name": "Wayve",
-      "website": "https://wayve.ai/",
-      "source": "http://www.wikidata.org/entity/Q125820744",
-      "discovered_at": "2026-11-16T02:46:18+00:00",
-      "status": "needs_review"
-    },
-    {
-      "id": "bf743f2e33c37779e10dca14",
-      "name": "10Web",
-      "website": "https://10web.io/",
-      "source": "http://www.wikidata.org/entity/Q134007166",
-      "discovered_at": "2026-11-16T02:46:18+00:00",
-      "status": "needs_review"
-    },
-    {
-      "id": "e94620750ebb20bc0f96317e",
-      "name": "CENIA",
-      "website": "https://cenia.cl/",
-      "source": "http://www.wikidata.org/entity/Q132554490",
-      "discovered_at": "2026-11-16T02:46:18+00:00",
-      "status": "needs_review"
-    },
-    {
-      "id": "aa91b746a50b73113008db58",
-      "name": "Alloy",
-      "website": "https://alloy.app/",
-      "source": "http://www.wikidata.org/entity/Q130948825",
-      "discovered_at": "2026-11-16T02:46:18+00:00",
-      "status": "needs_review"
-    },
-    {
-      "id": "472a15cea9677afd6972f990",
-      "name": "The Six AI",
-      "website": "https://thesix.ai/",
-      "source": "http://www.wikidata.org/entity/Q125956263",
-      "discovered_at": "2026-11-16T02:46:18+00:00",
-      "status": "needs_review"
-    },
-    {
-      "id": "daa6b57be8ff127d2c0cdf07",
-      "name": "Sigli",
-      "website": "https://sigli.com/",
-      "source": "http://www.wikidata.org/entity/Q135418647",
-      "discovered_at": "2026-11-16T02:46:18+00:00",
-      "status": "needs_review"
-    },
-    {
-      "id": "56ecc1aa44f2c5fc78d85d8b",
-      "name": "humain",
-      "website": "https://humain.ai/",
-      "source": "http://www.wikidata.org/entity/Q134444212",
-      "discovered_at": "2026-11-16T02:46:18+00:00",
-      "status": "needs_review"
-    },
-    {
-      "id": "51a651f1d744d7db99548a93",
-      "name": "Q131906982",
-      "website": "https://aifod.org/",
-      "source": "http://www.wikidata.org/entity/Q131906982",
-      "discovered_at": "2026-11-16T02:46:18+00:00",
-      "status": "needs_review"
-    },
-    {
-      "id": "974d398938d0991cb3255e2f",
-      "name": "MGX Fund Management Limited",
-      "website": "https://www.mgx.ae/",
-      "source": "http://www.wikidata.org/entity/Q131855666",
-      "discovered_at": "2026-11-16T02:46:18+00:00",
-      "status": "needs_review"
-    },
-    {
-      "id": "11792496eb99ae3565d69c7e",
-      "name": "Aimoove",
-      "website": "https://aimoove.fr/",
-      "source": "http://www.wikidata.org/entity/Q135440591",
-      "discovered_at": "2026-11-16T02:46:18+00:00",
-      "status": "needs_review"
-    },
-    {
-      "id": "ec6149c061113582e3c662fe",
-      "name": "Triorama AI",
-      "website": "https://triorama.ai/",
-      "source": "http://www.wikidata.org/entity/Q132705764",
-      "discovered_at": "2026-11-16T02:46:18+00:00",
-      "status": "needs_review"
-    },
-    {
-      "id": "bd1dc0c0ca2ce005c6c2eff5",
-      "name": "Q123704346",
-      "website": "https://atnorth.com/",
-      "source": "http://www.wikidata.org/entity/Q123704346",
-      "discovered_at": "2026-11-16T02:46:18+00:00",
-      "status": "needs_review"
-    },
-    {
-      "id": "ae7a131968011ad78fd66e2b",
-      "name": "Espresso AI",
-      "website": "https://espresso.ai/",
-      "source": "http://www.wikidata.org/entity/Q133843529",
-      "discovered_at": "2026-11-16T02:46:18+00:00",
-      "status": "needs_review"
-    },
-    {
-      "id": "896e4f3bec8ef318bbf57d5d",
-      "name": "K Health",
-      "website": "https://khealth.com/",
-      "source": "http://www.wikidata.org/entity/Q130313544",
-      "discovered_at": "2026-11-16T02:46:18+00:00",
-      "status": "needs_review"
-    },
-    {
-      "id": "59b05006f9c06277eec41639",
-      "name": "KNOWDYN",
-      "website": "https://knowdyn.com/",
-      "source": "http://www.wikidata.org/entity/Q133933023",
-      "discovered_at": "2026-11-16T02:46:18+00:00",
-      "status": "needs_review"
-    },
-    {
-      "id": "d6e2917c5c964e94d16b65a8",
-      "name": "Česká asociace umělé inteligence",
-      "website": "https://asociace.ai/",
-      "source": "http://www.wikidata.org/entity/Q131905880",
-      "discovered_at": "2026-11-16T02:46:18+00:00",
-      "status": "needs_review"
-    },
-    {
-      "id": "e0e818d827496b7508a7a9c0",
-      "name": "SambaNova Systems",
-      "website": "https://sambanova.ai/",
-      "source": "http://www.wikidata.org/entity/Q127693035",
-      "discovered_at": "2026-11-16T02:46:18+00:00",
-      "status": "needs_review"
-    },
-    {
-      "id": "e11d0009d47d7295b2e6ff57",
-      "name": "Yali Labs",
-      "website": "https://yalilabs.com/",
-      "source": "http://www.wikidata.org/entity/Q133802856",
-      "discovered_at": "2026-11-16T02:46:18+00:00",
-      "status": "needs_review"
-    },
-    {
-      "id": "d1699f0fec632fd969bef4e4",
-      "name": "Kinet.ai",
-      "website": "https://www.kinet.ai/",
-      "source": "http://www.wikidata.org/entity/Q135905218",
-      "discovered_at": "2026-11-16T02:46:18+00:00",
-      "status": "needs_review"
-    },
-    {
-      "id": "5a877eb9cac48aaaa43131fd",
-      "name": "Kittl",
-      "website": "https://www.kittl.com/",
-      "source": "http://www.wikidata.org/entity/Q135206129",
-      "discovered_at": "2026-11-16T02:46:18+00:00",
-      "status": "needs_review"
-    },
-    {
-      "id": "45883aeac6487b1776d994c9",
-      "name": "Photomyne",
-      "website": "https://photomyne.com/",
-      "source": "http://www.wikidata.org/entity/Q128218512",
-      "discovered_at": "2026-11-16T02:46:18+00:00",
-      "status": "needs_review"
-    },
-    {
-      "id": "dd039d70ececbd794b2c4300",
-      "name": "Contextual AI",
-      "website": "https://contextual.ai/",
-      "source": "http://www.wikidata.org/entity/Q135245580",
-      "discovered_at": "2026-11-16T02:46:18+00:00",
-      "status": "needs_review"
-    },
-    {
-      "id": "7af6a475bfea25bd5ac904c7",
-      "name": "Nexus AI",
-      "website": "https://mynexusai.com/",
-      "source": "http://www.wikidata.org/entity/Q130344019",
-      "discovered_at": "2026-11-16T02:46:18+00:00",
-      "status": "needs_review"
-    },
-    {
-      "id": "81c918282fb90ddb3f763093",
-      "name": "StageKeep",
-      "website": "https://stagekeep.com/",
-      "source": "http://www.wikidata.org/entity/Q133873020",
-      "discovered_at": "2026-11-16T02:46:18+00:00",
-      "status": "needs_review"
-    },
-    {
-      "id": "6879174f45b6647b76766a42",
-      "name": "Blankline",
-      "website": "https://blankline.org/",
-      "source": "http://www.wikidata.org/entity/Q126868640",
-      "discovered_at": "2026-11-16T02:46:18+00:00",
-      "status": "needs_review"
-    },
-    {
-      "id": "c11c5e91f312b112a037dbf9",
-      "name": "Q131894787",
-      "website": "https://www.deepl.com/",
-      "source": "http://www.wikidata.org/entity/Q131894787",
-      "discovered_at": "2026-11-16T02:46:18+00:00",
-      "status": "needs_review"
-    },
-    {
-      "id": "0f7956241e4bd95a2a38849c",
-      "name": "Arkham Intelligence",
-      "website": "https://intel.arkm.com/",
-      "source": "http://www.wikidata.org/entity/Q125895281",
-      "discovered_at": "2026-11-16T02:46:18+00:00",
-      "status": "needs_review"
-    },
-    {
-      "id": "77408b654a6af6e3e472bfeb",
-      "name": "Workabl.ai",
-      "website": "https://www.workabl.ai/",
-      "source": "http://www.wikidata.org/entity/Q133461493",
-      "discovered_at": "2026-11-16T02:46:18+00:00",
-      "status": "needs_review"
-    },
-    {
-      "id": "51645e7c27f71bb7cbc67ab0",
-      "name": "Holywater Tech",
-      "website": "https://holywater.tech/",
-      "source": "http://www.wikidata.org/entity/Q135914740",
-      "discovered_at": "2026-11-16T02:46:18+00:00",
-      "status": "needs_review"
-    },
-    {
-      "id": "274443ec79d1c46b5a095267",
-      "name": "H Company",
-      "website": "https://www.hcompany.ai/",
-      "source": "http://www.wikidata.org/entity/Q132456572",
-      "discovered_at": "2026-11-16T02:46:18+00:00",
-      "status": "needs_review"
-    },
-    {
-      "id": "0a6e0321ba81f64c9b7cf833",
-      "name": "HelpDesk",
-      "website": "https://www.helpdesk.com/",
-      "source": "http://www.wikidata.org/entity/Q125939905",
-      "discovered_at": "2026-11-16T02:46:18+00:00",
-      "status": "needs_review"
-    },
-    {
-      "id": "5964386662250c75423a5f64",
-      "name": "Graphwise",
-      "website": "https://www.graphwise.ai/",
-      "source": "http://www.wikidata.org/entity/Q133503461",
-      "discovered_at": "2026-11-16T02:46:18+00:00",
-      "status": "needs_review"
-    },
-    {
-      "id": "07d11ae12d714c70fd0ee485",
-      "name": "Schwarz Digits",
-      "website": "https://schwarz-digits.de/",
-      "source": "http://www.wikidata.org/entity/Q135479320",
-      "discovered_at": "2026-11-16T02:46:18+00:00",
-      "status": "needs_review"
     }
   ],
   "changes": [
+    {
+      "company_id": "hugging-face",
+      "document_id": "0b0662a742faa617a0ce38c4",
+      "seen_at": "2026-11-28T16:17:31+00:00",
+      "old_hash": "fe08cc29b4495de055196189",
+      "new_hash": "0da53122dc0cdb2b93925058"
+    },
+    {
+      "company_id": "hugging-face",
+      "document_id": "104f5989e8223bb56d075240",
+      "seen_at": "2026-11-28T16:17:30+00:00",
+      "old_hash": "9a640fa4e00535fbafbf559d",
+      "new_hash": "b8687e2c5c30eef413e4bcca"
+    },
+    {
+      "company_id": "hugging-face",
+      "document_id": "b1bd232257c7b2b0694ee463",
+      "seen_at": "2026-11-28T16:17:29+00:00",
+      "old_hash": "7f25917eaab07b0883beb762",
+      "new_hash": "f0f244db9288418a159058f7"
+    },
+    {
+      "company_id": "cohere",
+      "document_id": "b43ebea21648bd0777eddbe5",
+      "seen_at": "2026-11-28T16:17:26+00:00",
+      "old_hash": "2fdb9788cf9eafcf981173d9",
+      "new_hash": "b4955342554d26de204fb431"
+    },
+    {
+      "company_id": "anthropic",
+      "document_id": "75b51ef642299ee634dcc61a",
+      "seen_at": "2026-11-28T16:17:17+00:00",
+      "old_hash": "8403e2e65b9581caf882ce40",
+      "new_hash": "3a80426187e1a19479c8bb89"
+    },
     {
       "company_id": "elevenlabs",
       "document_id": "71fe52f8ebd1f4b3f95ec1a8",
@@ -7382,41 +7417,6 @@
       "seen_at": "2026-11-19T16:39:49+00:00",
       "old_hash": "be01e7ffa9d73173f16f7794",
       "new_hash": "c35648b41963d24fa8589c6c"
-    },
-    {
-      "company_id": "hugging-face",
-      "document_id": "0b0662a742faa617a0ce38c4",
-      "seen_at": "2026-11-19T16:39:38+00:00",
-      "old_hash": "302b7ce9ad73f12bae20bfe1",
-      "new_hash": "091ab28dca44198f49aa9341"
-    },
-    {
-      "company_id": "hugging-face",
-      "document_id": "104f5989e8223bb56d075240",
-      "seen_at": "2026-11-19T16:39:37+00:00",
-      "old_hash": "ccfb375b0f97e1ffb818a6fe",
-      "new_hash": "fe4700fea8312c8bf38c01ca"
-    },
-    {
-      "company_id": "hugging-face",
-      "document_id": "b1bd232257c7b2b0694ee463",
-      "seen_at": "2026-11-19T16:39:36+00:00",
-      "old_hash": "45f98338d3758aff8dddff38",
-      "new_hash": "9743fdd53d44bdaceb76c0cb"
-    },
-    {
-      "company_id": "anthropic",
-      "document_id": "56d51f6a228ac5d1d3291b6c",
-      "seen_at": "2026-11-19T16:39:25+00:00",
-      "old_hash": "fe90a71f002e537dab500708",
-      "new_hash": "0cf0b556da0cc674596902e5"
-    },
-    {
-      "company_id": "anthropic",
-      "document_id": "75b51ef642299ee634dcc61a",
-      "seen_at": "2026-11-19T16:39:24+00:00",
-      "old_hash": "fd9ca508f649283571656484",
-      "new_hash": "15b2f275d1ab0ce8ea9712ac"
     }
   ]
 }
